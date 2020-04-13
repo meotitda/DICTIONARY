@@ -31,6 +31,7 @@
 ## O
 
 ## P
+[Provisioning](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Provisioning.md)
 
 ## Q
 
