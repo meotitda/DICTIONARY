@@ -7,6 +7,7 @@
 ## C
 
 ## D
+[Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
 
 ## E
 
