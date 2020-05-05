@@ -1,4 +1,3 @@
-Provisioning
 # Provisioning
 
 동사 원형 : Provision
