@@ -1,7 +1,3 @@
-
-cron job
-
-Provisioning
 # Deamon
 
 동사 원형 : 
