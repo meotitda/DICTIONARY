@@ -37,6 +37,9 @@
 
 [Provisioning](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Provisioning.md)
 
+[POSIX] (https://github.com/MoonSupport/DICTIONARY/blob/master/P/POSIX.md)
+
+
 ## Q
 
 ## R
