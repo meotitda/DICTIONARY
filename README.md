@@ -32,6 +32,7 @@
 ## K
 
 ## L
+[Load, Work Load](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Load.md)
 
 ## M
 

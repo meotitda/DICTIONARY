@@ -17,7 +17,7 @@
 
 .([위키백과](https://ko.wikipedia.org/wiki/%EB%B6%88%EB%B3%80%EA%B0%9D%EC%B2%B4)))
 
-관련 기술
+## 관련 기술
 1. React Immutable
 > React가 State를 비교하여 리렌더링 할 때, Immutable한 객체를 비교.
 

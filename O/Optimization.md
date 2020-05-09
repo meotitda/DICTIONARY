@@ -10,7 +10,7 @@
 ([위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%B5%9C%EC%A0%81%ED%99%94
 ))
 
-사용 기술
+## 관련 기술
 1. DB
 > 적절한 Indexing등을 사용한 DB 최적화 ([참고자료](https://jaxenter.com/6-ways-optimize-sql-database-136448.html))
 
