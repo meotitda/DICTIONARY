@@ -1,7 +1,9 @@
 # Resolver, Resolve
 
 동사 원형 : Resolve
+
 의미  : 해결하다.
+
 발음 : 리졸버
 
 값을 제공 받고, 그에 대한 응답을 제공하는 기능 및 함수.
@@ -9,10 +11,10 @@
 
 관련 기술
 1. DNS
-> 리졸버라고도하는 DNS 리졸버는 **도메인 이름을 IP 주소로 변환**하는 인터넷상의 서버입니다.
+> 리졸버라고도하는 DNS 리졸버는 <span style="color:#FFBF00; font-weight:bold;">도메인 이름을 IP 주소로 변환</span>하는 인터넷상의 서버입니다.
 
 2. Graphql Resolver
-> 리졸버는 **GraphQL 쿼리에 대한 응답을 생성**하는 함수 모음입니다. 간단히 말하면, 리졸버는 **GraphQL 쿼리 핸들러** 역할을합니다.
+> 리졸버는 <span style="color:#FFBF00; font-weight:bold;">GraphQL 쿼리에 대한 응답을 생성</span>하는 함수 모음입니다. 간단히 말하면, 리졸버는 <span style="color:#FFBF00; font-weight:bold;">GraphQL 쿼리 핸들러</span> 역할을합니다.
 
 3. Javascript Resovle
 ```
