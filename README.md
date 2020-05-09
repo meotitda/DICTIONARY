@@ -5,6 +5,7 @@
 ## B
 
 ## C
+[Context](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Context.md)
 
 ## D
 [Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
@@ -43,8 +44,11 @@
 ## Q
 
 ## R
+[Resolver](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Resolver.md)
 
 ## S
+[Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
+
 
 ## T
 
