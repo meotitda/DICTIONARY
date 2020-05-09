@@ -22,3 +22,6 @@
 > React 메인페이지에 리액트의 특징으로 나와있다. https://reactjs.org/ 
 
 3. HTML, CSS
+
+4. Imperative Programming (선언형 프로그래밍)
+> Declarative Programming과 반대 개념
