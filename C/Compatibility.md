@@ -2,7 +2,7 @@
 
 동사 원형 : Compatible
 
-의미  : 적합성, 일치성, **호환성** 
+의미  : 적합성, 일치성, <span style="color:#FFBF00; font-weight:bold;">호환성</span>
 
 발음 : 컴패터빌리티
 
