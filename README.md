@@ -3,6 +3,7 @@
 ## A
 
 ## B
+[Batch](https://github.com/MoonSupport/DICTIONARY/blob/master/B/Batch.md)
 
 ## C
 [Cache](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Cache.md)
