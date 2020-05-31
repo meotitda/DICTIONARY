@@ -10,9 +10,9 @@
 
 [Compatibility](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Compatibility.md)
 
-[Context](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Context.md)
+[Consistent](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Consistent.md)
 
-[Consistency]
+[Context](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Context.md)
 
 ## D
 [Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
@@ -51,7 +51,7 @@
 [Orchestration](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Orchestration.md)
 
 ## P
-[POSIX] (https://github.com/MoonSupport/DICTIONARY/blob/master/P/POSIX.md)
+[POSIX](https://github.com/MoonSupport/DICTIONARY/blob/master/P/POSIX.md)
 
 [Preprocessor](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Preprocessor.md)
 
