@@ -1,6 +1,7 @@
 # REVERSE DICTIONARY
 
 ## A
+[Alias](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Alias.md)
 
 ## B
 [Batch](https://github.com/MoonSupport/DICTIONARY/blob/master/B/Batch.md)
