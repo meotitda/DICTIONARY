@@ -1,7 +1,3 @@
-
-
-
-
 # Cache
 
 동사 원형 : Cache
