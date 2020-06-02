@@ -2,6 +2,7 @@
 
 ## A
 [Alias](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Alias.md)
+
 [Assertion](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Assertion.md)
 
 ## B
@@ -41,7 +42,7 @@
 ## K
 
 ## L
-[Load, Work Load](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Load.md)
+[Load](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Load.md)
 
 ## M
 
