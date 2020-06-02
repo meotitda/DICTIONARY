@@ -1,6 +1,6 @@
 # Context
 
-동사 원형 : Context
+원형 : Context
 
 의미  : 문맥, 맥락 
 

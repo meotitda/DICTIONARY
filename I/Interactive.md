@@ -1,6 +1,6 @@
 # Interactive
 
-동사 원형 : Interactive
+원형 : Interactive
 
 의미  : 대화의
 

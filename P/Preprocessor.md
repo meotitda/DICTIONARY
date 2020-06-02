@@ -1,6 +1,6 @@
 # Preprocessor
 
-동사 원형 : Preprocessor
+원형 : Preprocessor
 
 의미  : 전처리기
 

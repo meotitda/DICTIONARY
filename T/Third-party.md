@@ -1,6 +1,6 @@
 # Third-party
 
-동사 원형 : Third-Party
+원형 : Third-Party
 
 의미  : 타사, 제3자
 

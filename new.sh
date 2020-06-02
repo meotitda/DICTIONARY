@@ -25,7 +25,7 @@ touch $DIRECTORY
 cat > ${DIRECTORY} <<- EOM
 # ${TITLE}
 
-동사 원형 : 입력
+원형 : 입력
 
 의미  : <span style="color:#FFBF00; font-weight:bold;">강조</span>
 

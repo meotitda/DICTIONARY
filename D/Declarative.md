@@ -1,6 +1,6 @@
 # Declarative
 
-동사 원형 : Declarative
+원형 : Declarative
 
 의미  : 선언적 
 

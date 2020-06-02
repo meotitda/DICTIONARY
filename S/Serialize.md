@@ -1,6 +1,6 @@
 # Serialize
 
-동사 원형 : Serialize
+원형 : Serialize
 
 의미  : 직렬화, 연속으로 ~하다.
 

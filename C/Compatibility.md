@@ -1,6 +1,6 @@
 # Compatibility
 
-동사 원형 : Compatible
+원형 : Compatible
 
 의미  : 적합성, 일치성, <span style="color:#FFBF00; font-weight:bold;">호환성</span>
 

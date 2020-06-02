@@ -2,7 +2,7 @@ Load
 
 # Load (Work Load)
 
-동사 원형 : Load, Work Load
+원형 : Load, Work Load
 
 의미  : 하중, 짐, 부하
 

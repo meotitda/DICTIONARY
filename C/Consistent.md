@@ -1,6 +1,6 @@
 # Consistent
 
-동사 원형 : Consistent
+원형 : Consistent
 
 의미  : <span style="color:#FFBF00; font-weight:bold;">일관된</span>
 

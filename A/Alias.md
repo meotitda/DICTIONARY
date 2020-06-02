@@ -1,6 +1,6 @@
 # Alias
 
-동사 원형 : Alias
+원형 : Alias
 
 의미  : <span style="color:#FFBF00; font-weight:bold;">별명</span>
 

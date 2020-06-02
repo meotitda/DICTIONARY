@@ -1,6 +1,6 @@
 # Resolver, Resolve
 
-동사 원형 : Resolve
+원형 : Resolve
 
 의미  : 해결하다.
 

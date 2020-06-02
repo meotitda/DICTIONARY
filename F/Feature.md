@@ -1,6 +1,6 @@
 # Feature
 
-동사 원형 : Feature
+원형 : Feature
 
 의미  : 특징, 기능 
 

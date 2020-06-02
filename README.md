@@ -2,6 +2,7 @@
 
 ## A
 [Alias](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Alias.md)
+[Assertion](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Assertion.md)
 
 ## B
 [Batch](https://github.com/MoonSupport/DICTIONARY/blob/master/B/Batch.md)

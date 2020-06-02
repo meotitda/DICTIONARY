@@ -1,6 +1,6 @@
 # Immutable
 
-동사 원형 : Immutable
+원형 : Immutable
 
 의미  : 불변의
 

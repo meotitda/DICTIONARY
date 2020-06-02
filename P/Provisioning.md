@@ -1,6 +1,6 @@
 # Provisioning
 
-동사 원형 : Provision
+원형 : Provision
 
 의미  : 공급, 준비, 대비, 식량
 

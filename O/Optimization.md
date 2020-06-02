@@ -1,6 +1,6 @@
 # Optimization
 
-동사 원형 : Optimization
+원형 : Optimization
 
 의미  : 최적화
 

@@ -1,6 +1,6 @@
 # Batch
 
-동사 원형 : Batch
+원형 : Batch
 
 의미  : 일괄
 

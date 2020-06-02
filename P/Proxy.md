@@ -1,6 +1,6 @@
 # Proxy
 
-동사 원형 : Proxy
+원형 : Proxy
 
 의미  : <span style="color:#FFBF00; font-weight:bold;">대리자</span>
 

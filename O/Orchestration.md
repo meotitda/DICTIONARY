@@ -1,6 +1,6 @@
 # Orchestration
 
-동사 원형 : Orchestration
+원형 : Orchestration
 
 의미  : 통합, 결집, 편성
 

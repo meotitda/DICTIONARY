@@ -1,6 +1,6 @@
 # POSIX
 
-동사 원형 : Portable Operating System Interface
+원형 : Portable Operating System Interface
 
 의미  : 이식 가능한 운영체제 인터페이스
 
