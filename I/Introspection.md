@@ -17,4 +17,4 @@
 스키마의 타입, 지시자등을 제공해주는 리턴값
 
 
-3. 그 외 C++, 루비 등도 [참고](https://en.wikipedia.org/wiki/Type_introspection) 문서에서 확인 가능
+3. 그 외 C++, 루비 등도 [참고](https://en.wikipedia.org/wiki/Type_xintrospection) 문서에서 확인 가능
