@@ -38,7 +38,7 @@
 ## I
 [Immutable](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Immutable.md)
 
-[Interactive]()
+[Introspection](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Introspection.md)
 ## J
 
 ## K
