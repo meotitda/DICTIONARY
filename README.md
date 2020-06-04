@@ -55,6 +55,9 @@
 
 [Orchestration](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Orchestration.md)
 
+[Operator](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Operator.md)
+
+
 ## P
 [POSIX](https://github.com/MoonSupport/DICTIONARY/blob/master/P/POSIX.md)
 
