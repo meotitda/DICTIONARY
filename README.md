@@ -5,6 +5,8 @@
 
 [Assertion](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Assertion.md)
 
+[Asterisk](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Asterisk.md)
+
 ## B
 [Batch](https://github.com/MoonSupport/DICTIONARY/blob/master/B/Batch.md)
 
