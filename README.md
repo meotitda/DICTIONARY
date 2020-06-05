@@ -48,6 +48,8 @@
 ## L
 [Load](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Load.md)
 
+[Landing Page](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Landingpage.md)
+
 ## M
 
 ## N
