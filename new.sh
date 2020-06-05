@@ -12,7 +12,8 @@ function takeWithoutPrefix() {
     echo $LOWER_REMAINDER
 }
 
-if [ $1 -z ]; then
+
+if [ -z ${1} ]; then
     echo '[Error] Invalid File Name'
     exit 1
 fi
@@ -24,6 +25,11 @@ REMAINDER=$(takeWithoutPrefix)
 TITLE=$PREFIX$REMAINDER
 
 DIRECTORY=./$PREFIX/$TITLE.md
+
+if [ -e $DIRECTORY ]; then
+    echo '[Error] Already File Name'
+    exit 1  
+fi
 
 touch $DIRECTORY
 
