@@ -59,6 +59,7 @@
 
 [Operator](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Operator.md)
 
+[Opinionated](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Opinionated.md)
 
 ## P
 [POSIX](https://github.com/MoonSupport/DICTIONARY/blob/master/P/POSIX.md)
