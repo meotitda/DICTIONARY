@@ -50,6 +50,8 @@
 
 [Landing Page](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Landingpage.md)
 
+[Literal](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Literal.md)
+
 ## M
 
 ## N
