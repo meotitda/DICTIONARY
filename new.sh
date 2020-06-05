@@ -12,6 +12,11 @@ function takeWithoutPrefix() {
     echo $LOWER_REMAINDER
 }
 
+if [ $1 -z ]; then
+    echo '[Error] Invalid File Name'
+    exit 1
+fi
+
 FILE=$1
 
 PREFIX=$(takePrefix)
