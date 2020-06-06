@@ -12,8 +12,5 @@
 ([참고](https://terms.naver.com/entry.nhn?docId=2835919&cid=40942&categoryId=32830))
 
 ## 관련 기술
-1. 예시 1
-
-2. 예시 2
-
+1. 대부분의 언어가 import export modules. include 와 같이 코드를 분리하고 가져 오는 방식
 
