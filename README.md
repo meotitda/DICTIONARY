@@ -24,7 +24,7 @@
 [Chunk](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Chunk.md)
 
 ## D
-[Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
+[Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Declarative.md)
 
 [Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
 
@@ -43,6 +43,8 @@
 [Immutable](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Immutable.md)
 
 [Introspection](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Introspection.md)
+
+[Imperative](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Imperative.md)
 ## J
 
 ## K

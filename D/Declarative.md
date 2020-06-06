@@ -23,5 +23,5 @@
 
 3. HTML, CSS
 
-4. Imperative Programming (선언형 프로그래밍)
+4. [Imperative Programming](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Imperative.md) (선언형 프로그래밍)
 > Declarative Programming과 반대 개념
