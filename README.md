@@ -57,6 +57,7 @@
 [Literal](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Literal.md)
 
 ## M
+[Module](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Module)
 
 ## N
 
