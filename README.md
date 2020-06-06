@@ -78,6 +78,8 @@
 
 [Proxy](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Proxy.md)
 
+[Precision](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Precision.md)
+
 ## Q
 
 ## R
