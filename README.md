@@ -29,7 +29,7 @@
 [Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
 
 ## E
-
+[Ellipsis](https://github.com/MoonSupport/DICTIONARY/blob/master/E/Ellipsis)
 
 ## F
 [Feature](https://github.com/MoonSupport/DICTIONARY/blob/master/F/Feature.md)
