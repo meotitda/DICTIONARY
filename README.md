@@ -7,6 +7,8 @@
 
 [Asterisk](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Asterisk.md)
 
+[AST](https://github.com/MoonSupport/DICTIONARY/blob/master/A/AST.md)
+
 ## B
 [Batch](https://github.com/MoonSupport/DICTIONARY/blob/master/B/Batch.md)
 
