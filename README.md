@@ -1,4 +1,4 @@
-# REVERSE DICTIONARY
+# DICTIONARY
 
 ## A
 [Alias](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Alias.md)
@@ -85,6 +85,8 @@
 
 ## R
 [Resolver](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Resolver.md)
+
+[Replication(Replica)](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Replication.md)
 
 ## S
 [Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
