@@ -39,12 +39,19 @@
 
 ## H
 
+[Hydrate-](https://github.com/MoonSupport/DICTIONARY/blob/master/H/Hydrate.md)
+
 ## I
 [Immutable](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Immutable.md)
 
 [Introspection](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Introspection.md)
 
 [Imperative](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Imperative.md)
+
+[Invariant-](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invariant.md)
+
+[Invalidate-](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
+
 ## J
 
 ## K
@@ -58,6 +65,8 @@
 
 ## M
 [Module](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Module)
+
+[Memoize-](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Memoize)
 
 ## N
 
@@ -81,6 +90,7 @@
 
 [Precision](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Precision.md)
 
+[Populate-](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Populate.md)
 ## Q
 
 ## R
@@ -91,6 +101,9 @@
 ## S
 [Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
 
+[Sanitize-](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Sanitize.md)
+
+[Stale-](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Stale.md)
 
 ## T
 [Third-party](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Third-party.md)
