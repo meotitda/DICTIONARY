@@ -90,7 +90,7 @@
 
 [Precision](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Precision.md)
 
-[Populate-](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Populate.md)
+[Populate](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Populate.md)
 ## Q
 
 ## R
