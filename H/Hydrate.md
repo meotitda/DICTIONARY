@@ -8,7 +8,7 @@
 
 일반적인 의미의 hydrate
 
-객체를 Hydrating 한다는 것은  <span style="color:#FFBF00; font-weight:bold;">아직 어떤 도메인 데이터('진짜' 데이터)도 포함하지 않은 메모리에 존재하는 객체를 가져옵니다. 그런 후에 도메인 데이터(데이터베이스, 네트워크, 혹은 파일 시스템으로부터)를 채웁니다.</span>
+객체를 Hydrating 한다는 것은  <span style="color:#FFBF00; font-weight:bold;">아직 어떤 도메인 데이터('진짜' 데이터)도 포함하지 않은 메모리에 존재하는 객체를 가져옵니다. 그런 후에 도메인 데이터(데이터베이스, 네트워크, 혹은 파일 시스템으로부터)를 채웁니다(Populate).</span>
 
 Erick Robertson( 마이크로소프트 IT Manager )에 댓글에 의하면
 
@@ -32,4 +32,6 @@ React는 렌더링 된 콘텐츠가 서버와 클라이언트 간에 같을 것�
 
 <h3>요약하자면</h3>
 서버사이드 렌더링 시에 이미 서버가 HTML을 만들어 제공하기 때문에 렌더링이 필요없다. 하지만 이런 상황에서는 정적인 페이지로만 그치기 때문에 여기서 <span style="color:#FFBF00; font-weight:bold;">
-동적인 페이지로 만들어주기 위해서 Store, State 등을 채워주어야 하는데 이런 과정을 Hydrate (수분을 보충하는) 라고</span> 한다.
+동적인 페이지로 만들어주기 위해서 Store, State 등을 채워주어야(Populate) 하는데 이런 과정을 Hydrate (수분을 보충하는) 라고</span> 한다.
+
+3. ORM

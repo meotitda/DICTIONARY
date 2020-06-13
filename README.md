@@ -48,7 +48,7 @@
 
 [Imperative](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Imperative.md)
 
-[Invariant-](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invariant.md)
+[Invariant](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invariant.md)
 
 [Invalidate-](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
 
@@ -121,3 +121,5 @@
 ## Y
 
 ## Z
+
+
