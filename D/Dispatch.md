@@ -24,11 +24,11 @@ account withdraw: 100
 
 메소드 디스패치는 <span style="color:#FFBF00; font-weight:bold;">메시지에 응답하여 호출 할 메소드를 결정</span>하는 데 사용되는 알고리즘입니다. 알고리즘은 언어마다 크게 다릅니다.
 
-([참고](https://stackoverflow.com/questions/1805510/what-is-method-dispatch))
+([참고 - 스택오버플로우](https://stackoverflow.com/questions/1805510/what-is-method-dispatch))
 
 
 3. 어딘가에 무엇을 보내는 행위
-([참고](https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3
+([참고 - 미디엄](https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3
 ))
 
 
@@ -41,6 +41,6 @@ account withdraw: 100
 
 등록된 action을 호출시킨다.
 
-3. static dispatch와 dynamic dispatch [참고](https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3)
+3. static dispatch와 dynamic dispatch [참고 - 미디엄](https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3)
 
 

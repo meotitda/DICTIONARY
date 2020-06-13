@@ -12,7 +12,7 @@
 
 ![명령형 vs 선언형](../2TAT1C/Imperative_1.png)
 
-[참고](https://ko.wikipedia.org/wiki/%EB%AA%85%EB%A0%B9%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+[참고 - 위키피디아](https://ko.wikipedia.org/wiki/%EB%AA%85%EB%A0%B9%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
 
 ## 관련 기술
 1. C, Java등 대부분의 프로그래밍 언어

@@ -7,7 +7,7 @@
 발음 : 엘립시스
 
 Ellipsis 는 <span style="color:#FFBF00; font-weight:bold;">...</span> 이다. (줄임표) 
-([참고](https://ko.wikipedia.org/wiki/%EC%A4%84%EC%9E%84%ED%91%9C))
+([참고 - 위키피디아](https://ko.wikipedia.org/wiki/%EC%A4%84%EC%9E%84%ED%91%9C))
 
 ## 관련 기술
 1. Javascript ES6 Destructuring

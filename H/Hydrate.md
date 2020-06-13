@@ -19,7 +19,7 @@ Erick Robertson( 마이크로소프트 IT Manager )에 댓글에 의하면
 
 더 자세한 Hydration 컨셉은 Erick Robertson의 답변을 확인하세요
 
-([참고](https://stackoverflow.com/questions/6991135/what-does-it-mean-to-hydrate-an-object))
+([참고 - 위키피디아](https://stackoverflow.com/questions/6991135/what-does-it-mean-to-hydrate-an-object))
 
 ## 관련 기술
 1. Java Object

@@ -10,7 +10,7 @@
 
 쉽게 생각해서 변수의 값으로 사용되는 것들을 리터럴이라 부른다 (변수의 주소를 할당하는 등의 순수한 값이 아닌 경우는 제외.)
 
-([참고](https://ko.wikipedia.org/wiki/%EB%A6%AC%ED%84%B0%EB%9F%B4))
+([참고 - 위키피디아](https://ko.wikipedia.org/wiki/%EB%A6%AC%ED%84%B0%EB%9F%B4))
 
 ## 관련 기술
 

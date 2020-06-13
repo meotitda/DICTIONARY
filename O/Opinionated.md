@@ -13,7 +13,7 @@
 <span style="color:#FFBF00; font-weight:bold;">반대로, 노드의 웹서버 프레임워크인 Node.js</span>는 <span style="color:#FFBF00; font-weight:bold;">UnOpinionated</span>하다고 하는데, 이 때문에 기본적인 기능만 제공되고 Django와 같은 Opinionated한 프레임워크보다 직접 적용시켜야만 하는 기능들이 많다.
 하지만 개발자가 원하는 기능을 <span style="color:#FFBF00; font-weight:bold;">선택해서 사용할 수 있고 또 불필요한 기능들이 추가되어 있지 않으므로 가볍고 단순한</span> 편이다.
 
-([참고](https://stackoverflow.com/questions/802050/what-is-opinionated-software)))
+([참고 - 위키피디아](https://stackoverflow.com/questions/802050/what-is-opinionated-software)))
 
 ## 관련 기술
 1. Python Django (Opinionate)

@@ -15,12 +15,12 @@ invariant는 variable(변수) 보다 좀 더 개념적(conceptual)입니다. 일
 여러분이 알 수 있듯, <span style="color:#00FFCC; font-weight:bold;">당신의 변수에 저장할 수 있는 종류의 것은 아닙니다.</span> (개념적이다):
 
 
-As you can tell, that's not the sort of thing you can store in a variable: it's more a statement about the program. By figuring out what sort of invariants your program should maintain, then reviewing your code to make sure that it actually maintains those invariants, you can avoid logical errors in your code.
+이것은 프로그램에 대한 더 자세한 설명입니다. 프로그램이 어떤 종류의 불변성을 유지해야 하는지 파악한 다음 실제로 불변성을 유지해야하는지 확실히 검토함으로써, 여러분은 코드에서 논리적 오류를 피할 수 있습니다.
 
-([참고](https://stackoverflow.com/questions/112064/what-is-an-invariant))
+([참고 - 위키피디아](https://stackoverflow.com/questions/112064/what-is-an-invariant))
 
 ## 관련 기술
-1. 예시 1
+1. 이진 탐색트리
 
 2. 예시 2
 

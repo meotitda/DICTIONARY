@@ -11,7 +11,7 @@
 메모이제이션은 글자 그대로 해석하면 ‘메모리에 넣기’라는 의미이며 ‘기억되어야 할 것’이라는 뜻의 라틴어 memorandum에서 파생되었다. 흔히 메모라이제이션(memorization)과 비슷하지만 구분되는 용어이다.
 
 
-([참고](https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EC%9D%B4%EC%A0%9C%EC%9D%B4%EC%85%98))
+([참고 - 위키피디아](https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EC%9D%B4%EC%A0%9C%EC%9D%B4%EC%85%98))
 
 ## 관련 기술
 1. 검색 기능
