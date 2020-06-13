@@ -39,7 +39,7 @@
 
 ## H
 
-[Hydrate-](https://github.com/MoonSupport/DICTIONARY/blob/master/H/Hydrate.md)
+[Hydrate](https://github.com/MoonSupport/DICTIONARY/blob/master/H/Hydrate.md)
 
 ## I
 [Immutable](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Immutable.md)
