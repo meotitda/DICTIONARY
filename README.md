@@ -103,7 +103,7 @@
 
 [Sanitize-](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Sanitize.md)
 
-[Stale-](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Stale.md)
+[Stale](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Stale.md)
 
 ## T
 [Third-party](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Third-party.md)
