@@ -50,7 +50,7 @@
 
 [Invariant](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invariant.md)
 
-[Invalidate-](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
+[Invalidate](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
 
 ## J
 
