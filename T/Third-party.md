@@ -7,7 +7,7 @@
 발음 : 서드 파티
 
 관련된 주요 인물이나 조직보다 사안에 덜 직접 관련된 제 3 자 또는 조직
-([참고])(https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/third-party)
+([참고 - 캠브릿지딕셔너리])(https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/third-party)
 
 써드파티란 판매자와 구매자 이외의 관계에 있는 회사입니다.
 예를들어 게임기를 보면,

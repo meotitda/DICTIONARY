@@ -11,7 +11,7 @@
 ([Precision](https://en.wikipedia.org/wiki/Precision_(computer_science)))
 
 ## 관련 기술
-1. 머신러닝 성능평가의 척도 [참고](https://m.blog.naver.com/sw4r/221681933731)
+1. 머신러닝 성능평가의 척도 [참고 - 네이버 블로그](https://m.blog.naver.com/sw4r/221681933731)
 
 
 2. 프로그래밍 언어에서 round와 같은 소수점을 다루는 함수에서 몇번째 자리에서 적용시킬지의 정도.
