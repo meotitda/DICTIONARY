@@ -66,7 +66,7 @@
 ## M
 [Module](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Module)
 
-[Memoize-](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Memoize)
+[Memoize](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Memoize)
 
 ## N
 
