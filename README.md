@@ -52,6 +52,8 @@
 
 [Invalidate](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
 
+[Integrity](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
+
 ## J
 
 ## K
@@ -101,7 +103,7 @@
 ## S
 [Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
 
-[Sanitize-](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Sanitize.md)
+[Sanitize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Sanitize.md)
 
 [Stale](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Stale.md)
 
