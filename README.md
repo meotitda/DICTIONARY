@@ -31,6 +31,7 @@
 ## E
 [Ellipsis](https://github.com/MoonSupport/DICTIONARY/blob/master/E/Ellipsis)
 
+[Encryption](https://github.com/MoonSupport/DICTIONARY/blob/master/E/Encryption)
 ## F
 [Feature](https://github.com/MoonSupport/DICTIONARY/blob/master/F/Feature.md)
 
