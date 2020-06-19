@@ -35,6 +35,7 @@
 ## F
 [Feature](https://github.com/MoonSupport/DICTIONARY/blob/master/F/Feature.md)
 
+[Flush](https://github.com/MoonSupport/DICTIONARY/blob/master/F/Flush.md)
 
 ## G
 
