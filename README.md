@@ -108,6 +108,8 @@
 
 [Stale](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Stale.md)
 
+[Scheme](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Scheme.md)
+
 ## T
 [Third-party](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Third-party.md)
 
