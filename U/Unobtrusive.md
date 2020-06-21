@@ -41,8 +41,10 @@ window.addEventListener("DOMContentLoaded", function(event) {
 ([위키 백과](https://en.wikipedia.org/wiki/Unobtrusive_JavaScript))
 
 ## 관련 기술
-1. 예시 1
+1. Javascript
 
-2. 예시 2
+2. Passport js
+
+3. 그 외 언어로 작성된 코드
 
 

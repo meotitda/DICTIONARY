@@ -27,3 +27,6 @@
 
 3. DeSerialize 역직렬화
 > 직렬화의 반대 개념. 언어 차원에서 쓰려고 만든 직렬화된 데이터를 다시 원래의 객체구조로 변형시키는 것.
+
+4. passport js
+> 참고 : http://www.passportjs.org/
