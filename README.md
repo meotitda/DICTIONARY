@@ -117,12 +117,12 @@
 [Truncate](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Truncate.md)
 
 ## U
-[Unobtrusive](https://github.com/MoonSupport/DICTIONARY/blob/master/U/Unobtrusive.md
-)
+[Unobtrusive](https://github.com/MoonSupport/DICTIONARY/blob/master/U/Unobtrusive.md)
 
 ## V
 
 ## W
+[WildCard (character)](https://github.com/MoonSupport/DICTIONARY/blob/master/W/WildCard.md)
 
 ## X
 
