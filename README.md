@@ -56,6 +56,8 @@
 
 [Integrity](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
 
+[Intuitive](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Intuitive.md)
+
 ## J
 
 ## K
