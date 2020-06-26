@@ -113,6 +113,8 @@
 
 [Scheme](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Scheme.md)
 
+[Subscription](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Subscription.md)
+
 ## T
 [Third-party](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Third-party.md)
 
