@@ -118,6 +118,8 @@
 ## T
 [Third-party](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Third-party.md)
 
+[Token](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Token.md)
+
 [Truncate](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Truncate.md)
 
 ## U
