@@ -122,6 +122,8 @@
 
 [Truncate](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Truncate.md)
 
+[TrailingSlash](https://github.com/MoonSupport/DICTIONARY/blob/master/T/TrailingSlash.md)
+
 ## U
 [Unobtrusive](https://github.com/MoonSupport/DICTIONARY/blob/master/U/Unobtrusive.md)
 
