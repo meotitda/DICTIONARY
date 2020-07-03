@@ -75,6 +75,7 @@
 [Memoize](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Memoize)
 
 ## N
+[Namespace](https://github.com/MoonSupport/DICTIONARY/blob/master/N/Namespace)
 
 ## O
 [Optimization](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Optimization.md)
