@@ -11,6 +11,8 @@
 
 [Archive](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Archive.md)
 
+[Agnostic](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Agnostic.md)
+
 ## B
 [Batch](https://github.com/MoonSupport/DICTIONARY/blob/master/B/Batch.md)
 
