@@ -27,6 +27,8 @@
 
 [Complementary](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Complementary.md)
 
+[CGI](https://github.com/MoonSupport/DICTIONARY/blob/master/C/CGI.md)
+
 ## D
 [Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Declarative.md)
 
