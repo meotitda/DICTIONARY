@@ -104,6 +104,8 @@
 
 [Replication(Replica)](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Replication.md)
 
+[Ripple_effect](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Ripple_effect.md)
+
 ## S
 [Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
 
