@@ -1,17 +1,12 @@
 # Complementary
 
-원형 : 입력
+원형 : Complement
 
-의미  : <span style="color:#FFBF00; font-weight:bold;">강조</span>
+의미  보완적인
 
-발음 : 알리아스
+발음 : 컴플리멘터리
 
-설명
-([참고](주소))
 
 ## 관련 기술
-1. 예시 1
-
-2. 예시 2
 
 
