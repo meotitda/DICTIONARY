@@ -13,9 +13,6 @@ dist/
 ([스택오버플로우](https://stackoverflow.com/questions/22842691/what-is-the-meaning-of-the-dist-directory-in-open-source-projects))
 
 ## 관련 기술
-1. 예시 1
-
-2. 예시 2
-
+1. 폴더 구조
 
 <span style="color:#FFBF00; font-weight:bold;">강조</span>
