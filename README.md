@@ -33,6 +33,7 @@
 
 ## D
 [Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Declarative.md)
+![일관성](./2TAT1C/Label_Frontend.png)
 
 [Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
 
@@ -119,7 +120,6 @@
 [Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
 
 [Sanitize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Sanitize.md)
-![일관성](./2TAT1C/Label_Frontend.png)
 
 [Stale](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Stale.md)
 
@@ -154,7 +154,16 @@
 # LEBEL
 <button style="background-color:#48CFF8; color:white; border:none; padding : 5 7; ">FRONT_END</button>
 
-![일관성](./2TAT1C/Label_FRONT_END.png)
-![일관성](./2TAT1C/Label_FRONT_END_SMALL.png)
 ![일관성](./2TAT1C/Label_Frontend.png)
 
+<button style="background-color:#8DDC6E; color:white; border:none; padding : 5 7; ">BACK_END</button>
+
+![일관성](./2TAT1C/Label_Backend.png)
+
+<button style="background-color:#E67070; color:white; border:none; padding : 5 7; ">COMMON</button>
+
+![일관성](./2TAT1C/Label_Common.png)
+
+<button style="background-color:#6675E7; color:white; border:none; padding : 5 7; ">DEVOPS</button>
+
+![일관성](./2TAT1C/Label_Devops.png)
