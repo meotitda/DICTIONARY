@@ -37,6 +37,8 @@
 
 [Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
 
+[dist](https://github.com/MoonSupport/DICTIONARY/blob/master/D/dist)
+
 ## E
 [Ellipsis](https://github.com/MoonSupport/DICTIONARY/blob/master/E/Ellipsis)
 
