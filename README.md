@@ -31,6 +31,9 @@
 
 [CGI](https://github.com/MoonSupport/DICTIONARY/blob/master/C/CGI.md)
 
+[Coroutine](https://github.com/MoonSupport/DICTIONARY/blob/master/C/CGI.md)
+
+
 ## D
 [Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Declarative.md)
 ![일관성](./2TAT1C/Label_Frontend.png)
