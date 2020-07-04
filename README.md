@@ -141,7 +141,7 @@
 ## V
 
 ## W
-[WildCard (character)](https://github.com/MoonSupport/DICTIONARY/blob/master/W/WildCard.md)
+[WildCard (character)](https://github.com/MoonSupport/DICTIONARY/blob/master/W/WildCard.md) 
 
 ## X
 
@@ -150,3 +150,5 @@
 ## Z
 
 
+# LEBEL
+<button style="background-color:48CFF8; color:white; border:none; padding : 5 7; ">FRONT_END</button>
