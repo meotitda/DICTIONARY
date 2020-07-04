@@ -160,9 +160,9 @@
 
 ![일관성](./2TAT1C/Label_Backend.png)
 
-<button style="background-color:#E67070; color:white; border:none; padding : 5 7; ">COMMON</button>
+<button style="background-color:#E67070; color:white; border:none; padding : 5 7; ">DATABASE</button>
 
-![일관성](./2TAT1C/Label_Common.png)
+![일관성](./2TAT1C/Label_Database.png)
 
 <button style="background-color:#6675E7; color:white; border:none; padding : 5 7; ">DEVOPS</button>
 
