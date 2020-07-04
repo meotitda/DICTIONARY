@@ -119,7 +119,7 @@
 [Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
 
 [Sanitize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Sanitize.md)
-![일관성](./2TAT1C/Label_FRONT_END_SMALL.png)
+![일관성](./2TAT1C/Label_Frontend.png)
 
 [Stale](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Stale.md)
 
@@ -155,4 +155,6 @@
 <button style="background-color:#48CFF8; color:white; border:none; padding : 5 7; ">FRONT_END</button>
 
 ![일관성](./2TAT1C/Label_FRONT_END.png)
+![일관성](./2TAT1C/Label_FRONT_END_SMALL.png)
+![일관성](./2TAT1C/Label_Frontend.png)
 
