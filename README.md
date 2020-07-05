@@ -28,25 +28,30 @@
 ## C
 [Cache](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Cache.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [CGI](https://github.com/MoonSupport/DICTIONARY/blob/master/C/CGI.md)
 
 [Chunk](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Chunk.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Coherence](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Coherence.md)
 ![Common](./2TAT1C/Label_Common.png)
 
 [Compatibility](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Compatibility.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Complementary](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Complementary.md)
+![Common](./2TAT1C/Label_Common.png)
 
 [Consistent](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Consistent.md)
 ![Common](./2TAT1C/Label_Common.png)
 
 [Context](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Context.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Coroutine](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Coroutine.md)
 
@@ -54,6 +59,7 @@
 [Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
 
 [Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Declarative.md)
+![Common](./2TAT1C/Label_Common.png)
 ![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Deprecated](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deprecated.md)
@@ -61,6 +67,7 @@
 
 [Dispatch](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Dispatch.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [dist](https://github.com/MoonSupport/DICTIONARY/blob/master/D/dist.md)
 ![Common](./2TAT1C/Label_Common.png)
@@ -68,6 +75,7 @@
 ## E
 [Ellipsis](https://github.com/MoonSupport/DICTIONARY/blob/master/E/Ellipsis)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Encryption](https://github.com/MoonSupport/DICTIONARY/blob/master/E/Encryption)
 
@@ -82,24 +90,30 @@
 ## H
 
 [Hydrate](https://github.com/MoonSupport/DICTIONARY/blob/master/H/Hydrate.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 ## I
 [Immutable](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Immutable.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Imperative](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Imperative.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Integrity](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
 
 [Interactive](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Interactive.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Introspection](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Introspection.md)
 
 [Intuitive](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Intuitive.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Invalidate](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Invariant](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invariant.md)
 
@@ -109,6 +123,7 @@
 
 ## L
 [Landing Page](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Landingpage.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Literal](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Literal.md)
 ![Common](./2TAT1C/Label_Common.png)
@@ -141,6 +156,7 @@
 ## P
 [Populate](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Populate.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [POSIX](https://github.com/MoonSupport/DICTIONARY/blob/master/P/POSIX.md)
 
@@ -161,13 +177,16 @@
 [Resolver](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Resolver.md)
 
 [Ripple_effect](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Ripple_effect.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 ## S
 [Sanitize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Sanitize.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Scheme](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Scheme.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
 
@@ -183,11 +202,13 @@
 [Token](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Token.md)
 
 [TrailingSlash](https://github.com/MoonSupport/DICTIONARY/blob/master/T/TrailingSlash.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Truncate](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Truncate.md)
 
 ## U
 [Unobtrusive](https://github.com/MoonSupport/DICTIONARY/blob/master/U/Unobtrusive.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 ## V
 
