@@ -1,4 +1,5 @@
 # DICTIONARY
+![DICTIONARY](./2TAT1C/DICT_DEV.png)
 
 ## A
 [Agnostic](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Agnostic.md)
