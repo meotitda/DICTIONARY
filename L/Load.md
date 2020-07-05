@@ -1,13 +1,16 @@
 # Load (Work Load)
 ![Common](../2TAT1C/Label_Common.png)
+![Backend](../2TAT1C/Label_Backend.png)
 
 원형 : Load, Work Load
 
-의미  : 하중, 짐, 부하
+의미  : 하중, 짐, <span style='color:#FFCC00; font-weight:bold;'>**부하**</span>
 
 발음 : 로드
 
-작업 혹은 작업량을 뜻함.
+컴퓨터의 작업 혹은 작업량을 뜻함.
+
+로드가 많다는건 컴퓨터의 일이 많다는 것.
 
 ## 관련 기술
 1. load Balancing(로드 밸런싱)

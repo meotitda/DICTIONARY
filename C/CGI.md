@@ -1,4 +1,5 @@
-# CGI (Common Gateway Interface)
+# CGI (Common Gateway Int![Backend](../2TAT1C/Label_Backend.png)
+erface)
 
 원형 : Common Gateway Interface
 

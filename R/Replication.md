@@ -1,4 +1,5 @@
 # Replication (Replica)
+![Backend](../2TAT1C/Label_Backend.png)
 
 원형 : 복제 (사본, 복제본)
 

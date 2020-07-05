@@ -16,8 +16,4 @@
 [아카이브 파일 - 위키백과](https://ko.wikipedia.org/wiki/%EC%95%95%EC%B6%95_%ED%8C%8C%EC%9D%BC)
 
 ## 관련 기술
-1. 예시 1
-
-2. 예시 2
-
 

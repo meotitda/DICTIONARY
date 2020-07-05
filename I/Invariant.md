@@ -1,4 +1,5 @@
 # Invariant
+![Backend](../2TAT1C/Label_Backend.png)
 
 원형 : invariant
 
@@ -21,4 +22,5 @@ invariant는 variable(변수) 보다 좀 더 개념적(conceptual)입니다. 일
 
 ## 관련 기술
 1. 이진 탐색트리
+
 
