@@ -1,4 +1,5 @@
 # Agnostic
+![Common](../2TAT1C/Label_Common.png)
 
 원형 : Agnostic
 
@@ -13,3 +14,5 @@
 
 ## 관련 기술
 1. Program dependencies
+
+## 관련 태그

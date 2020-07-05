@@ -1,53 +1,79 @@
 # DICTIONARY
 
 ## A
+[Agnostic](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Agnostic.md)
+![Common](./2TAT1C/Label_Common.png)
+
 [Alias](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Alias.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Archive](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Archive.md)
+![Common](./2TAT1C/Label_Common.png)
 
 [Assertion](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Assertion.md)
 
-[Asterisk](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Asterisk.md)
-
 [AST](https://github.com/MoonSupport/DICTIONARY/blob/master/A/AST.md)
+![Common](./2TAT1C/Label_Common.png)
 
-[Archive](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Archive.md)
+[Asterisk](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Asterisk.md)
+![Common](./2TAT1C/Label_Common.png)
 
-[Agnostic](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Agnostic.md)
+
+
 
 ## B
 [Batch](https://github.com/MoonSupport/DICTIONARY/blob/master/B/Batch.md)
+![Common](./2TAT1C/Label_Common.png)
 
 ## C
 [Cache](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Cache.md)
-
-[Compatibility](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Compatibility.md)
-
-[Consistent](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Consistent.md)
-
-[Context](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Context.md)
-
-[Chunk](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Chunk.md)
-
-[Complementary](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Complementary.md)
+![Common](./2TAT1C/Label_Common.png)
 
 [CGI](https://github.com/MoonSupport/DICTIONARY/blob/master/C/CGI.md)
 
-[Coroutine](https://github.com/MoonSupport/DICTIONARY/blob/master/C/CGI.md)
+[Chunk](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Chunk.md)
+![Common](./2TAT1C/Label_Common.png)
 
+[Coherence](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Coherence.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Compatibility](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Compatibility.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Complementary](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Complementary.md)
+
+[Consistent](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Consistent.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Context](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Context.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Coroutine](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Coroutine.md)
 
 ## D
-[Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Declarative.md)
-![일관성](./2TAT1C/Label_Frontend.png)
-
 [Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
 
-[dist](https://github.com/MoonSupport/DICTIONARY/blob/master/D/dist)
+[Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Declarative.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
+
+[Deprecated](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deprecated.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Dispatch](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Dispatch.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[dist](https://github.com/MoonSupport/DICTIONARY/blob/master/D/dist.md)
+![Common](./2TAT1C/Label_Common.png)
 
 ## E
 [Ellipsis](https://github.com/MoonSupport/DICTIONARY/blob/master/E/Ellipsis)
+![Common](./2TAT1C/Label_Common.png)
 
 [Encryption](https://github.com/MoonSupport/DICTIONARY/blob/master/E/Encryption)
+
 ## F
 [Feature](https://github.com/MoonSupport/DICTIONARY/blob/master/F/Feature.md)
+![Common](./2TAT1C/Label_Common.png)
 
 [Flush](https://github.com/MoonSupport/DICTIONARY/blob/master/F/Flush.md)
 
@@ -59,87 +85,106 @@
 
 ## I
 [Immutable](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Immutable.md)
-
-[Introspection](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Introspection.md)
+![Common](./2TAT1C/Label_Common.png)
 
 [Imperative](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Imperative.md)
-
-[Invariant](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invariant.md)
-
-[Invalidate](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
+![Common](./2TAT1C/Label_Common.png)
 
 [Integrity](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
 
+[Interactive](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Interactive.md)
+
+[Introspection](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Introspection.md)
+
 [Intuitive](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Intuitive.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Invalidate](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
+
+[Invariant](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invariant.md)
 
 ## J
 
 ## K
 
 ## L
-[Load](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Load.md)
-
 [Landing Page](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Landingpage.md)
 
 [Literal](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Literal.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Load](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Load.md)
+![Common](./2TAT1C/Label_Common.png)
 
 ## M
-[Module](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Module)
-
 [Memoize](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Memoize)
+![Common](./2TAT1C/Label_Common.png)
+
+[Module](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Module)
+![Common](./2TAT1C/Label_Common.png)
 
 ## N
 [Namespace](https://github.com/MoonSupport/DICTIONARY/blob/master/N/Namespace)
 
 ## O
+[Operator](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Operator.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Opinionated](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Opinionated.md)
+![Common](./2TAT1C/Label_Common.png)
+
 [Optimization](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Optimization.md)
+![Common](./2TAT1C/Label_Common.png)
 
 [Orchestration](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Orchestration.md)
 
-[Operator](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Operator.md)
-
-[Opinionated](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Opinionated.md)
-
 ## P
+[Populate](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Populate.md)
+![Common](./2TAT1C/Label_Common.png)
+
 [POSIX](https://github.com/MoonSupport/DICTIONARY/blob/master/P/POSIX.md)
+
+[Precision](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Precision.md)
 
 [Preprocessor](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Preprocessor.md)
 
 [Provisioning](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Provisioning.md)
 
 [Proxy](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Proxy.md)
+![Common](./2TAT1C/Label_Common.png)
 
-[Precision](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Precision.md)
-
-[Populate](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Populate.md)
 ## Q
 
 ## R
-[Resolver](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Resolver.md)
-
 [Replication(Replica)](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Replication.md)
+
+[Resolver](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Resolver.md)
 
 [Ripple_effect](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Ripple_effect.md)
 
 ## S
-[Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
-
 [Sanitize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Sanitize.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Scheme](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Scheme.md)
+![Common](./2TAT1C/Label_Common.png)
+
+[Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
 
 [Stale](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Stale.md)
 
-[Scheme](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Scheme.md)
 
 [Subscription](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Subscription.md)
 
 ## T
 [Third-party](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Third-party.md)
+![Common](./2TAT1C/Label_Common.png)
 
 [Token](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Token.md)
 
-[Truncate](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Truncate.md)
-
 [TrailingSlash](https://github.com/MoonSupport/DICTIONARY/blob/master/T/TrailingSlash.md)
+
+[Truncate](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Truncate.md)
 
 ## U
 [Unobtrusive](https://github.com/MoonSupport/DICTIONARY/blob/master/U/Unobtrusive.md)
@@ -148,6 +193,7 @@
 
 ## W
 [WildCard (character)](https://github.com/MoonSupport/DICTIONARY/blob/master/W/WildCard.md) 
+![Common](./2TAT1C/Label_Common.png)
 
 ## X
 
@@ -159,16 +205,20 @@
 # LEBEL
 <button style="background-color:#48CFF8; color:white; border:none; padding : 5 7; ">FRONT_END</button>
 
-![일관성](./2TAT1C/Label_Frontend.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 <button style="background-color:#8DDC6E; color:white; border:none; padding : 5 7; ">BACK_END</button>
 
-![일관성](./2TAT1C/Label_Backend.png)
+![Backend](./2TAT1C/Label_Backend.png)
 
 <button style="background-color:#E67070; color:white; border:none; padding : 5 7; ">DATABASE</button>
 
-![일관성](./2TAT1C/Label_Database.png)
+![Database](./2TAT1C/Label_Database.png)
 
 <button style="background-color:#6675E7; color:white; border:none; padding : 5 7; ">DEVOPS</button>
 
-![일관성](./2TAT1C/Label_Devops.png)
+![Devops](./2TAT1C/Label_Devops.png)
+
+<button style="background-color:#c6b200; color:white; border:none; padding : 5 7; ">COMMON</button>
+
+![Common](./2TAT1C/Label_Common.png)

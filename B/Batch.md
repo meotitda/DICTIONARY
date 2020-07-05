@@ -1,4 +1,5 @@
 # Batch
+![Common](../2TAT1C/Label_Common.png)
 
 원형 : Batch
 
@@ -25,4 +26,3 @@
 4. 이미지 처리
 
 5. 변환
-

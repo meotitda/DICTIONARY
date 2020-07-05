@@ -18,8 +18,3 @@
 AST는 코드를 해석하기 위해 여러가지 정보를 담는 객체와 같다.
 [자바스크립트로 엄청나게 쉬운 컴파일러 만들기](https://github.com/hg-pyun/the-super-tiny-compiler-kr)
 
-
-
-2. 예시 2
-
-

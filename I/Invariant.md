@@ -22,5 +22,3 @@ invariant는 variable(변수) 보다 좀 더 개념적(conceptual)입니다. 일
 ## 관련 기술
 1. 이진 탐색트리
 
-2. 예시 2
-

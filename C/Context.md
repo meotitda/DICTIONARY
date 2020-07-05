@@ -1,4 +1,5 @@
 # Context
+![Common](../2TAT1C/Label_Common.png)
 
 원형 : Context
 
@@ -14,4 +15,8 @@
 > 전역 컨텍스트, 함수 컨텍스트
 
 2. 웹프레임워크에서의 Context
-> The request context keeps track of the request-level data during a request. Rather than passing the request object to 		     each function that runs during a request, the request and session proxies are accessed instead.
+> 요청 컨텍스트는 요청 중 요청 레벨 데이터를 추적합니다. 요청 동안 실행되는 각 함수에 요청 객체를 전달하는 대신 요청 및 세션 프록시가 대신 액세스됩니다.
+
+3. Grahpql Context
+
+4. 기타 언어의 Context
