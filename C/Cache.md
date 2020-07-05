@@ -1,5 +1,6 @@
 # Cache
 ![Common](../2TAT1C/Label_Common.png)
+![Frontend](../2TAT1C/Label_Frontend.png)
 
 원형 : Cache
 
