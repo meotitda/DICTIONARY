@@ -11,6 +11,7 @@
 
 [Archive](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Archive.md)
 ![Common](./2TAT1C/Label_Common.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 [Assertion](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Assertion.md)
 ![Backend](./2TAT1C/Label_Backend.png)
@@ -28,21 +29,25 @@
 [Batch](https://github.com/MoonSupport/DICTIONARY/blob/master/B/Batch.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Backend](./2TAT1C/Label_Backend.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 ## C
 [Cache](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Cache.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Frontend](./2TAT1C/Label_Frontend.png)
 ![Backend](./2TAT1C/Label_Backend.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 [CGI](https://github.com/MoonSupport/DICTIONARY/blob/master/C/CGI.md)
 ![Backend](./2TAT1C/Label_Backend.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 [Chunk](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Chunk.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Frontend](./2TAT1C/Label_Frontend.png)
 ![Backend](./2TAT1C/Label_Backend.png)
 ![Database](./2TAT1C/Label_Database.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 [Coherence](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Coherence.md)
 ![Common](./2TAT1C/Label_Common.png)
@@ -68,6 +73,7 @@
 ## D
 [Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
 ![Backend](./2TAT1C/Label_Backend.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 [Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Declarative.md)
 ![Common](./2TAT1C/Label_Common.png)
@@ -92,6 +98,7 @@
 
 [Encryption](https://github.com/MoonSupport/DICTIONARY/blob/master/E/Encryption)
 ![Backend](./2TAT1C/Label_Backend.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 ## F
 [Feature](https://github.com/MoonSupport/DICTIONARY/blob/master/F/Feature.md)
@@ -155,6 +162,7 @@
 [Load](https://github.com/MoonSupport/DICTIONARY/blob/master/L/Load.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Backend](./2TAT1C/Label_Backend.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 ## M
 [Memoize](https://github.com/MoonSupport/DICTIONARY/blob/master/M/Memoize)
@@ -179,8 +187,10 @@
 [Optimization](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Optimization.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Backend](./2TAT1C/Label_Backend.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 [Orchestration](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Orchestration.md)
+![Devops](./2TAT1C/Label_Devops.png)
 
 ## P
 [Populate](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Populate.md)
@@ -199,10 +209,12 @@
 ![Backend](./2TAT1C/Label_Backend.png)
 
 [Provisioning](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Provisioning.md)
+![Devops](./2TAT1C/Label_Devops.png)
 
 [Proxy](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Proxy.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Backend](./2TAT1C/Label_Backend.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 ## Q
 
@@ -210,6 +222,7 @@
 [Replication(Replica)](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Replication.md)
 ![Backend](./2TAT1C/Label_Backend.png)
 ![Database](./2TAT1C/Label_Database.png)
+![Devops](./2TAT1C/Label_Devops.png)
 
 [Resolver](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Resolver.md)
 ![Frontend](./2TAT1C/Label_Frontend.png)
