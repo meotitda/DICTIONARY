@@ -1,6 +1,7 @@
 # Declarative
 ![Common](../2TAT1C/Label_Common.png)
 ![Frontend](../2TAT1C/Label_Frontend.png)
+![Database](../2TAT1C/Label_Database.png)
 
 원형 : Declarative
 

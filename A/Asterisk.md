@@ -1,6 +1,7 @@
 # Asterisk
 ![Common](../2TAT1C/Label_Common.png)
 ![Backend](../2TAT1C/Label_Backend.png)
+![Database](../2TAT1C/Label_Database.png)
 
 원형 : Asterisk
 
