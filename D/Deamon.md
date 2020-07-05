@@ -1,5 +1,6 @@
 # Deamon
 ![Backend](../2TAT1C/Label_Backend.png)
+![Devops](../2TAT1C/Label_Devops.png)
 
 원형 : Deamon
 

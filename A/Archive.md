@@ -1,5 +1,6 @@
 # Archive
 ![Common](../2TAT1C/Label_Common.png)
+![Devops](../2TAT1C/Label_Devops.png)
 
 원형 : Archive
 

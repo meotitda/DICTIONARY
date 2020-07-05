@@ -2,6 +2,7 @@
 ![Common](../2TAT1C/Label_Common.png)
 ![Frontend](../2TAT1C/Label_Frontend.png)
 ![Backend](../2TAT1C/Label_Backend.png)
+![Devops](../2TAT1C/Label_Devops.png)
 
 원형 : Cache
 

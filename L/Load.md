@@ -1,6 +1,7 @@
 # Load (Work Load)
 ![Common](../2TAT1C/Label_Common.png)
 ![Backend](../2TAT1C/Label_Backend.png)
+![Devops](../2TAT1C/Label_Devops.png)
 
 원형 : Load, Work Load
 
