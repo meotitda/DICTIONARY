@@ -3,11 +3,11 @@
 ![Frontend](../2TAT1C/Label_Frontend.png)
 ![Backend](../2TAT1C/Label_Backend.png)
 
-원형 : 입력
+원형 : Dispatch
 
 의미  : <span style="color:#FFBF00; font-weight:bold;">보내다</span>, 신속히 해치우다.
 
-발음 : 알리아스
+발음 : 디스패치
 
 1. 프로그램이 어떤 메소드를 호출할 것인가를 결정하여 그것을 실행하는 과정을 말한다.
 
