@@ -247,6 +247,9 @@
 [Serialize](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Serialize.md)
 ![Backend](./2TAT1C/Label_Backend.png)
 
+[Spawn](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Spawn.md)
+![Backend](./2TAT1C/Label_Backend.png)
+
 [Stale](https://github.com/MoonSupport/DICTIONARY/blob/master/S/Stale.md)
 ![Backend](./2TAT1C/Label_Backend.png)
 ![Database](./2TAT1C/Label_Database.png)
