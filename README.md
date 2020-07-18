@@ -70,6 +70,10 @@
 
 [Coroutine](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Coroutine.md)
 ![Backend](./2TAT1C/Label_Backend.png)
+![Common](./2TAT1C/Label_Common.png)
+
+[Corruption](https://github.com/MoonSupport/DICTIONARY/blob/master/C/Corruption.md)
+![Backend](./2TAT1C/Label_Backend.png)
 
 ## D
 [Deamon](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Deamon.md)
