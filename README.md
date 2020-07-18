@@ -225,6 +225,10 @@
 ## Q
 
 ## R
+[REPL](https://github.com/MoonSupport/DICTIONARY/blob/master/R/REPL.md)
+![Common](./2TAT1C/Label_Common.png)
+![Backend](./2TAT1C/Label_Backend.png)
+
 [Replication(Replica)](https://github.com/MoonSupport/DICTIONARY/blob/master/R/Replication.md)
 ![Backend](./2TAT1C/Label_Backend.png)
 ![Database](./2TAT1C/Label_Database.png)
