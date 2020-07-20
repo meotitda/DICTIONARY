@@ -1,6 +1,8 @@
 # DICTIONARY
 <img src="./2TAT1C/DICT_DEV.png">
 
+DICTIONARY 일반적인 개발 용어 사전입니다.
+
 ## A
 [Agnostic](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Agnostic.md)
 ![Common](./2TAT1C/Label_Common.png)
@@ -293,6 +295,10 @@
 ![Database](./2TAT1C/Label_Database.png)
 
 ## X
+[XHR](https://github.com/MoonSupport/DICTIONARY/blob/master/X/XHR.md) 
+![Common](./2TAT1C/Label_Common.png)
+![Backend](./2TAT1C/Label_Backend.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 ## Y
 
