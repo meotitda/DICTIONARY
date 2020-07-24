@@ -83,6 +83,10 @@ DICTIONARY 일반적인 개발 용어 사전입니다.
 ![Backend](./2TAT1C/Label_Backend.png)
 ![Devops](./2TAT1C/Label_Devops.png)
 
+[Debounce](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Debounce.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
+![Common](./2TAT1C/Label_Common.png)
+
 [Declarative](https://github.com/MoonSupport/DICTIONARY/blob/master/D/Declarative.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Frontend](./2TAT1C/Label_Frontend.png)
