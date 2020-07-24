@@ -1,4 +1,5 @@
 # Pluralize
+![Common](../2TAT1C/Label_Common.png)
 
 원형 : Pluralize
 
