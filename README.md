@@ -139,6 +139,9 @@ DICTIONARY 일반적인 개발 용어 사전입니다.
 ![Frontend](./2TAT1C/Label_Frontend.png)
 ![Backend](./2TAT1C/Label_Backend.png)
 
+[Infer(Inference)](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Infer.md)
+![Common](./2TAT1C/Label_Common.png)
+
 [Integrity](https://github.com/MoonSupport/DICTIONARY/blob/master/I/Invalidate.md)
 ![Database](./2TAT1C/Label_Database.png)
 
