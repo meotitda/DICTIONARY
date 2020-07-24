@@ -1,7 +1,7 @@
 # DICTIONARY
 <img src="./2TAT1C/DICT_DEV.png">
 
-DICTIONARY 일반적인 개발 용어 사전입니다.
+DICTIONARY는 일반적인 개발 용어 사전입니다.
 
 ## A
 [Agnostic](https://github.com/MoonSupport/DICTIONARY/blob/master/A/Agnostic.md)
