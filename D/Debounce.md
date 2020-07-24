@@ -2,11 +2,11 @@
 ![Common](../2TAT1C/Label_Common.png)
 ![Frontend](../2TAT1C/Label_Frontend.png)
 
-원형 : 입력
+원형 : Debounce
 
 의미  : 튕기지 않는
 
-발음 : 알리아스
+발음 : 디바운스
 
 Debounce 는 여러번 발생하는 이벤트에서, 가장 마지막 이벤트 만을 실행 되도록 만드는 개념이다.
 
@@ -34,4 +34,5 @@ document.getElementById("search").addEventListener('keyup', keyUpFn);
 
 2. Client (React, Vue등 ...)
 
+3. Lodash
 
