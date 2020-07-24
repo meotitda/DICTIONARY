@@ -25,7 +25,7 @@ document.getElementById("search").addEventListener('keyup', keyUpFn);
 ```
 ([미디엄 @pks2974님 블로그](https://medium.com/@pks2974/throttle-%EC%99%80-debounce-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0-2335a9c426ff))
 
-위 예제에서 입력이 끝난 500ms 동안 동일한 이벤트가 계속해서 발생 한다면, 입력이 끝날때, 가장 마지막 이벤트만을 실행하여, 성능성 유리함을 가져올 수 있다.
+위 예제에서 입력이 끝난 500ms 동안 동일한 이벤트가 계속해서 발생 한다면, <span style='color:#FFCC00; font-weight:bold;'>입력이 끝날때, 가장 마지막 이벤트만</span>을 실행하여, 성능성 유리함을 가져올 수 있다.
 ([github - 예제](https://github.com/niksy/throttle-debounce))
 
 

@@ -276,6 +276,11 @@ DICTIONARY 일반적인 개발 용어 사전입니다.
 [Third-party](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Third-party.md)
 ![Common](./2TAT1C/Label_Common.png)
 
+[Throttle](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Throttle.md
+)
+![Frontend](./2TAT1C/Label_Frontend.png)
+![Common](./2TAT1C/Label_Common.png)
+
 [Token](https://github.com/MoonSupport/DICTIONARY/blob/master/T/Token.md)
 ![Backend](./2TAT1C/Label_Backend.png)
 
