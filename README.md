@@ -191,6 +191,9 @@ DICTIONARY는 일반적인 개발 용어 사전입니다.
 ![Backend](./2TAT1C/Label_Backend.png)
 
 ## O
+[Omit](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Omit.md)
+![Common](./2TAT1C/Label_Common.png)
+
 [Operator](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Operator.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Backend](./2TAT1C/Label_Backend.png)
