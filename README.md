@@ -210,6 +210,9 @@ DICTIONARY는 일반적인 개발 용어 사전입니다.
 [Orchestration](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Orchestration.md)
 ![Devops](./2TAT1C/Label_Devops.png)
 
+[Orientation](https://github.com/MoonSupport/DICTIONARY/blob/master/O/Orientation.md)
+![Frontend](./2TAT1C/Label_Frontend.png)
+
 ## P
 [Pluralize](https://github.com/MoonSupport/DICTIONARY/blob/master/P/Pluralize.md)
 ![Common](./2TAT1C/Label_Common.png)
