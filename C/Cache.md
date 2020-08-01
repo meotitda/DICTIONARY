@@ -1,21 +1,81 @@
+<DIC>
+
 # Cache
-![Common](../2TAT1C/Label_Common.png)
-![Frontend](../2TAT1C/Label_Frontend.png)
-![Backend](../2TAT1C/Label_Backend.png)
-![Devops](../2TAT1C/Label_Devops.png)
+
+</DIC>
+
+<LABEL>
+
+   <EL>
+
+   ![Common](../2TAT1C/Label_Common.png)
+      
+   </EL>
+
+   <EL>
+
+   ![Frontend](../2TAT1C/Label_Frontend.png)
+
+   </EL>
+
+   <EL>
+
+   ![Backend](../2TAT1C/Label_Backend.png)
+
+   </EL>
+
+   <EL>
+
+   ![Devops](../2TAT1C/Label_Devops.png)
+
+   </EL>
+
+</LABEL>
+
+<ORIGIN>
 
 원형 : Cache
 
+</ORIGIN>
+
+<MEAN>
+
 의미  : 은닉처, 고속완충기억기
 
+</MEAN>
+
+<PRONOUN>
+
 발음 : 캐시
+
+</PRONOUN>
+
+<DESC>
 
 캐시는 컴퓨터 과학에서 <span style="color:#FFBF00; font-weight:bold;">데이터나 값을 미리 복사해 놓는 임시 장소</span>를 가리킨다. 캐시는 캐시의 접근 시간에 비해 <span style="color:#FFBF00; font-weight:bold;">원래 데이터를 접근하는 시간이 오래 걸리는 경우나 값을 다시 계산하는 시간을 절약하고 싶은 경우</span>에 사용한다. 캐시에 데이터를 미리 복사해 놓으면 계산이나 접근 시간 없이 더 빠른 속도로 데이터에 접근할 수 있다.
 .([참고주소](https://dl.acm.org/doi/10.1145/3195836.3195861))
 
+</DESC>
+
+<RELATE>
+
 ## 관련 기술
-1. CPU 캐시
 
-2. 디스크 캐시
+   <EL>
 
-3. 웹 캐시
+   1. CPU 캐시
+   </EL>
+
+   <EL>
+
+   2. 디스크 캐시
+
+   </EL>
+
+   <EL>
+
+   3. 웹 캐시
+
+   </EL>
+
+</RELATE>
