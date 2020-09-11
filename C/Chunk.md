@@ -1,15 +1,62 @@
+<d-title>
+
 # Chunk
+
+<d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Common](../2TAT1C/Label_Common.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Frontend](../2TAT1C/Label_Frontend.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Database](../2TAT1C/Label_Database.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Devops](../2TAT1C/Label_Devops.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : Chunk
 
+</d-origin>
+
+<d-mean>
+
 의미  : <span style="color:#FFBF00; font-weight:bold;">덩어리</span>, 상당한 양 (단위로 사용)
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 청크
+
+</d-pronunciation>
+
+<d-content>
 
 컴퓨터 프로그래밍에서 청크는 여러가지 의미를 가진다.
 
@@ -31,13 +78,35 @@ HTTP 메시지 전송에서
 
 ([참고 - 위키피디아](https://en.wikipedia.org/wiki/Chunking_(computing)))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. 힙 메모리 관리
+
+</d-inner>
+
+<d-inner>
 
 2. HTTP 메시지 전송
 
+</d-inner>
+
+<d-inner>
+
 3. 데이터 중복 제거, 데이터 동기화
+
+</d-inner>
+
+<d-inner>
 
 4. Javascript Library인  [Lodash](https://lodash.com/docs/4.17.15#chunk)
 
+</d-inner>
+
+</d-relation>
 
