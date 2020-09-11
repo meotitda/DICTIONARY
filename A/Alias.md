@@ -24,6 +24,8 @@
 
 </d-inner>
 
+</d-label>
+
 <d-origin>
 
 원형 : Alias
