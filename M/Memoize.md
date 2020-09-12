@@ -1,11 +1,38 @@
+<d-title>
+
 # Memoize
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Common](../2TAT1C/Label_Common.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : 입력
 
+</d-origin>
+
+<d-mean>
+
 의미  : <span style="color:#FFBF00; font-weight:bold;">메모</span>
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 메모아이즈
+
+</d-pronunciation>
+
+<d-content>
 
 메모이제이션(memoization)은 컴퓨터 프로그램이 동일한 계산을 반복해야 할 때, 이전에 계산한 값을 메모리에 저장함으로써 동일한 계산의 반복 수행을 제거하여 프로그램 실행 속도를 빠르게 하는 기술이다. 동적 계획법의 핵심이 되는 기술이다. 메모아이제이션이라고도 한다.
 
@@ -14,17 +41,40 @@
 
 ([참고 - 위키피디아](https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EC%9D%B4%EC%A0%9C%EC%9D%B4%EC%85%98))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. 검색 기능
+
+</d-inner>
+
+<d-inner>
 
 2. HTML등과 같은소스 코드 생성 (React, Vue등)
 
+</d-inner>
+
+<d-inner>
+
 3. 암호화, 데이터 압축 영상변환과 같은 반복 계산
+
+</d-inner>
+
+<d-inner>
 
 4. 음성 인식과 같은 패턴 인식
 
+</d-inner>
+
+<d-inner>
+
 5. Game tree evaluation
 
+</d-inner>
 
-
-
+</d-relation>
