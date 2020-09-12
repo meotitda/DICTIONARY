@@ -1,11 +1,38 @@
+<d-title>
+
 # Flush
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : Flush
 
+</d-origin>
+
+<d-mean>
+
 의미  : 홍조, <span style="color:#FFBF00; font-weight:bold;">한꺼번에 쏟다, 붓다</span>
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 플러시
+
+</d-pronunciation>
+
+<d-content>
 
 버퍼 flush란 일시적인 저장 공간에서 컴퓨터의 영구적인 메모리로 데이터를 전송하는 것입니다.
 
@@ -13,5 +40,16 @@
 
 ([에디터 API에서의 실제 사용 예제](https://github.com/ProseMirror/prosemirror-view/blob/3a8bed5b73ee8db94b34242b16b2098bff9a6707/src/input.js#L249))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. IO 
+
+</d-inner>
+
+</d-relation>
