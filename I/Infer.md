@@ -1,11 +1,38 @@
+<d-title>
+
 # Infer(Inference)
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Common](../2TAT1C/Label_Common.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : Inference
 
+</d-origin>
+
+<d-mean>
+
 의미  : <span style="color:#FFBF00; font-weight:bold;">추론하다</span>
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 인퍼
+
+</d-pronunciation>
+
+<d-content>
 
 Type infer는 프로그래밍 언어에서 식의 데이터 형식을 자동으로 감지하는 것을 말합니다.
 
@@ -18,9 +45,18 @@ Type infer는 프로그래밍 언어에서 식의 데이터 형식을 자동으�
 ```
 
 
-
-
 ([위키 백과](https://en.wikipedia.org/wiki/Type_inference#:~:text=Type%20inference%20refers%20to%20the,some%20strongly%20statically%20typed%20languages.))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. Type 언어 (C, Java ...)
+
+</d-inner>
+
+</d-relation>
