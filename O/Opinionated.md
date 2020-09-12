@@ -1,12 +1,44 @@
+<d-title>
+
 # Opinionated
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Common](../2TAT1C/Label_Common.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : Opinion
 
+</d-origin>
+
+<d-mean>
+
 의미  : <span style="color:#FFBF00; font-weight:bold;">의견</span>
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 오피니어네이티드
+
+</d-pronunciation>
+
+<d-content>
 
 만약 프레임워크가 opinionated 하다면, 그것은 <span style="color:#FFBF00; font-weight:bold;">여러분이 해야하는 일을 안내하거나 제한</span>합니다.
 
@@ -17,13 +49,34 @@
 
 ([참고 - 위키피디아](https://stackoverflow.com/questions/802050/what-is-opinionated-software)))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. Python Django (Opinionate)
+
+</d-inner>
+
+<d-inner>
 
 2. Nodejs Express (UnOpinionate)
 
+</d-inner>
+
+<d-inner>
+
 3. Flutter (Opinionate)
+
+</d-inner>
+
+<d-inner>
 
 4. 그 외 프레임워크
 
+</d-inner>
 
+</d-relation>
