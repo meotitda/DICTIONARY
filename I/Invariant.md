@@ -1,11 +1,38 @@
+<d-title>
+
 # Invariant
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : invariant
 
+</d-origin>
+
+<d-mean>
+
 의미  : 불변
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 인베리언트
+
+</d-pronunciation>
+
+<d-content>
 
 invariant는 variable(변수) 보다 좀 더 개념적(conceptual)입니다. 일반적으로, 이것은 <span style="color:#FFBF00; font-weight:bold;">항상 true인 프로그램 상태의 속성</span>입니다. 불변함을 보장하는 위한 함수 혹은 메소드는 invariant를 유지한다고 합니다.
 
@@ -20,7 +47,19 @@ invariant는 variable(변수) 보다 좀 더 개념적(conceptual)입니다. 일
 
 (참고 - 스택오버플로우](https://stackoverflow.com/questions/112064/what-is-an-invariant))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. 이진 탐색트리
+
+</d-inner>
+
+</d-relation>
+
 
 
