@@ -1,13 +1,48 @@
+<d-title>
+
 # Dispatch
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Common](../2TAT1C/Label_Common.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Frontend](../2TAT1C/Label_Frontend.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+<d-origin>
 
 원형 : Dispatch
 
+</d-origin>
+
+<d-mean>
+
 의미  : <span style="color:#FFBF00; font-weight:bold;">보내다</span>, 신속히 해치우다.
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 디스패치
+
+</d-pronunciation>
+
+<d-content>
 
 1. 프로그램이 어떤 메소드를 호출할 것인가를 결정하여 그것을 실행하는 과정을 말한다.
 
@@ -34,16 +69,34 @@ account withdraw: 100
 ([참고 - 미디엄](https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3
 ))
 
+</d-content>
+
+<d-relation>
 
 ## 관련 기술
+
+<d-inner>
+
 1. javascript의 [dispatchEvent](https://developer.mozilla.org/ko/docs/Web/API/EventTarget/dispatchEvent)
 
 등록된 이벤트를 실행시킨다.
+
+</d-inner>
+
+<d-inner>
 
 2. Redux dispatch
 
 등록된 action을 호출시킨다.
 
+</d-inner>
+
+<d-inner>
+
 3. static dispatch와 dynamic dispatch [참고 - 미디엄](https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3)
+
+</d-inner>
+
+</d-relation>
 
 
