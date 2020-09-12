@@ -1,11 +1,38 @@
+<d-title>
+
 # Namespace
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : namespace
 
+</d-origin>
+
+<d-mean>
+
 의미  : 네임스페이스
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 네임스페이스
+
+</d-pronunciation>
+
+<d-content>
 
 컴퓨팅에서 네임 스페이스는 다양한 종류의 객체를 식별하고 참조하는 데 사용되는 일련의 기호 (이름)입니다. 네임 스페이스는 주어진 모든 개체 집합이 <span style="color:#FFBF00; font-weight:bold;">고유한 이름을 가지므로</span> 쉽게 식별 할 수 있습니다.
 
@@ -41,12 +68,29 @@ int main() {
 
 ([위키 백과](https://en.wikipedia.org/wiki/Namespace))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. Programming Language
+
+</d-inner>
+
+<d-inner>
 
 2. XML
 
+</d-inner>
+
+<d-inner>
+
 3. MAC Address
 
+</d-inner>
 
+</d-relation>
 
