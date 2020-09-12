@@ -1,13 +1,50 @@
+<d-title>
+
 # Immutable
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Common](../2TAT1C/Label_Common.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Frontend](../2TAT1C/Label_Frontend.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : Immutable
 
+</d-origin>
+
+<d-mean>
+
 의미  : 불변의
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 이뮤터블
+
+</d-pronunciation>
+
+<d-content>
 
 객체 지향 프로그래밍에 있어서 불변객체(immutable object)는 생성 후 그 <span style="color:#FFBF00; font-weight:bold;">상태를 바꿀 수 없는 객체</span>를 말한다. 반대 개념으로는 가변(mutable) 객체로 생성 후에도 상태를 변경할 수 있다. 객체 전체가 불변인 것도 있고, C++에서 const 데이터 멤버를 사용하는 경우와 같이 일부 속성만 불변인 것도 있다. 또, 경우에 따라서는 내부에서 사용하는 속성이 변화해도 외부에서 그 객체의 상태가 변하지 않은 것 처럼 보인다면 불변 객체로 보기도 한다. 예를 들어, 비용이 큰 계산의 결과를 캐시하기 위해 메모이제이션(Memoization)을 이용하더라도 그 객체는 여전히 불변하다고 볼 수있다. 불변 객체의 초기 상태는 대개 생성 시에 결정되지만 객체가 실제로 사용되는 순간까지 늦추기도 한다.
 
@@ -20,9 +57,20 @@
 
 .([위키백과](https://ko.wikipedia.org/wiki/%EB%B6%88%EB%B3%80%EA%B0%9D%EC%B2%B4)))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. React Immutable
 > React가 State를 비교하여 리렌더링 할 때, Immutable한 객체를 비교.
+
+</d-inner>
+
+<d-inner>
 
 2. Javascript의 원시 타입(primitive data type)은 변경 불가능한 값(immutable value)이다.
 > Primitive Type :
@@ -53,3 +101,7 @@ b // {a: 2}
 
 ** 주소를 참조해서 a,b 모두 값이 바뀜
 ```
+
+</d-inner>
+
+</d-relation>
