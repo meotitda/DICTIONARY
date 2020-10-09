@@ -1,11 +1,38 @@
-# Tokenizer
+<d-title>
+
+# Token
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : token
 
+</d-origin>
+
+<d-mean>
+
 의미  : 티켓
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 토큰
+
+</d-pronunciation>
+
+<d-content>
 
 토큰은 <span style='color:#FFCC00; font-weight:bold;'>
 파싱 목적</span>을 위해 분류화를 명시적으로 지시하는 어휘소를 표현하는 구조의 하나이다.
@@ -44,12 +71,25 @@ x = a + b * 2;
 
 [위키 백과](https://en.wikipedia.org/wiki/Lexical_analysis#Token)
 
+</d-content>
+
+<d-relation>
 
 ## 관련 기술
+
+<d-inner>
+
 1. Parser
+
+[참고자료-위키 백과](https://ko.wikipedia.org/wiki/%EB%82%B1%EB%A7%90_%EB%B6%84%EC%84%9D)
+
+</d-inner>
+
+<d-inner>
 
 2. Compiler
 
+</d-inner>
 
+</d-relation>
 
-https://ko.wikipedia.org/wiki/%EB%82%B1%EB%A7%90_%EB%B6%84%EC%84%9D

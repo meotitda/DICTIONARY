@@ -1,13 +1,50 @@
+<d-title>
+
 # Wildcard (character)
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Common](../2TAT1C/Label_Common.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Database](../2TAT1C/Label_Database.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : Wildcard
 
+</d-origin>
+
+<d-mean>
+
 의미  : 와일드카드
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 와일드카드
+
+</d-pronunciation>
+
+<d-content>
 
 와일드카드 문자(wildcard character)는 컴퓨터에서 특정 명령어로 명령을 내릴 때, 여러 파일을 한꺼번에 지정할 목적으로 사용하는 기호를 가리킨다. 이 문자는 어느 곳에서 사용하느냐에 따라 약간의 차이를 보인다. 주로 특정한 패턴이 있는 문자열 혹은 파일을 찾거나, 긴 이름을 생략할 때 쓰인다.
 
@@ -15,6 +52,16 @@
 
 ([위키백과](https://ko.wikipedia.org/wiki/%EC%99%80%EC%9D%BC%EB%93%9C%EC%B9%B4%EB%93%9C_%EB%AC%B8%EC%9E%90))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. 정규표현식
 
+</d-inner>
+
+</d-relation>

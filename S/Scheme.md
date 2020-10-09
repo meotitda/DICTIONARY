@@ -1,14 +1,56 @@
+<d-title>
+
 # Scheme (Schema)
+
+</d-title>
+
+<d-label>
+
+<d-inner>
+
 ![Common](../2TAT1C/Label_Common.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Frontend](../2TAT1C/Label_Frontend.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Backend](../2TAT1C/Label_Backend.png)
+
+</d-inner>
+
+<d-inner>
+
 ![Database](../2TAT1C/Label_Database.png)
+
+</d-inner>
+
+</d-label>
+
+<d-origin>
 
 원형 : Scheme
 
+</d-origin>
+
+<d-mean>
+
 의미  : <span style="color:#FFBF00; font-weight:bold;">계획</span>, 개요
 
+</d-mean>
+
+<d-pronunciation>
+
 발음 : 스킴, 스키마
+
+</d-pronunciation>
+
+<d-content>
 
 <span style="color:#FFBF00; font-weight:bold;">데이터 혹은 구조를 묘사하는 데이터</span>
 
@@ -29,11 +71,34 @@
 
 ([MDN](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web))
 
+</d-content>
+
+<d-relation>
+
 ## 관련 기술
+
+<d-inner>
+
 1. GRAPHQL
+
+</d-inner>
+
+<d-inner>
 
 2. 데이터 베이스
 
+</d-inner>
+
+<d-inner>
+
 3. URL 구조
 
+</d-inner>
+
+<d-inner>
+
 4. 컴퓨터 과학 전반적
+
+</d-inner>
+
+</d-relation>
