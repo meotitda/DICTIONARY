@@ -25,12 +25,17 @@ jobs:
       - name: Generate output
         run: npm run gen
 
+      - name: Clone D-Client
+        uses: actions/checkout@master
+        with:
+          repository: MoonSupport/dictionary-client
+
+
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'output'
           destination-github-username: 'MoonSupport'
           destination-repository-name: 'dictionary-client/tree/master/src/markdown-pages'
           user-email: jiwon3346@naver.com
