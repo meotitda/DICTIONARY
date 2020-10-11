@@ -23,13 +23,11 @@ jobs:
           CI: true
 
       - name: Clone D-Client
-        run: |
-          git clone https://github.com/MoonSupport/dictionary-client.git
+        run: git clone https://github.com/MoonSupport/dictionary-client.git
           
 
       - name: Generate output
-        run: |
-        npm run gen
+        run: npm run gen
 
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@master
