@@ -32,7 +32,7 @@ jobs:
         with:
           source-directory: 'output'
           destination-github-username: 'MoonSupport'
-          destination-repository-name: 'dictionary-client'
+          destination-repository-name: 'dictionary-client/src/markdown-pages'
           user-email: jiwon3346@naver.com
 
   
