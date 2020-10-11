@@ -30,8 +30,6 @@ jobs:
       - name: Generate output
         run: |
         npm run gen
-        cd dictionary-client
-
 
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@master
