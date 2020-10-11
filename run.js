@@ -5,21 +5,21 @@ const showdown = require('showdown')
 
 const dd = fs.readdirSync(path.join(__dirname, './' ,'DIC/'))
 
-if (!fs.existsSync(path.join(__dirname, './', `dictionary-client/src/dictionary-client`))) {
-  fs.mkdirSync(path.join(__dirname, './', `dictionary-client/src/dictionary-client`))
+if (!fs.existsSync(path.join(__dirname, './', `dictionary-client/src/markdown-pages`))) {
+  fs.mkdirSync(path.join(__dirname, './', `dictionary-client/src/markdown-pages`))
 }
 
 dd.map((alp) => {
   const d = fs.readdirSync(path.join(__dirname, './' , `DIC/${alp}`))
 
-  if (!fs.existsSync(path.join(__dirname, './', `dictionary-client/src/dictionary-client/${alp}`))) {
-    fs.mkdirSync(path.join(__dirname, './', `dictionary-client/src/dictionary-client/${alp}`))
+  if (!fs.existsSync(path.join(__dirname, './', `dictionary-client/src/markdown-pages/${alp}`))) {
+    fs.mkdirSync(path.join(__dirname, './', `dictionary-client/src/markdown-pages/${alp}`))
   }
 
   d.map((file) => {
     const output = makeOutput(alp, file)
     fs.writeFile(
-      path.join(__dirname, './' , `dictionary-client/src/dictionary-client/${alp}/${file}`),
+      path.join(__dirname, './' , `dictionary-client/src/markdown-pages/${alp}/${file}`),
       output,
       function (err) {
         if (err) throw err
