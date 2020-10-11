@@ -10,18 +10,14 @@ if (!fs.existsSync(path.join(__dirname, './', `output`))) {
 }
 
 dd.map((alp) => {
-   console.log('1')
   const d = fs.readdirSync(path.join(__dirname, './' , `DIC/${alp}`))
-  console.log('2')
 
   if (!fs.existsSync(path.join(__dirname, './', `output/${alp}`))) {
     fs.mkdirSync(path.join(__dirname, './', `output/${alp}`))
   }
 
   d.map((file) => {
-   console.log('3')
     const output = makeOutput(alp, file)
-    console.log('4')
     fs.writeFile(
       path.join(__dirname, './' , `output/${alp}/${file}`),
       output,
@@ -30,7 +26,6 @@ dd.map((alp) => {
         console.log('File is created successfully.')
       },
     )
-    console.log('5')
   })
 })
 
@@ -42,10 +37,8 @@ function makeOutput(alp, file) {
   const f = fs
     .readFileSync(path.join(__dirname, './', `DIC/${alp}/${file}`))
     .toString()
-    console.log('6')
 
   const ast = parser(f)
-  console.log('7')
 
   const title = getAChildTarget(ast, 'd-title')
   const label = getAChildTarget(ast, 'd-label')
@@ -53,7 +46,6 @@ function makeOutput(alp, file) {
   const mean = getAChildTarget(ast, 'd-mean')
   const pronunciation = getAChildTarget(ast, 'd-pronunciation')
   const relation = getAChildTarget(ast, 'd-relation')
-  console.log('8')
 
   const titleText = getAChildTarget(title, 'TEXT').text
   const originText = getAChildTarget(origin, 'TEXT').text
