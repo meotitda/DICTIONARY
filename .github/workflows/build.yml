@@ -22,14 +22,13 @@ jobs:
         env:
           CI: true
 
-      - name: Generate output
-        run: npm run gen
-
       - name: Clone D-Client
         uses: actions/checkout@master
         with:
           repository: MoonSupport/dictionary-client
 
+      - name: Generate output
+        run: npm run gen
 
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@master
