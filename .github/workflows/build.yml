@@ -32,7 +32,8 @@ jobs:
         with:
           source-directory: 'output'
           destination-github-username: 'MoonSupport'
-          destination-repository-name: 'dictionary-client/src/markdown-pages'
+          destination-repository-name: 'dictionary-client/tree/master/src/markdown-pages'
           user-email: jiwon3346@naver.com
 
+    
   
