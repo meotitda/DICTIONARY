@@ -25,12 +25,12 @@ PREFIX=$(takePrefix)
 REMAINDER=$(takeWithoutPrefix)
 TITLE=$PREFIX$REMAINDER
 
-DIRECTORY=./$PREFIX/$TITLE.md
+DIRECTORY=./DIC/$PREFIX/$TITLE.md
 
 if [ ! -e $DIRECTORY ]; then
     echo "[Error] Doesn't Exist File"
     exit 1  
 fi
 
-echo "![제목](../2TAT1C/$TITLE _1.png)" >> $DIRECTORY
+echo "![제목](..//2TAT1C/$TITLE _1.png)" >> $DIRECTORY
 

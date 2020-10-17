@@ -24,7 +24,7 @@ PREFIX=$(takePrefix)
 REMAINDER=$(takeWithoutPrefix)
 TITLE=$PREFIX$REMAINDER
 
-DIRECTORY=./$PREFIX/$TITLE.md
+DIRECTORY=./DIC/$PREFIX/$TITLE.md
 
 if [ -e $DIRECTORY ]; then
     echo '[Error] Already File Name'
