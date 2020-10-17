@@ -2,7 +2,6 @@ const  fs = require('fs')
 const path = require('path')
 const parser  = require('d-html-parser').default
 const showdown = require('showdown')
-
 const dd = fs.readdirSync(path.join(__dirname, './' ,'DIC/'))
 
 if (!fs.existsSync(path.join(__dirname, './', `dictionary-client/src/markdown-pages`))) {
