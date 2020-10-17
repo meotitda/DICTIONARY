@@ -34,7 +34,7 @@
 
 <d-content>
 
-<span style="color:#FFBF00; font-weight:bold;">오케스트레이션</span>은 컴퓨터 시스템 및 소프트웨어의 <span style="color:#FFBF00; font-weight:bold;">자동 구성</span>, <span style="color:#FFBF00; font-weight:bold;">조정</span> 및 <span style="color:#FFBF00; font-weight:bold;">관리</span>입니다..([위키백과](<https://en.wikipedia.org/wiki/Orchestration_(computing)>))
+<span style="color:#FFBF00; font-weight:bold;">Orchestration</span>은 컴퓨터 시스템 및 소프트웨어의 <span style="color:#FFBF00; font-weight:bold;">자동 구성</span>, <span style="color:#FFBF00; font-weight:bold;">조정</span> 및 <span style="color:#FFBF00; font-weight:bold;">관리</span>입니다..([위키백과](<https://en.wikipedia.org/wiki/Orchestration_(computing)>))
 
 </d-content>
 
