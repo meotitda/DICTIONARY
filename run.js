@@ -28,10 +28,6 @@ dd.map((alp) => {
   })
 })
 
-// const a = makeOutput('C', 'Coroutine.md')
-
-// console.log(a)
-
 function makeOutput(alp, file) {
   const f = fs
     .readFileSync(path.join(__dirname, './', `DIC/${alp}/${file}`))
