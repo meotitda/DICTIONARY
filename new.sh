@@ -45,7 +45,7 @@ cat > ${DIRECTORY} <<- EOM
 
 <d-inner>
 
-![Common](../2TAT1C/Label_Common.png)
+![Common](../../2TAT1C/Label_Common.png)
 
 </d-inner>
 
