@@ -14,19 +14,19 @@
 
 <d-inner>
 
-![Frontend](../2TAT1C/Label_Frontend.png)
+![Frontend](../../2TAT1C/Label_Frontend.png)
 
 </d-inner>
 
 <d-inner>
 
-![Backend](../2TAT1C/Label_Backend.png)
+![Backend](../../2TAT1C/Label_Backend.png)
 
 </d-inner>
 
 <d-inner>
 
-![Database](../2TAT1C/Label_Database.png)
+![Database](../../2TAT1C/Label_Database.png)
 
 </d-inner>
 
@@ -67,7 +67,7 @@
 ## URL 구조에서의 Scheme
 사용할 프로토콜을 말하며, 리소스에 어떻게 요청, 접근할 것인지를 명시합니다.
 웹에서 주로 HTTP 프로토콜을 사용합니다.
-![URL구조](../2TAT1C/Scheme_1.png)
+![URL구조](../../2TAT1C/Scheme_1.png)
 
 ([MDN](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web))
 

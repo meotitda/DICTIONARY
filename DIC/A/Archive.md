@@ -14,7 +14,7 @@
 
 <d-inner>
 
-![Devops](../2TAT1C/Label_Devops.png)
+![Devops](../../2TAT1C/Label_Devops.png)
 
 </d-inner>
 

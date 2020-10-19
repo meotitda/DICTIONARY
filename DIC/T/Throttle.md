@@ -14,7 +14,7 @@
 
 <d-inner>
 
-![Frontend](../2TAT1C/Label_Frontend.png)
+![Frontend](../../2TAT1C/Label_Frontend.png)
 
 </d-inner>
 

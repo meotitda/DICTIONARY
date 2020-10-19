@@ -8,7 +8,7 @@
 
 <d-inner>
 
-![Database](../2TAT1C/Label_Database.png)
+![Database](../../2TAT1C/Label_Database.png)
 
 </d-inner>
 

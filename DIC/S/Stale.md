@@ -8,13 +8,13 @@
 
 <d-inner>
 
-![Backend](../2TAT1C/Label_Backend.png)
+![Backend](../../2TAT1C/Label_Backend.png)
 
 </d-inner>
 
 <d-inner>
 
-![Database](../2TAT1C/Label_Database.png)
+![Database](../../2TAT1C/Label_Database.png)
 
 </d-inner>
 

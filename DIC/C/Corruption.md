@@ -14,7 +14,7 @@
 
 <d-inner>
 
-![Backend](../2TAT1C/Label_Backend.png)
+![Backend](../../2TAT1C/Label_Backend.png)
 
 </d-inner>
 

@@ -21,7 +21,7 @@ slug: /S/Scheme(Schema)
 <h2 id="url-구조에서의-scheme">URL 구조에서의 Scheme</h2>
 <p>사용할 프로토콜을 말하며, 리소스에 어떻게 요청, 접근할 것인지를 명시합니다.<br />
 웹에서 주로 HTTP 프로토콜을 사용합니다.<br />
-<img src="../2TAT1C/Scheme_1.png" alt="URL구조" /></p>
+<img src="../../2TAT1C/Scheme_1.png" alt="URL구조" /></p>
 <p>(<a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web">MDN</a>)</p>
 
 

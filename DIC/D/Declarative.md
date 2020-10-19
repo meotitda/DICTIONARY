@@ -14,13 +14,13 @@
 
 <d-inner>
 
-![Frontend](../2TAT1C/Label_Frontend.png)
+![Frontend](../../2TAT1C/Label_Frontend.png)
 
 </d-inner>
 
 <d-inner>
 
-![Database](../2TAT1C/Label_Database.png)
+![Database](../../2TAT1C/Label_Database.png)
 
 </d-inner>
 
