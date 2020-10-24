@@ -3,8 +3,6 @@
 
 DICTIONARY는 일반적인 개발 용어 사전입니다.
 
-웹사이트 : https://dictionarymoon.tk
-
 ## A
 [Agnostic](https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/A/Agnostic.md)
 ![Common](./2TAT1C/Label_Common.png)
