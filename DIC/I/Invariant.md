@@ -1,38 +1,10 @@
-<d-title>
-
 # Invariant
-
-</d-title>
-
-<d-label>
-
-<d-inner>
 
 ![Backend](../../2TAT1C/Label_Backend.png)
 
-</d-inner>
+<a href="https://www.google.com/search?sxsrf=ALeKk003d-pO5eb1jgpaV7hBqnNczTFzxQ%3A1604565042893&ei=MrijX82FNor_wAPnro74Cw&q=binary+search+tree+Invariant&oq=binary+search+tree+Invariant&gs_lcp=CgZwc3ktYWIQAzICCAAyBggAEAUQHjoECAAQRzoKCAAQkQIQRhD5AToGCAAQBxAeOgUIABDLAVCTP1jyQ2C4RWgAcAN4AIABqwGIAZEEkgEDMC40mAEAoAEBoAECqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwjN5pnL_ursAhWKP3AKHWeXA78Q4dUDCA0&uact=5">#이진 탐색트리</a>
 
-</d-label>
-
-<d-origin>
-
-원형 : invariant
-
-</d-origin>
-
-<d-mean>
-
-의미  : 불변
-
-</d-mean>
-
-<d-pronunciation>
-
-발음 : 인베리언트
-
-</d-pronunciation>
-
-<d-content>
+일반적으로 불변이라는 의미를 가집니다.
 
 invariant는 variable(변수) 보다 좀 더 개념적(conceptual)입니다. 일반적으로, 이것은 <span style="color:#FFBF00; font-weight:bold;">항상 true인 프로그램 상태의 속성</span>입니다. 불변함을 보장하는 위한 함수 혹은 메소드는 invariant를 유지한다고 합니다.
 
@@ -45,21 +17,5 @@ invariant는 variable(변수) 보다 좀 더 개념적(conceptual)입니다. 일
 
 이것은 프로그램에 대한 더 자세한 설명입니다. 프로그램이 어떤 종류의 불변성을 유지해야 하는지 파악한 다음 실제로 불변성을 유지해야하는지 확실히 검토함으로써, 여러분은 코드에서 논리적 오류를 피할 수 있습니다.
 
-(참고 - 스택오버플로우](https://stackoverflow.com/questions/112064/what-is-an-invariant))
-
-</d-content>
-
-<d-relation>
-
-## 관련 기술
-
-<d-inner>
-
-1. 이진 탐색트리
-
-</d-inner>
-
-</d-relation>
-
-
+<a href="https://stackoverflow.com/questions/112064/what-is-an-invariant/">참고-스택오버플로우</a>
 
