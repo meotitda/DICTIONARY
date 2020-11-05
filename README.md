@@ -243,11 +243,12 @@ DICTIONARY는 일반적인 개발 용어 사전입니다.
 ## Q
 
 ## R
-[REPL](https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/R/REPL.md)
+
+<a href="https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/R/REPL(Read Eval Print Loop).md">REPL(Read Eval Print Loop)</a>
 ![Common](./2TAT1C/Label_Common.png)
 ![Backend](./2TAT1C/Label_Backend.png)
 
-[Replication(Replica)](https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/R/Replication.md)
+[Replica](https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/R/Replica.md)
 ![Backend](./2TAT1C/Label_Backend.png)
 ![Database](./2TAT1C/Label_Database.png)
 ![Devops](./2TAT1C/Label_Devops.png)
