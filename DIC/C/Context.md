@@ -1,86 +1,17 @@
-<d-title>
-
 # Context
 
-</d-title>
-
-<d-label>
-
-<d-inner>
-
 ![Common](../../2TAT1C/Label_Common.png)
-
-</d-inner>
-
-<d-inner>
-
 ![Frontend](../../2TAT1C/Label_Frontend.png)
-
-</d-inner>
-
-<d-inner>
-
 ![Backend](../../2TAT1C/Label_Backend.png)
 
-</d-inner>
+<a href="https://www.google.com/search?sxsrf=ALeKk00rBEMkT_zcyESsIyO9yhBO1YXaAg%3A1604557809854&ei=8ZujX6vXM4TmwQOblYvAAg&q=%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8+%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8&oq=%EC%9E%90%EB%B0%94%EC%8A%A4&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnMgQIIxAnMgQIIxAnMgUIABCxAzICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQRzoHCAAQyQMQDToECAAQDToHCAAQFBCHAjoICAAQsQMQgwE6BAgAEENQzhFY3LQCYPC6AmgGcAF4AoABjgOIAb4LkgEHMC41LjEuMZgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab">#자바스크립트 실행 Context</a>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Browsing_context">#브라우저 Context</a>
+<a href="https://graphql.org/learn/execution/#root-fields-resolvers">#Grahpql Context</a>
 
-</d-label>
+일반적으로 Context는 문맥, 맥락이라는 의미를 가집니다.
 
-<d-origin>
+간단히 <span style="color:#FFBF00; font-weight:bold;">Context는 실행 가능한 코드가 실행되기 위해 필요한 환경</span>이라고 한다.
 
-원형 : Context
-
-</d-origin>
-
-<d-mean>
-
-의미 : 문맥, 맥락
-
-</d-mean>
-
-<d-pronunciation>
-
-발음 : 컨텍스트
-
-</d-pronunciation>
-
-<d-content>
-
-프로그래밍 컨텍스트는 <span style="color:#FFBF00; font-weight:bold;">개발자가 일을 완료하기 위한 모든 관련된 정보</span>들로 정의될 수 있다. 컨텍스트는 여러 다른 <span style="color:#FFBF00; font-weight:bold;">코드들로 구성된 정보</span>이며, 프로그래머는 프로그래밍 목표에 따라 동일한 정보 라도 다르게 해석합니다. 또한 같은 아티팩트일지라도 재방문시에 다른 컨택스트를 생성할 수도 있습니다. 그러므로 컨텍스트는 <span style="color:#FFBF00; font-weight:bold;">"유연한 개념"</span> 입니다.
+프로그래밍 Context는 <span style="color:#FFBF00; font-weight:bold;">개발자가 일을 완료하기 위한 모든 관련된 정보</span>들로 정의될 수 있다. Context는 여러 다른 <span style="color:#FFBF00; font-weight:bold;">코드들로 구성된 정보</span>이며, 프로그래머는 프로그래밍 목표에 따라 동일한 정보 라도 다르게 해석합니다. 또한 같은 아티팩트일지라도 재방문시에 다른 Context를 생성할 수도 있습니다. 그러므로 Context는 <span style="color:#FFBF00; font-weight:bold;">"유연한 개념"</span> 입니다.
 .([참고주소](https://dl.acm.org/doi/10.1145/3195836.3195861))
 
-</d-content>
-
-<d-relation>
-
-## 관련 기술
-
-<d-inner>
-
-1.  자바스크립트 실행 컨텍스트
-
-    </d-inner>
-
-> 전역 컨텍스트, 함수 컨텍스트
-
-<d-inner>
-
-2.  웹프레임워크에서의 Context
-
-</d-inner>
-
-> 요청 컨텍스트는 요청 중 요청 레벨 데이터를 추적합니다. 요청 동안 실행되는 각 함수에 요청 객체를 전달하는 대신 요청 및 세션 프록시가 대신 액세스됩니다.
-
-<d-inner>
-
-3.  Grahpql Context
-
-</d-inner>
-
-<d-inner>
-
-4.  기타 언어의 Context
-
-</d-inner>
-
-</d-relation>
