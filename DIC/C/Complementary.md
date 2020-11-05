@@ -2,7 +2,7 @@
 
 ![Common](../../2TAT1C/Label_Common.png)
 
-<a href="https://gist.github.com/faridiot/93abc5a6f37c56fa8af4de0b6d2d10fb">React Complementary Tools</a>
+<a href="https://gist.github.com/faridiot/93abc5a6f37c56fa8af4de0b6d2d10fb">#React Complementary Tools</a>
 
 일반적으로 <span style="color:#FFBF00; font-weight:bold;">보완적인</span>이라는 의미로 사용됩니다.
 
