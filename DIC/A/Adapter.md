@@ -1,26 +1,7 @@
-<d-title>
 
 # Adapter
 
-</d-title>
-
-<d-origin>
-
-원형 : Adapter
-
-</d-origin>
-
-<d-mean>
-
-의미 : <span style="color:#FFBF00; font-weight:bold;">어뎁터</span>
-
-</d-mean>
-
-<d-pronunciation>
-
-발음 : 어뎁터
-
-</d-pronunciation>
+![Common](../../2TAT1C/Label_Common.png)
 
 <d-content>
 
