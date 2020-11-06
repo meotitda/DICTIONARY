@@ -1,50 +1,16 @@
-<d-title>
-
 # Dispatch
 
-</d-title>
-
-<d-label>
-
-<d-inner>
-
 ![Common](../../2TAT1C/Label_Common.png)
-
-</d-inner>
-
-<d-inner>
-
 ![Frontend](../../2TAT1C/Label_Frontend.png)
-
-</d-inner>
-
-<d-inner>
-
 ![Backend](../../2TAT1C/Label_Backend.png)
 
-</d-inner>
+<a href="https://developer.mozilla.org/ko/docs/Web/API/EventTarget/dispatchEvent">#javascript의 dispatchEvent</a>
+<a href="">#Redux dispatch</a>
+<a href="https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3">#static dispatch와 dynamic dispatch</a>
 
-</d-label>
+Dispatch는 일반적으로 <span style="color:#FFBF00; font-weight:bold;">보내다</span>, 신속히 해치우다 라는 의미를 지닌다.
 
-<d-origin>
-
-원형 : Dispatch
-
-</d-origin>
-
-<d-mean>
-
-의미 : <span style="color:#FFBF00; font-weight:bold;">보내다</span>, 신속히 해치우다.
-
-</d-mean>
-
-<d-pronunciation>
-
-발음 : 디스패치
-
-</d-pronunciation>
-
-<d-content>
+Dispatch는 다음과 같은 의미로 쓰인다.
 
 1. 프로그램이 어떤 메소드를 호출할 것인가를 결정하여 그것을 실행하는 과정을 말한다.
 
@@ -64,41 +30,9 @@ account withdraw: 100
 
 이러한 아이디어는 다른 이름으로 다양한 객체 지향 언어에서 공유됩니다. 예를 들어, C ++는 메시지를 'virtual member function'라고 부릅니다.
 
-메소드 디스패치는 <span style="color:#FFBF00; font-weight:bold;">메시지에 응답하여 호출 할 메소드를 결정</span>하는 데 사용되는 알고리즘입니다. 알고리즘은 언어마다 크게 다릅니다.
+Method Dispatch는 <span style="color:#FFBF00; font-weight:bold;">메시지에 응답하여 호출 할 메소드를 결정</span>하는 데 사용되는 알고리즘입니다. 알고리즘은 언어마다 크게 다릅니다.
 
-([참고 - 스택오버플로우](https://stackoverflow.com/questions/1805510/what-is-method-dispatch))
+<a href="https://stackoverflow.com/questions/1805510/what-is-method-dispatch">참고-스택오버플로우</a>
 
-3. 어딘가에 무엇을 보내는 행위
-   ([참고 - 미디엄](https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3))
+3. <a href="https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3">어딘가에 무엇을 보내는 행위</a>
 
-</d-content>
-
-<d-relation>
-
-## 관련 기술
-
-<d-inner>
-
-1. javascript의 dispatchEvent
-
-</d-inner>
-
-[dispatchEvent](https://developer.mozilla.org/ko/docs/Web/API/EventTarget/dispatchEvent)를 통해 등록된 이벤트를 실행시킨다.
-
-<d-inner>
-
-2. Redux dispatch
-
-</d-inner>
-
-등록된 action을 호출시킨다.
-
-<d-inner>
-
-3. static dispatch와 dynamic dispatch
-
-</d-inner>
-
-[참고 - 미디엄](https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3)
-
-</d-relation>

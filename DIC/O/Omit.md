@@ -1,55 +1,29 @@
-<d-title>
-
 # Omit
-
-</d-title>
-
-<d-label>
-
-<d-inner>
 
 ![Common](../../2TAT1C/Label_Common.png)
 
-</d-inner>
+<a href="https://www.typescriptlang.org/docs/handbook/utility-types.html#omittk">#타입스크립트 - Omit</a>
+<a href="https://mochajs.org/#synchronous-code">#mocha -SYNCHRONOUS CODE Description</a>
 
-</d-label>
-
-<d-origin>
-
-원형 : Omit
-
-</d-origin>
-
-<d-mean>
-
-의미 : <span style="color:#FFBF00; font-weight:bold;">생략하다</span>
-
-</d-mean>
-
-<d-pronunciation>
-
-발음 : 오밋
-
-</d-pronunciation>
-
-<d-content>
+일반적으로 Omit이란 <span style="color:#FFBF00; font-weight:bold;">생략하다</span> 하다는 의미를 지닌다.
 
 기능을 스킵하거나 객체의 인자를 생략하다.
 
-</d-content>
+```ts
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
+}
 
-<d-relation>
+type TodoPreview = Omit<Todo, "description">;
 
-## 관련 기술
+const todo: TodoPreview = {
+  title: "Clean room",
+  completed: false,
+};
 
-<d-inner>
+todo; // Correct Type
+```
 
-1. 일반적인 기능
-
-</d-inner>
-
-[타입스크립트 - Omit](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittk)
-
-[mocha -SYNCHRONOUS CODE Description](https://mochajs.org/#synchronous-code)
-
-</d-relation>
+Todo 인터페이스의 description 속성을 생략시켰다.

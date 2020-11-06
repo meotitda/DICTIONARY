@@ -1,37 +1,7 @@
-<d-title>
-
 # Feature
-
-</d-title>
-
-<d-label>
-
-<d-inner>
 
 ![Common](../../2TAT1C/Label_Common.png)
 
-</d-inner>
+<a href="">#새로운 기능 릴리즈!</a>
 
-</d-label>
-
-<d-origin>
-
-원형 : Feature
-
-</d-origin>
-
-<d-mean>
-
-의미 : 특징, 기능
-
-</d-mean>
-
-<d-pronunciation>
-
-발음 : 피쳐
-
-</d-pronunciation>
-
-<d-content>
-
-</d-content>
+특징, <span style="color:#FFBF00; font-weight:bold;">기능</span>이라는 뜻을 가진다.

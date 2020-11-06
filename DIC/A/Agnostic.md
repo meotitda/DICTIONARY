@@ -1,54 +1,11 @@
-<d-title>
-
 # Agnostic
-
-</d-title>
-
-<d-label>
-
-<d-inner>
 
 ![Common](../../2TAT1C/Label_Common.png)
 
-</d-inner>
+<a>#Program dependencies</a>
 
-</d-label>
+구애받지 않는 것이라는 뜻을 가집니다. 대체로 어떤 것에 국한되지 않는 프로그램이나 기술을 표현할 때 사용됩니다.
 
-<d-origin>
+<span style="color:#FFBF00; font-weight:bold;">의존성이 없는 순수한 기술</span> 혹은 프로그램
 
-원형 : Agnostic
-
-</d-origin>
-
-<d-mean>
-
-의미 : 불가지론
-
-</d-mean>
-
-<d-pronunciation>
-
-발음 : 이그노스틱
-
-</d-pronunciation>
-
-<d-content>
-
-어떤 것에 국한되지 않는 프로그램
-의존성이 없는 순수한 기술 혹은 프로그램
-
-예를 들어 : pure javascript with zero dependencies.
-
-</d-content>
-
-<d-relation>
-
-## 관련 기술
-
-<d-inner>
-
-1. Program dependencies
-
-</d-inner>
-
-</d-relation>
+예를 들어 : Agnostic is like pure javascript with zero dependencies.
