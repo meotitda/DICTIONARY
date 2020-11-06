@@ -1,44 +1,14 @@
-<d-title>
-
 # Unobtrusive
 
-</d-title>
-
-<d-label>
-
-<d-inner>
-
 ![Frontend](../../2TAT1C/Label_Frontend.png)
-
-</d-inner>
-
-<d-inner>
-
 ![Backend](../../2TAT1C/Label_Backend.png)
 
-</d-inner>
+<a href="https://en.wikipedia.org/wiki/Unobtrusive_JavaScript">#Unobtrusive_JavaScript</a>
+<a href="http://www.passportjs.org/">#passport.js</a>
 
-</d-label>
+---
 
-<d-origin>
-
-원형 : Unobtrusive
-
-</d-origin>
-
-<d-mean>
-
-의미  : <span style="color:#FFBF00; font-weight:bold;">눈에 거슬리지 않는</span>
-
-</d-mean>
-
-<d-pronunciation>
-
-발음 : 어놉트루시브
-
-</d-pronunciation>
-
-<d-content>
+<span style="color:#FFBF00; font-weight:bold;">눈에 거슬리지 않는</span>
 
 코드를 레이어 단위로 분리됨을 의미하는 단어
 
@@ -70,31 +40,4 @@ window.addEventListener("DOMContentLoaded", function(event) {
 
 위의 코드는 Unobtrusive 하다.
 
-([위키 백과](https://en.wikipedia.org/wiki/Unobtrusive_JavaScript))
-
-</d-content>
-
-<d-relation>
-
-## 관련 기술
-
-<d-inner>
-
-1. Javascript
-
-</d-inner>
-
-<d-inner>
-
-2. Passport js
-
-</d-inner>
-
-<d-inner>
-
-3. 그 외 언어로 작성된 코드
-
-</d-inner>
-
-</d-relation>
 
