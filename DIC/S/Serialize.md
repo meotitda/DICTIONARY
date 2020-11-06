@@ -6,6 +6,8 @@
 <a href="https://www.google.com/search?sxsrf=ALeKk02o_MRZgAZtjUEwfNkN4qWwUVwOOA%3A1604574024052&ei=SNujX8nmAoKJoAT8sKn4Dw&q=orm+serializer&oq=orm+serializer&gs_lcp=CgZwc3ktYWIQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQR1C6Z1i6Z2CSaWgAcAJ4AIABAIgBAJIBAJgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab&ved=0ahUKEwjJquCFoOvsAhWCBIgKHXxYCv8Q4dUDCA0&uact=5">#ORM</a>
 <a href="https://www.google.com/search?q=parser+Serialize&oq=parser+Serialize&aqs=chrome..69i57j69i60l3.7506j0j4&sourceid=chrome&ie=UTF-8">#parser</a>
 
+---
+
 Serialize는 직렬화, 연속으로 ~하다. 라는 뜻을 가진다.
 
 특정 시스템 내부에서 사용되는 Object 또는 Data를 외부의 특정 시스템에서도 사용할 수 있도록 byte 형태로 데이터를 변환하는 기술.

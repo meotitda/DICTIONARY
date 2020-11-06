@@ -8,6 +8,8 @@
 <a href="https://www.google.com/search?sxsrf=ALeKk00lBg8YwNyeeDGw41YU0mTSNMF1jg%3A1604572132869&ei=5NOjX4LbNMbr-Qb3uYOIBg&q=Proxy+pattern%EC%9D%B4%EB%9E%80">#Proxy pattern</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk01s0YwkA2ukeNM7QZ2SNlYDFOK5Mw%3A1604572138631&ei=6tOjX_-MJtGB-QaEnK5g&q=Javascript+Proxy+Interface%EC%9D%B4%EB%9E%80&oq=Javascript+Proxy+Interface%EC%9D%B4%EB%9E%80&gs_lcp=CgZwc3ktYWIQAzIFCAAQzQIyBQgAEM0CMgUIABDNAjIFCAAQzQI6BAgAEEdQ1UJY1UJgi0hoAHADeACAAaoBiAGqAZIBAzAuMZgBAKABAqABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab&ved=0ahUKEwj_qduCmevsAhXRQN4KHQSOCwwQ4dUDCA0&uact=5">#Javascript Proxy Interface</a>
 
+---
+
 Proxy는 일반적으로는 <span style="color:#FFBF00; font-weight:bold;">대리자</span>라는 뜻을 가진다.
 
 Proxy는 <span style="color:#FFBF00; font-weight:bold;">다른 누군가를 대신</span>해 그 역할을 수행하는 존재를 말한다.

@@ -7,6 +7,7 @@
 <a href="https://ko.wikipedia.org/wiki/%EB%B3%84%ED%91%9C">#Asterisk</a>
 <a href="https://ko.wikipedia.org/wiki/%EC%A0%95%EA%B7%9C_%ED%91%9C%ED%98%84%EC%8B%9D">#정규표현식</a>
 
+---
 
 별표(_)는 타이포그래피 기호나 문자이다. 별(라틴어: asteriscus)의 기본 그림의 형태를 닮았기 때문에 Asterisk라고도 부른다. 전산학과 수학은 이를 스타(star)라고 발음한다. (A_ 알고리즘, C\* 대수)
 

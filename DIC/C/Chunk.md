@@ -11,6 +11,8 @@
 <a href="">#데이터 중복 제거, 데이터 동기화</a>
 <a href="https://lodash.com/docs/4.17.15#chunk">#Javascript Library인 Lodash의 함수</a>
 
+---
+
 일반적으로 Chunk는 덩어리 혹은 상당한 양이라는 뜻을 가진다.
 
 컴퓨터 프로그래밍에서 Chunk는 여러가지 의미를 가진다.
@@ -29,8 +31,5 @@ Chunk는 HTTP 1.1프로토콜의 특별한 기능입니다. 메모리 관리에�
 
 ## 데이터 중복 제거, 데이터 동기화 및 원격 데이터 압축
 
-청킹은 <span style="color:#FFBF00; font-weight:bold;">청킹 알고리즘에 의해 파일을 Chunk라고하는 작은 조각으로 분할</span>하는 프로세스입니다. 스토리지에서 반복되는 데이터의 중복 사본을 제거하거나 변경된 Chunk 만 선택하여 네트워크를 통해 전송되는 데이터의 양을 줄일 수 있습니다. 롤링 해시와 같은 CDC (Content-Defined Chunking) 알고리즘과 그 변형은 지난 15 년간 가장 인기있는 데이터 중복 제거 알고리즘이었습니다
-
-([참고 - 위키피디아](<https://en.wikipedia.org/wiki/Chunking_(computing)>))
-
+청킹은 <span style="color:#FFBF00; font-weight:bold;">청킹 알고리즘에 의해 파일을 Chunk라고하는 작은 조각으로 분할</span>하는 프로세스입니다. 스토리지에서 반복되는 데이터의 중복 사본을 제거하거나 변경된 Chunk 만 선택하여 네트워크를 통해 전송되는 데이터의 양을 줄일 수 있습니다. 롤링 해시와 같은 CDC (Content-Defined Chunking) 알고리즘과 그 변형은 지난 15 년간 가장 인기있는 데이터 중복 제거 알고리즘이었습니다 <a href="https://en.wikipedia.org/wiki/Chunking_(computing)">참고 자료</a>
 

@@ -8,6 +8,8 @@
 <a href="">#Redux dispatch</a>
 <a href="https://medium.com/ingeniouslysimple/static-and-dynamic-dispatch-324d3dc890a3">#static dispatch와 dynamic dispatch</a>
 
+---
+
 Dispatch는 일반적으로 <span style="color:#FFBF00; font-weight:bold;">보내다</span>, 신속히 해치우다 라는 의미를 지닌다.
 
 Dispatch는 다음과 같은 의미로 쓰인다.

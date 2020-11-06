@@ -8,6 +8,8 @@
 <a href="https://ko.reactjs.org/docs/react-dom.html#hydrate">#React Dom hydrate</a>
 <a href="">#ORM</a>
 
+---
+
 객체를 Hydrate 한다는 것은 <span style="color:#FFBF00; font-weight:bold;">아직 어떤 도메인 데이터('진짜' 데이터)도 포함하지 않은 메모리에 존재하는 객체를 가져옵니다. 그런 후에 도메인 데이터(데이터베이스, 네트워크, 혹은 파일 시스템으로부터)를 채웁니다(Populate).</span>
 
 Erick Robertson( 마이크로소프트 IT Manager )에 댓글에 의하면

@@ -7,6 +7,8 @@
 <a href="https://www.google.com/search?sxsrf=ALeKk00TU5JzsuvOY63L_MbyKH23R8QAcg%3A1604558984556&ei=iKCjX9LQIdmtoASOorBw&q=react+debounce+%EB%9E%80&oq=react+debounce+%EB%9E%80&gs_lcp=CgZwc3ktYWIQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQR1DGA1jgBGD5BWgAcAN4AIABlwGIAakCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwjStK6C6OrsAhXZFogKHQ4RDA4Q4dUDCA0&uact=5">#Client App(React, Vue등 ...)</a>
 <a href="https://lodash.com/docs/4.17.15#debounce">#코드를 지연처리 할때 쓰는 함수명</a>
 
+---
+
 일반적으로 튕기지 않는 이라는 의미를 가진다.
 
 Debounce 는 여러번 발생하는 이벤트에서, 가장 마지막 이벤트 만을 실행 되도록 만드는 개념이다.

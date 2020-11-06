@@ -5,6 +5,7 @@
 <a href="https://www.google.com/search?sxsrf=ALeKk00bjd1DBUcuiASDbuAASniQHKhTcg%3A1604567636589&ei=VMKjX-TCI5v1hwOHz4uABw&q=xml+namespace&oq=XML+Nap&gs_lcp=CgZwc3ktYWIQAxgAMgsIABDJAxAWEAoQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIICAAQFhAKEB4yBggAEBYQHjIGCAAQFhAeOgcIABDJAxBDOgQIABBDOgUIABDLAToCCAA6BQghEKABUPAXWLwlYKUraANwAXgAgAGBDYgByBSSAQcwLjYuOC0xmAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab">#XML</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk00dgp9sOmEUsq7VeSXltPv6N0rIJQ%3A1604567645396&ei=XcKjX8bpF5vv-QbtuY_ABQ&q=ip+address+namespace&oq=IP+Address+name&gs_lcp=CgZwc3ktYWIQAxgBMgUIABDJAzIHCAAQFBCHAjICCAAyAggAMgIIADIHCAAQFBCHAjICCAAyAggAMgYIABAWEB4yBggAEBYQHjoECAAQRzoHCAAQyQMQQzoFCAAQywE6CAgAEMkDEMsBOgQIABBDOgoIABDJAxAUEIcCUNRSWJVeYKdpaABwA3gAgAHpAYgB9AeSAQUwLjUuMZgBAKABAqABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab">#IP Address</a>
 
+---
 
 컴퓨팅에서 NameSpace는 다양한 종류의 객체를 식별하고 참조하는 데 사용되는 일련의 기호 (이름)입니다. NameSpace는 주어진 모든 개체 집합이 <span style="color:#FFBF00; font-weight:bold;">고유한 이름을 가지므로</span> 쉽게 식별 할 수 있습니다.
 

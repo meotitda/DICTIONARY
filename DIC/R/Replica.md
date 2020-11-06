@@ -9,6 +9,8 @@
 <a href="https://www.google.com/search?sxsrf=ALeKk01Yzr7GsAcm3--yeM90xP6Bl9oaAw%3A1604572756529&ei=VNajX5PQH8mh-Qbf-oSAAQ&q=%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C+Replica&oq=%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C+Replica&gs_lcp=CgZwc3ktYWIQAzoECAAQR1CygANYm4wDYI-NA2gCcAN4BIABoQKIAaETkgEGMi4xMi4xmAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwiTyqypm-vsAhXJUN4KHV89ARAQ4dUDCA0&uact=5">#파일시스템 백업 Replica</a>
 <a href="">#Elasticsearch Replica</a>
 
+---
+
 일반적으로 Replica는 <span style="color:#FFBF00; font-weight:bold;">복제, 복제본</span> 라는 뜻입니다.
 
 <span style="color:#FFBF00; font-weight:bold;">동일한 데이터가 여러 저장 장치에 저장되는 데이터 복제, 혹은 동일한 컴퓨팅 작업이 여러 번 실행되는 계산 복제 계산 작업</span>

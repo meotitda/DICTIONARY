@@ -9,6 +9,7 @@
 <a href="">#HTML, CSS</a>
 <a href="https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/I/Imperative.md">#Imperative Programming</a>
 
+---
 
 일반적으로 선언적인 이라는 뜻을 가집니다.
 

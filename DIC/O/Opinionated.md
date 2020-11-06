@@ -6,6 +6,8 @@
 <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction">#Python Django (Opinionated)</a>
 <a href="https://expressjs.com/">#Nodejs Express (UnOpinionated)</a>
 
+---
+
 Opinionated는 일반적으로 <span style="color:#FFBF00; font-weight:bold;">의견의</span>라는 의미로 쓰인다.
 
 만약 프레임워크가 opinionated 하다면, 그것은 <span style="color:#FFBF00; font-weight:bold;">여러분이 해야하는 일을 안내하거나 제한</span>합니다.

@@ -6,6 +6,7 @@
 <a href="https://en.wikipedia.org/wiki/Cache_invalidation">#Cache Invalidate</a>
 <a href="">#UI API</a>
 
+---
 
 일반적으로 Invalidate는 <span style="color:#FFBF00; font-weight:bold;">무효화</span>, 무효화하다. 라는 뜻을 가진다.
 

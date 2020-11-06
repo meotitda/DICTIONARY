@@ -6,6 +6,7 @@
 <a href="https://en.wikipedia.org/wiki/Data_corruption">#데이터 Corruption</a>
 <a href="https://en.wikipedia.org/wiki/Memory_corruption">#메모리 Corruption</a>
 
+---
 
 일반적으로 Corruption은 <span style="color:#FFBF00; font-weight:bold;">부패</span> , 타락 이라는 뜻을 가집니다.
 
