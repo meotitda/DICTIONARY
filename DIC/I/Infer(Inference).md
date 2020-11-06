@@ -4,6 +4,8 @@
 
 <a href="">#Type 언어</a>
 
+---
+
 일반적으로 <span style="color:#FFBF00; font-weight:bold;">추론하다</span>라는 뜻을 가진다.
 
 Type infer는 프로그래밍 언어에서 식의 데이터 형식을 자동으로 감지하는 것을 말합니다.

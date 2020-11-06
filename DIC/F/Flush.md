@@ -2,9 +2,9 @@
 
 ![Backend](../../2TAT1C/Label_Backend.png)
 
-
-
 <a href="https://www.google.com/search?sxsrf=ALeKk01wE6yzhTLEg7y64doHNayV8gD58A%3A1604562916298&ei=5K-jX9zaEcfN-QbMs4_wDQ&q=io%EB%9E%80&oq=IOfks&gs_lcp=CgZwc3ktYWIQARgBMgQIIxAnMggIABDJAxDLATIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDVAAWABgtRJoAHAAeACAAY4CiAGOA5IBBTAuMS4xmAEAqgEHZ3dzLXdpesABAQ&sclient=psy-ab">#IO(입출력)</a>
+
+---
 
 일반적으로 <span style="color:#FFBF00; font-weight:bold;">한꺼번에 쏟다, 붓다</span> 라는 뜻을 가진다.
 

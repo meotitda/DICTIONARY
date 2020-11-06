@@ -5,6 +5,8 @@
 <a href="https://aws.amazon.com/ko/ecs/">#AWS ECS</a>
 <a href="https://kubernetes.io/">#Kubernetes</a>
 
+---
+
 Orchestration은 통합, 결집, 편성이라는 뜻을 가집니다.
 
 Orchestration은 컴퓨터 시스템 및 소프트웨어의 <span style="color:#FFBF00; font-weight:bold;">자동 구성</span>, <span style="color:#FFBF00; font-weight:bold;">조정</span> 및 <span style="color:#FFBF00; font-weight:bold;">관리</span>기술입니다.

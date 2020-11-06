@@ -4,6 +4,8 @@
 
 <a href="https://www.google.com/search?sxsrf=ALeKk003d-pO5eb1jgpaV7hBqnNczTFzxQ%3A1604565042893&ei=MrijX82FNor_wAPnro74Cw&q=binary+search+tree+Invariant&oq=binary+search+tree+Invariant&gs_lcp=CgZwc3ktYWIQAzICCAAyBggAEAUQHjoECAAQRzoKCAAQkQIQRhD5AToGCAAQBxAeOgUIABDLAVCTP1jyQ2C4RWgAcAN4AIABqwGIAZEEkgEDMC40mAEAoAEBoAECqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwjN5pnL_ursAhWKP3AKHWeXA78Q4dUDCA0&uact=5">#이진 탐색트리</a>
 
+---
+
 일반적으로 불변이라는 의미를 가집니다.
 
 invariant는 variable(변수) 보다 좀 더 개념적(conceptual)입니다. 일반적으로, 이것은 <span style="color:#FFBF00; font-weight:bold;">항상 true인 프로그램 상태의 속성</span>입니다. 불변함을 보장하는 위한 함수 혹은 메소드는 invariant를 유지한다고 합니다.

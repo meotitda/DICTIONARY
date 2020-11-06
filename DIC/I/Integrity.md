@@ -5,6 +5,8 @@
 <a href="">#데이터 베이스(관계형 데이터베이스)</a>
 <a href="https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/S/Stale.md">#Stale</a>
 
+---
+
 일반적으로 <span style="color:#FFBF00; font-weight:bold;">무결성</span>이라는 뜻을 가진다
 
 데이터 무결성(영어: data integrity)은 컴퓨팅 분야에서 완전한 수명 주기를 거치며 데이터의 정확성과 일관성을 유지하고 보증하는 것을 가리키며[1] 데이터베이스나 RDBMS 시스템의 중요한 기능이다.

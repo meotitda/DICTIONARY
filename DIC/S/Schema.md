@@ -9,6 +9,8 @@
 <a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web">#URL Schema</a>
 <a href="https://www.apollographql.com/docs/apollo-server/schema/schema/">#GRAPHQL</a>
 
+---
+
 일반적으로는 <span style="color:#FFBF00; font-weight:bold;">계획</span>, 개요 라는 의미를 가집니다.
 
 Schema는 <span style="color:#FFBF00; font-weight:bold;">데이터 혹은 구조를 묘사하는 데이터</span>를 의미합니다.

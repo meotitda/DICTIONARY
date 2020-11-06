@@ -8,6 +8,8 @@
 <a href="https://developer.mozilla.org/en-US/docs/Glossary/Browsing_context">#브라우저 Context</a>
 <a href="https://graphql.org/learn/execution/#root-fields-resolvers">#Grahpql Context</a>
 
+---
+
 일반적으로 Context는 문맥, 맥락이라는 의미를 가집니다.
 
 간단히 <span style="color:#FFBF00; font-weight:bold;">Context는 실행 가능한 코드가 실행되기 위해 필요한 환경</span>이라고 한다.

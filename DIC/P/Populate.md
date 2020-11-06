@@ -7,6 +7,8 @@
 
 <a href="https://github.com/MoonSupport/DICTIONARY/blob/master/H/Hydrate.md">#Hydrate</a>
 
+---
+
 Populate는 <span style="color:#FFBF00; font-weight:bold;">채우다</span> 라는 뜻이다.
 
 할당되어진 메모리 공간에 데이터를 채우는 것.

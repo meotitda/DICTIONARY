@@ -7,6 +7,8 @@
 <a href="https://rinae.dev/posts/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-kr">#왜 모든 프론트엔드 개발자는 pub-sub을 알아야하는가?</a>
 <a href="https://nodejs.org/api/events.html#events_class_eventemitter">#Nodejs & Javascript Event</a>
 
+---
+
 분리된 서로 다른 기능이 메시지 전달을 통해서 연결하고 통신하는 방법의 네트워크 지향 아키텍쳐입니다.
 
 Observer패턴 혹은 Pub-Sub패턴이라 불리는 디자인 패턴에서 사용됩니다.

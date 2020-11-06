@@ -7,6 +7,7 @@
 <a href="">#컴파일러 혹은 파서</a>
 <a href="https://github.com/hg-pyun/the-super-tiny-compiler-kr">#자바스크립트로 엄청나게 쉬운 컴파일러 만들기</a>
 
+---
 
 AST란 <span style="color:#FFBF00; font-weight:bold;">작성된 코드를 프로그램이 이해할 수 있게 만들어진 추상적인 트리 구조</span>이다.
 

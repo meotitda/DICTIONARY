@@ -7,6 +7,8 @@
 <a href="https://medium.com/@abderrahman.hamila/what-sanitize-mean-and-why-sanitize-in-code-data-5c68c9f7616">#자료구조</a>
 <a href="https://github.com/marmelab/react-admin/blob/master/packages/ra-ui-materialui/src/input/sanitizeRestProps.ts">#React Props들을 거르는 방법</a>
 
+---
+
 Sanitize는 <span style="color:#00FFCC; font-weight:bold;">살균제</span> 라는 뜻을 가진다.
 
 Sanitize는 잘못된 문자열을 데이터로부터 제거합니다.
