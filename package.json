@@ -4,7 +4,7 @@
   "description": "dictionary from eng to kor for develop",
   "main": "index.js",
   "scripts": {
-    "deploy" : "node inspect.js",
+    "deploy" : "node inspect.js production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
