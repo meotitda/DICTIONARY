@@ -11,4 +11,4 @@
 
 다음 애니메이션을 Ripple_effect라고 합니다.
 
-<img src="../../2TAT1C/ripple_effect_1.png" />
+<img src="https://user-images.githubusercontent.com/41575415/98444180-ae95ff00-2153-11eb-9836-1dfe4c620a21.png" />

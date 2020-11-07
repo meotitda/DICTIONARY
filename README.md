@@ -1,5 +1,5 @@
 # DICTIONARY
-<img src="./2TAT1C/DICT_DEV.png">
+<img src="https://user-images.githubusercontent.com/41575415/98444377-ab4f4300-2154-11eb-808f-e84e2f93cf48.png">
 
 DICTIONARY는 일반적인 개발 용어 사전입니다.
 

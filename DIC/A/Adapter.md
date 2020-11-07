@@ -12,6 +12,6 @@
 
 XML 문서의 문서 오브젝트 모델의 인터페이스를 표시 할 수있는 트리 구조로 변환하는 Adapter가 그 예입니다.
 
-<img src="../../2TAT1C/Adapter_1.jpg"/>
+<img src="https://user-images.githubusercontent.com/41575415/98444425-f36e6580-2154-11eb-8eb1-07e291378643.jpg"/>
 
 이 외에도 형식이 다른 인터페이스를 사용하기 위해 기능과 사용자 사이에서 연결 역할을 하는 기능을 Adapter라 부른다.
