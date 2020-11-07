@@ -122,6 +122,9 @@ DICTIONARY는 일반적인 개발 용어 사전입니다.
 ## G
 
 ## H
+[Headless](https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/H/Headless.md)
+![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Hydrate](https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/H/Hydrate.md)
 ![Frontend](./2TAT1C/Label_Frontend.png)
