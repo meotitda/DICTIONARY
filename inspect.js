@@ -80,7 +80,7 @@ function main() {
    ALL_DIC_DIRECTORY.map((alpabet) => {
       const filenames = fs.readdirSync(path.join(__dirname, './', `DIC/${alpabet}`))
 
-      if (!fs.existsSync(path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}`))) {
+      if (!fs.existsSync(path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}`) )&& ENV) {
          fs.mkdirSync(path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}`))
       }
       
@@ -231,8 +231,8 @@ function nomalizedText(text) {
 function init() {
    const BASE_PATH  = path.join(__dirname, './', __OUTPUT_DIRECTORY)
    try {
-      if (!fs.existsSync(BASE_PATH)) {
-         console.log(`${fs.existsSync(BASE_PATH)}가 존재 하지 않아 생성합니다.`)
+      if (!fs.existsSync(BASE_PATH) && ENV) {
+         console.log(`${BASE_PATH}가 존재 하지 않아 생성합니다.`)
          fs.mkdirSync(BASE_PATH,{ recursive: true })
       }
    }catch(e) {

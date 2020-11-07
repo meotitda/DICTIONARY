@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "deploy": "node inspect.js production",
+    "inspect": "node inspect.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

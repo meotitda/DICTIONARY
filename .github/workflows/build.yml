@@ -1,5 +1,5 @@
 
-name: Depoly D-Client
+name: Deploy D-Client
 
 on:
   push:
