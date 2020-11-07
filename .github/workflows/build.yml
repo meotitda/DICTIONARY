@@ -27,7 +27,7 @@ jobs:
           
 
       - name: Generate output
-        run: npm run gen
+        run: npm run deploy
 
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@master
