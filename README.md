@@ -1,7 +1,7 @@
 # DICTIONARY
 <img src="https://user-images.githubusercontent.com/41575415/98444377-ab4f4300-2154-11eb-808f-e84e2f93cf48.png">
 
-DICTIONARY는 일반적인 개발 용어 사전입니다.
+DICTIONARY는 일반적인 개발 용어 사전입니다. 🎉
 
 ## A
 [Agnostic](https://github.com/meotitda/DICTIONARY/blob/master/DIC/A/Agnostic.md)
