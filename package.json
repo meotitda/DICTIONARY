@@ -4,7 +4,7 @@
   "description": "dictionary from eng to kor for develop",
   "main": "index.js",
   "scripts": {
-    "deploy" : "node inspect.js production",
+    "deploy": "node inspect.js production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/MoonSupport/DICTIONARY#readme",
   "dependencies": {
-    "d-html-parser": "^1.0.4",
     "showdown": "^1.9.1"
   }
 }

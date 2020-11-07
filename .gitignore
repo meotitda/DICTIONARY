@@ -1,6 +1,2 @@
-node_modules
-package-lock.json
-_web/
-OUTPUT
-output
-dictionary-client/
+node_modules/
+.DS_Store
