@@ -8,13 +8,13 @@
 
 ## 1. 단어 추가 및 수정
 
-추가 했으면 하는 단어, 혹은 수정되어야 하는 단어를 DICTIONARY의 양식에 맞게 작성하여 [PR(PULL REQUEST)](https://github.com/MoonSupport/DICTIONARY/pulls)를 생성해주세요.
+추가 했으면 하는 단어, 혹은 수정되어야 하는 단어를 DICTIONARY의 양식에 맞게 작성하여 [PR(PULL REQUEST)](https://github.com/meotitda/DICTIONARY/pulls)를 생성해주세요.
 
 이곳에서 의견을 주고 받아, 최종적으로 DICTIONARY에 반영됩니다.
 
 ### **📄 추가방법** 
 
-DICTIONARY는 [DICTIONARY만의 포맷]()이 있습니다.
+DICTIONARY는 [DICTIONARY만의 포맷](https://github.com/meotitda/DICTIONARY/blob/master/docs/SyntaxDoc.md)이 있습니다.
 
 단어를 추가하려면 포맷에 맞추어서 제출하셔야 합니다.
 
@@ -54,12 +54,19 @@ dictionary를 바탕으로 테스트할수있는 서비스를 제공하는 프�
 
 현재는 [Meot의 팀](https://github.com/meotitda)의 팀이 되시면 기여하실 수 있습니다. 
 
-[Meot의 팀원되기](https://github.com/meotitda)
 
-## 3. DICTONARY
+Meot의 팀원이 되고 싶으시다면 [다음 문서에서 확인](https://github.com/meotitda) 할 수 있습니다.
+
+## 3. DICTONARY DOC
 
 ### **📄 문서 수정** 
 
 [해당 페이지](https://github.com/MoonSupport/DICTIONARY/tree/master/docs)의 기여 방법등 페이지를 수정 하실 수 있습니다.
 
-## 4. 그 외
+## 4. 🤩 GOOD ISSUE
+
+DICTIONARY는 아직 많은 아이디어와 기능이 필요합니다.
+
+또한 초기 단계라 버그가 발생할 수 있습니다.
+
+<a href="https://github.com/meotitda/DICTIONARY/issues">issue</a>를 생성해서 다양한 아이디어 혹은 버그 리포팅을 해주세요!

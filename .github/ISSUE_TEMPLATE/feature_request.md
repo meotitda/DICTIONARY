@@ -1,20 +1,25 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
+### 자유롭게 기능을 설명해주세요.
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+예시
+```
+이 기능은 단어 포맷에 대한 제안을 합니다.
+```
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+### 기능이 있어야 하는 이유를 설명해주세요.
+---
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+예시
+```
+이 기능이 생기면 단어를 생성하는데 더 편합니다!
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+```
+
+
+### 이 기능의 주의할 점 혹은 기타 정보들을 설명해주세요.
+---
+
+예시
+```
+크로스 플랫폼을 지원해야 합니다.
+```
