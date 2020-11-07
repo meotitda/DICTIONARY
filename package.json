@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MoonSupport/DICTIONARY.git"
+    "url": "git+https://github.com/meotitda/DICTIONARY.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MoonSupport/DICTIONARY/issues"
+    "url": "https://github.com/meotitda/DICTIONARY/issues"
   },
-  "homepage": "https://github.com/MoonSupport/DICTIONARY#readme",
+  "homepage": "https://github.com/meotitda/DICTIONARY#readme",
   "dependencies": {
     "showdown": "^1.9.1"
   }
