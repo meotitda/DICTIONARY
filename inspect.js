@@ -13,7 +13,6 @@ const ALL_DIC_DIRECTORY = fs.readdirSync(path.join(__dirname, './' ,'DIC/'))
 let __OUTPUT_DIRECTORY = './output'
 
 if(ENV == 'production') {
-   __ROOT_DIRECTORY = 'dictionary-client/src/markdown-pages'
    __OUTPUT_DIRECTORY = 'dictionary-client/src/markdown-pages'
 }
 

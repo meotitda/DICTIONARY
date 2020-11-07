@@ -38,7 +38,7 @@ jobs:
           destination-github-username: 'MoonSupport'
           destination-repository-name: 'dictionary-client'
           user-email: jiwon3346@naver.com
-          target-: dist
+          target-branch: dist
 
     
   
