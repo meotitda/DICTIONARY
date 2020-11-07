@@ -21,7 +21,7 @@ Token은 <span style='color:#FFCC00; font-weight:bold;'>
 
 Token 값의 예
 |Token name|Sample token values|
-|------|---|
+|--|--|
 |identifier|x, color, UP|
 |keyword| if, while, return
 |separator| }, (, ;
