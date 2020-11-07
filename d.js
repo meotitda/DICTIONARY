@@ -76,10 +76,6 @@ const WARNING = {
    },
 }
 
-init()
-main()
-
-
 function main() {
    cLog('작업 시작',PROCESS_STATE.INFO)
    ALL_DIC_DIRECTORY.map((alpabet) => {
@@ -270,3 +266,6 @@ function init() {
    }
    console.log('\x1b[0m',color, `${decoration} ${message}`,'\x1b[0m')
  }
+
+init()
+main()
