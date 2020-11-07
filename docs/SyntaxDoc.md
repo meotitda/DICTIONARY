@@ -1,6 +1,33 @@
 # DICTIONARY 문법
 
-Dictionary는 마크다운 파일로 구성됩니다. 각각의 단어들은 DIC 디렉토리의 안 단어의 첫번째 알파벳 디렉토리에 위치합니다.
+## 에디터 및 환경
+
+Dictionary는 마크다운 파일로 구성됩니다.
+
+에디터 별로 마크다운을 미리보기 할 수 있습니다.
+
+### **VSCODE**
+
+만약 에디터를 VSCODE를 사용하신다면 아래의 이미지의 버튼을 클릭하시거나 단축키를 이용하시면 미리 마크다운 파일의 결과를 확인 하실수 있습니다.
+
+![markdown-preview](../2TAT1C/markdown_preview.png)
+
+혹은 단축키
+
+```
+Windows, Linux : Ctrl+Shift+V
+MAC : Command + Shift + V 
+```
+### **ATOM**
+[링크](https://atom.io/packages/markdown-preview
+)를 통해 Extension을 설치하여 미리보기를 실행합니다.
+
+### **Web Editor**
+별도의 설치 없이 [stackedit](https://stackedit.io/app)에서 직접 수정할 수 있습니다. 이 경우의 포멧을 복사해서 사용하셔야 합니다.
+
+## 단어 파일 위치
+
+각각의 단어들은 DIC 디렉토리의 안 단어의 첫번째 알파벳 디렉토리에 위치합니다.
 
 예시) Example.md
 ```

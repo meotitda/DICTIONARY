@@ -4,6 +4,8 @@
 
 이곳은 **DICTIONARY에 함께하는 방법**을 설명하는 문서입니다.
 
+모든 기여는 해당 Repository에서 이루워지며, **만약 GITHUB을 사용하는데 어려움을 겪으신다면** [링크](https://github.com/meotitda/DICTIONARY/blob/master/docs/ToGitBeginner.md)를 통해 도움을 받을 수 있습니다. 👾👾
+
 기여 방법은 총 네 가지 입니다.
 
 ## 1. 단어 추가 및 수정
@@ -61,7 +63,7 @@ Meot의 팀원이 되고 싶으시다면 [다음 문서에서 확인](https://gi
 
 ### **📄 문서 수정** 
 
-[해당 페이지](https://github.com/MoonSupport/DICTIONARY/tree/master/docs)의 기여 방법등 페이지를 수정 하실 수 있습니다.
+[해당 페이지](https://github.com/meotitda/DICTIONARY/tree/master/docs)의 기여 방법등 페이지를 수정 하실 수 있습니다.
 
 ## 4. 🤩 GOOD ISSUE
 
