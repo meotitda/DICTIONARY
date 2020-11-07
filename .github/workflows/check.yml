@@ -1,7 +1,7 @@
 
 name: Check Syntax
 
-on: [commit]
+on: [push]
 
 jobs:
   build:
