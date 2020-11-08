@@ -87,8 +87,11 @@ function main() {
       filenames.map((filename) => {
          const text = fs.readFileSync(path.join(__dirname, './', `DIC/${alpabet}/${filename}`)).toString()
          cursor.file = filename
-         const output = parse(text)
+
+         const result = parse(text)
+         
          if(ENV==="production" || ENV==="debug") {
+            const output = extractOutput(result)
             fs.writeFile(
                path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}/${filename}`),
                output,
@@ -113,17 +116,37 @@ function parse(text) {
    const hashTags  = extractHashTags(lines)
    const content = extractContent(lines)
    
+  return {
+     title, 
+     labels: labels.join(','), 
+     hashTags: hashTags.join(','),
+     content: content.join('\n')
+   }
+}
+
+function extractOutput(result) {
+   const {title, labels, hashTags, content} = result
+
+   const showdown = require('showdown')
+
+   const converter = new showdown.Converter({
+      simpleLineBreaks: true,
+      omitExtraWLInCodeBlocks: true,
+      ghCodeBlocks: true,
+    })
+  
+    const html = converter.makeHtml(content)
+
    const output = 
-`---
+   `---
 title: ${title}
-label: [${labels.join(',')}]
-hashTag: [${hashTags.join(',')}]
+label: [${labels}]
+hashTag: [${hashTags}]
 slug: /${title.charAt(0)}/${title}
 ---
-${content.join('\n\n')}
+${html}
 `
-   
-  return output
+   return output
 }
 
 function extractLabels(lines) {
