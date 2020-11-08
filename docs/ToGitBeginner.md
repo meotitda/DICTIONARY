@@ -32,16 +32,41 @@ git config --global user.email "메일주소"
 git clone "복사한 주소(Ctrl+V)"
 ```
 
-3. new.sh 파일을 실행시킨다.
+3. new 파일을 실행시킨다.
 
-예시
+Window (.exe)
 ```
-sh new.sh "추가할 단어명"
+./run.exe [추가하려는 단어]
+```
+
+Mac Os, Linux (Shell)
+```
+sh new.sh [추가하려는 단어]
+```
+
+Node.js
+``` 
+node new.js [추가하려는 단어]
+```
+
+Python
+``` 
+python new.py [추가하려는 단어]
 ```
 
 4. 단어를 수정 및 작성한다.
 
 5. inspect 파일을 실행하여 이상이 없는 지 확인한다.
+
+Node.js
+``` 
+node inspect.js
+```
+
+Python
+``` 
+python inspect.py
+```
 
 6. 다음 명령어를 차례대로 입력한다.
 

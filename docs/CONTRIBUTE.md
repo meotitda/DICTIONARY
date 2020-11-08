@@ -47,12 +47,12 @@ sh new.sh [추가하려는 단어]
 ```
 
 Node.js
-```python 
+``` 
 node new.js [추가하려는 단어]
 ```
 
 Python
-```python 
+``` 
 python new.py [추가하려는 단어]
 ```
 
