@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*- 
 
 import os
-import markdown2
 import copy
 import sys
 from os import listdir
@@ -65,8 +64,6 @@ def make_contents(lines):
     for j in range(len(contents_temp_list)):
         contents_temp_str += contents_temp_list[j]
  
-    contents = markdown2.markdown(contents_temp_str)
-
     return contents
 
 def create_CURSOR(lines):
