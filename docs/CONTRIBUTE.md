@@ -4,6 +4,8 @@
 
 이곳은 **DICTIONARY에 함께하는 방법**을 설명하는 문서입니다.
 
+만약 기타 다른 질문이 있다면 [ISSUE](https://github.com/meotitda/DICTIONARY/issues)에 어떠한 것이라도 남겨주세요.
+
 모든 기여는 해당 Repository에서 이루워지며, **만약 GITHUB을 사용하는데 어려움을 겪으신다면** [링크](https://github.com/meotitda/DICTIONARY/blob/master/docs/ToGitBeginner.md)를 통해 도움을 받을 수 있습니다. 👾👾
 
 기여 방법은 총 네 가지 입니다.
@@ -20,6 +22,14 @@ DICTIONARY는 [DICTIONARY만의 포맷](https://github.com/meotitda/DICTIONARY/b
 
 단어를 추가하려면 포맷에 맞추어서 제출하셔야 합니다.
 
+작성 후에 inspect파일을 실행시켜 단어를 잘 작성했는지 검사할 수 있습니다.
+
+```
+python inspect.py
+혹은
+node inspect.js
+```
+
 ### **🆕 새로운 단어 추가하기**
 
 다음 명령어를 통해 **포맷에 맞는 예제를 생성**합니다.
@@ -31,7 +41,7 @@ Window (.exe)
 ./run.exe [추가하려는 단어]
 ```
 
-Mac Os (Shell)
+Mac Os, Linux (Shell)
 ```
 sh new.sh [추가하려는 단어]
 ```
