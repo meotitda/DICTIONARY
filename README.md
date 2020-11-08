@@ -3,6 +3,12 @@
 
 DICTIONARY는 일반적인 개발 용어 사전입니다. 🎉
 
+DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
+
+1. 개발 문서 및 코드를 더 잘 이해하게 되고
+2. 적절한 함수명을 작성할 수 있게 되며
+3. 개발자들의 대화를 더 잘 이해하게 됩니다.
+
 ## A
 [Agnostic](https://github.com/meotitda/DICTIONARY/blob/master/DIC/A/Agnostic.md)
 ![Common](./2TAT1C/Label_Common.png)

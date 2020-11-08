@@ -21,5 +21,8 @@ jobs:
 
       - name: Generate output
         run: npm run inspect
+
+      - name: check by Python
+         run: python inspect.py
     
   
