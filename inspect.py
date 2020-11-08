@@ -77,7 +77,7 @@ def create_CURSOR(lines):
             CURSOR_COUNT += 1
 
     if CURSOR == 0:
-        raise ContentsSplitError("내용을 나누는 '---'과 같은 구분자는 필수입니다.")
+        raise ContentsSplitError("[%s file Error] 내용을 나누는 '---'과 같은 구분자는 필수입니다." % reserved_words['title'])
 
     return CURSOR
 
@@ -99,7 +99,7 @@ def create_title():
     title = title[1:].strip()
 
     if title == '':
-        raise TitleError('제목이 없습니다.')
+        raise TitleError('[%file Error] 제목이 없습니다.' % reserved_words['title'])
 
     reserved_words['title'] = title
 
@@ -119,13 +119,13 @@ def create_label():
 
     for i in label_original:
         if keywords_str.count(i) > 1:
-            raise LabelReduplicationError('label에 중복이 있습니다.')
+            raise LabelReduplicationError('[%s file Error] label에 중복이 있습니다.' % reserved_words['title'])
             
         elif keywords_str.count(i) == 1:
             label_list.append(i)
     
     if len(label_list) != keywords_str.count('!['):
-        raise LabelTypoError('label에 오타가 있습니다.')
+        raise LabelTypoError('[%s file Error] label에 오타가 있습니다.' % reserved_words['title'])
 
     elif len(label_list) == 0:
         print("[확인] label이 없습니다.")
@@ -162,7 +162,7 @@ def create_hashtag():
         '[Frontend]', 
         '[Backend]', 
         '[Database]', 
-        '[Develops]']
+        '[Devops]']
 
     keywords_temp_list = copy.copy(keywords)
 
@@ -170,7 +170,7 @@ def create_hashtag():
     del keywords_temp_list[-1]
     del keywords_temp_list[1]
     del keywords_temp_list[0]
-    
+
     for i in label_original:
         for j in keywords_temp_list:
             if j.find(i) != -1:
@@ -178,9 +178,9 @@ def create_hashtag():
     
     keywords_temp_str = ''.join(keywords_temp_list)
     HASHTAG_CURSOR = keywords_temp_str.count('<a href')
-    
-    if len(keywords_temp_list) != 0 and HASHTAG_CURSOR == 0:
-        raise HashtagTypoError('hashtag에 오타가 있습니다.')
+
+    if HASHTAG_CURSOR != len(keywords_temp_list):
+       raise HashtagTypoError('[%s file Error] hashtag에 오타가 있습니다.' % reserved_words['title'])
 
     elif HASHTAG_CURSOR == 0:
         print("[확인] hashtag가 없습니다.")
@@ -244,7 +244,8 @@ for alpabet in alpabets:
     dir_path = mypath+"/"+alpabet
     file_names = listdir(mypath+"/"+alpabet)
     for file_name in file_names:
-        print(file_name)
+        print(file_name + ' -> start')
         keywords = ['---', '---']
         inspect_file(dir_path+"/"+file_name)
+        print(file_name + ' -> complete')
         make_output(output_path)
