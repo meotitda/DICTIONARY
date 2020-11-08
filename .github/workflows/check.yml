@@ -23,6 +23,6 @@ jobs:
         run: npm run inspect
 
       - name: check by Python
-         run: python inspect.py
+        run: python inspect.py
     
   
