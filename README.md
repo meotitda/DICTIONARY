@@ -25,7 +25,7 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 [Assertion](https://github.com/meotitda/DICTIONARY/blob/master/DIC/A/Assertion.md)
 ![Backend](./2TAT1C/Label_Backend.png)
 
-[AST](https://github.com/meotitda/DICTIONARY/blob/master/DIC/A/Ast.md)
+[AST](https://github.com/meotitda/DICTIONARY/blob/master/DIC/A/AST.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Backend](./2TAT1C/Label_Backend.png)
 
