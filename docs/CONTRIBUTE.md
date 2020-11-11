@@ -64,7 +64,7 @@ git repository : https://github.com/MoonSupport/dictionary-client
 
 dictionary를 바탕으로 테스트할수있는 서비스를 제공하는 프로젝트 입니다.
 
-현재는 [Meot의 팀](https://github.com/meotitda)의 팀이 되시면 기여하실 수 있습니다. 
+현재는 [Meot의 팀](https://github.com/meotitda)이 되시면 기여하실 수 있습니다. 
 
 
 Meot의 팀원이 되고 싶으시다면 [다음 문서에서 확인](https://github.com/meotitda) 할 수 있습니다.
