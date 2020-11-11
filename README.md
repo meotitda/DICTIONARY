@@ -128,6 +128,9 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 ## G
 
 ## H
+[Headless](https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/H/Headless.md)
+![Common](./2TAT1C/Label_Common.png)
+![Frontend](./2TAT1C/Label_Frontend.png)
 
 [Hydrate](https://github.com/meotitda/DICTIONARY/blob/master/DIC/H/Hydrate.md)
 ![Frontend](./2TAT1C/Label_Frontend.png)
