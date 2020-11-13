@@ -203,6 +203,9 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 [Omit](https://github.com/meotitda/DICTIONARY/blob/master/DIC/O/Omit.md)
 ![Common](./2TAT1C/Label_Common.png)
 
+[OOP](https://github.com/meotitda/DICTIONARY/blob/master/DIC/O/OOP.md)
+![Common](./2TAT1C/Label_Common.png)
+
 [Operator](https://github.com/meotitda/DICTIONARY/blob/master/DIC/O/Operator.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Backend](./2TAT1C/Label_Backend.png)
