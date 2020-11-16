@@ -89,6 +89,8 @@ MAC : Command + Shift + V
 
 그 이후 내용을 작성하실 수 있습니다.
 
+내용 안에 제시하는 단어가 언급되는 경우에는 영어로 작성해 주셔야 이후 유저가 문제를 풀 때 블라인드 처리가 됩니다. 
+
 줄바꿈을 하려는 경우에는 문장과 문장사이에 빈 공백으로 이루어진 라인이 하나 있어야 합니다.
 
 이미지와 링크를 삽입하려는 경우 <a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started">html</a>문법을 이용하실 수 있습니다.
