@@ -129,6 +129,11 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 [Flush](https://github.com/meotitda/DICTIONARY/blob/master/DIC/F/Flush.md)
 ![Backend](./2TAT1C/Label_Backend.png)
 
+[Fuzzy matching](https://github.com/meotitda/DICTIONARY/blob/master/DIC/F/Fuzzy matching.md)
+![Common](./2TAT1C/Label_Common.png)
+![Backend](./2TAT1C/Label_Backend.png)
+![Database](./2TAT1C/Label_Database.png)
+
 ## G
 
 ## H
