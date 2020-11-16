@@ -16,12 +16,21 @@
 
 이곳에서 의견을 주고 받아, 최종적으로 DICTIONARY에 반영됩니다.
 
+### **Quick Start **
+
+DICTIONARY-EDITOR Beta 버전이 출시되었습니다.
+
+양식을 입력 후에 복사해서 바로 Propose 할 수 있습니다.
+
+https://meotitda.github.io/DICTIONARY-EDITOR/
+
+작성 파일은 반드시 *.md(마크다운) 파일로 생성하셔야 합니다.
+
+
 ### **📄 추가방법** 
 
 DICTIONARY는 [DICTIONARY만의 포맷](https://github.com/meotitda/DICTIONARY/blob/master/docs/SyntaxDoc.md)이 있습니다.
-
 단어를 추가하려면 포맷에 맞추어서 제출하셔야 합니다.
-
 작성 후에 inspect파일을 실행시켜 단어를 잘 작성했는지 검사할 수 있습니다.
 
 ```

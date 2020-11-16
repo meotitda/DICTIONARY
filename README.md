@@ -9,6 +9,10 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 2. 적절한 함수명을 작성할 수 있게 되며
 3. 개발자들의 대화를 더 잘 이해하게 됩니다.
 
+## Contribute
+
+단어 추가, 혹은 기여를 하시려면 [다음 링크](https://github.com/meotitda/DICTIONARY/blob/master/docs/CONTRIBUTE.md)를 확인해주세요
+
 ## A
 [Agnostic](https://github.com/meotitda/DICTIONARY/blob/master/DIC/A/Agnostic.md)
 ![Common](./2TAT1C/Label_Common.png)
