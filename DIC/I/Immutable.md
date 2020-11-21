@@ -1,8 +1,8 @@
 # Immutable
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk01HCnuINQ0w0s8n8ErK4LZawYRjEw%3A1604563697054&ei=8bKjX5PsAqXFmAWLuYfQCA&q=React+Immutable&oq=React+Immutable&gs_lcp=CgZwc3ktYWIQAzIICAAQyQMQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBwgAEBQQhwIyAggAMgIIADICCAAyAggAMgIIADoECAAQR1D3gAFY94ABYOmHAWgAcAR4AIABiwGIAYsBkgEDMC4xmAEAoAECoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwjTqLrJ-ersAhWlIqYKHYvcAYoQ4dUDCA0&uact=5">#React</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk03jpFVmuDav9jC2SdKGRXpFVYSSVg%3A1604563694388&ei=7rKjX-OdF7HLmAX41qjoDA&q=javascript+%EC%9B%90%EC%8B%9C+%ED%83%80%EC%9E%85&oq=javascript+%EC%9B%90%EC%8B%9C+%ED%83%80%EC%9E%85&gs_lcp=CgZwc3ktYWIQAzIFCCEQoAEyBQghEKABOgQIABBHOgIIADoFCAAQzQJQqQZYwQ5glw9oAXADeAGAAbMBiAHnC5IBBDAuMTGYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=psy-ab&ved=0ahUKEwjjzJfI-ersAhWxJaYKHXgrCs0Q4dUDCA0&uact=5">#Javascript의 원시 타입은 immutable value</a>

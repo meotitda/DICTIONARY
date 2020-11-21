@@ -1,7 +1,7 @@
 # Resolver(Resolve)
 
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="">#DNS</a>
 <a href="https://www.apollographql.com/docs/apollo-server/data/resolvers/">#Graphql Resolver</a>

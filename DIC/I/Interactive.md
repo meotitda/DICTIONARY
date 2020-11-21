@@ -1,6 +1,6 @@
 # Interactive
 
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="">#워드프로세서나 스프레드시트와 같은 사용자의 명령을 받는 프로그램</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk00tKxd81ieL966mEP-pZ_GMmEKPoQ%3A1604564488592&ei=CLajX5_kI63DmAXjrr7YBA&q=Interactive+Web%EC%9D%B4%EB%9E%80&oq=Interactive+Web%EC%9D%B4%EB%9E%80&gs_lcp=CgZwc3ktYWIQAzIECCMQJzoECAAQRzoHCAAQyQMQQzoFCAAQkQI6BQgAEMsBOgIIADoHCAAQFBCHAlDxF1jEHWC3HmgBcAJ4AIABmAGIAcADkgEDMC4zmAEAoAEBqgEHZ3dzLXdpesgBBMABAQ&sclient=psy-ab&ved=0ahUKEwifiPLC_OrsAhWtIaYKHWOXD0sQ4dUDCA0&uact=5">#Interactive Web</a>

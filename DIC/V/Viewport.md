@@ -1,6 +1,6 @@
 # Viewport
 
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag">#Viewport 사용법</a>
 

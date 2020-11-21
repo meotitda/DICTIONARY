@@ -1,6 +1,6 @@
 # Precision
 
-![Backend](../../2TAT1C/Label_Backend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk01lXkVsja720N8LIng1NsOyNlbjpg%3A1604567432213&ei=iMGjX-DPDMzYhwOx_41I&q=%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D+precision&oq=%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D+pre&gs_lcp=CgZwc3ktYWIQAxgAMgIIADICCAAyAggAMgIIADoECCMQJzoICAAQyQMQkQI6BQgAEJECOggILhDHARCjAjoCCC46BwgAEMkDEEM6BAguEEM6BwgAEBQQhwI6BQgAELEDOggIABCxAxCDAToGCAAQCBAeUJcmWISG-gFgiI_6AWgMcAB4AYABgAKIAe4rkgEGMC4zMC40mAEAoAEBqgEHZ3dzLXdperABAMABAQ&sclient=psy-ab">#머신러닝 성능평가의 척도</a>
 <a href="">#round와 같은 소수점을 다루는 함수에서 몇번째 자리에서 적용시킬지의 정도</a>

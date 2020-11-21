@@ -1,6 +1,6 @@
 # Omit
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="https://www.typescriptlang.org/docs/handbook/utility-types.html#omittk">#타입스크립트 - Omit</a>
 <a href="https://mochajs.org/#synchronous-code">#mocha -SYNCHRONOUS CODE Description</a>

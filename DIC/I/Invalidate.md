@@ -1,7 +1,7 @@
 # Invalidate
 
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://en.wikipedia.org/wiki/Cache_invalidation">#Cache Invalidate</a>
 <a href="">#UI API</a>

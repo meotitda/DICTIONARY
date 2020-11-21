@@ -1,9 +1,9 @@
 # Replica
 
 
-![Backend](../../2TAT1C/Label_Backend.png)
-![Database](../../2TAT1C/Label_Database.png)
-![Devops](../../2TAT1C/Label_Devops.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Database](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Database.png)
+![Devops](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Devops.png)
 
 <a href="https://www.google.com/search?q=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4+Replica&oq=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4+Replica&aqs=chrome..69i57j0.202j0j4&sourceid=chrome&ie=UTF-8">#데이터베이스 Replica</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk01Yzr7GsAcm3--yeM90xP6Bl9oaAw%3A1604572756529&ei=VNajX5PQH8mh-Qbf-oSAAQ&q=%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C+Replica&oq=%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C+Replica&gs_lcp=CgZwc3ktYWIQAzoECAAQR1CygANYm4wDYI-NA2gCcAN4BIABoQKIAaETkgEGMi4xMi4xmAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwiTyqypm-vsAhXJUN4KHV89ARAQ4dUDCA0&uact=5">#파일시스템 백업 Replica</a>

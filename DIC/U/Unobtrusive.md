@@ -1,7 +1,7 @@
 # Unobtrusive
 
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://en.wikipedia.org/wiki/Unobtrusive_JavaScript">#Unobtrusive_JavaScript</a>
 <a href="http://www.passportjs.org/">#passport.js</a>

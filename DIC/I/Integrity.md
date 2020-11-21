@@ -1,6 +1,6 @@
 # Integrity
 
-![Database](../../2TAT1C/Label_Database.png)
+![Database](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Database.png)
 
 <a href="">#데이터 베이스(관계형 데이터베이스)</a>
 <a href="https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/S/Stale.md">#Stale</a>

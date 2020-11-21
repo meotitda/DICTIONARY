@@ -1,6 +1,6 @@
 # Invariant
 
-![Backend](../../2TAT1C/Label_Backend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk003d-pO5eb1jgpaV7hBqnNczTFzxQ%3A1604565042893&ei=MrijX82FNor_wAPnro74Cw&q=binary+search+tree+Invariant&oq=binary+search+tree+Invariant&gs_lcp=CgZwc3ktYWIQAzICCAAyBggAEAUQHjoECAAQRzoKCAAQkQIQRhD5AToGCAAQBxAeOgUIABDLAVCTP1jyQ2C4RWgAcAN4AIABqwGIAZEEkgEDMC40mAEAoAEBoAECqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwjN5pnL_ursAhWKP3AKHWeXA78Q4dUDCA0&uact=5">#이진 탐색트리</a>
 

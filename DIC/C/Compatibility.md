@@ -1,7 +1,7 @@
 # Compatibility
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://caniuse.com/">#CSS 호환성 검사</a>
 <a href="http://html5test.com/compare/browser/chrome-37/firefox-32/ie-11/ie-8.html">#HTML 호환성 검사</a>

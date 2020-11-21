@@ -1,8 +1,8 @@
 
 # Archive
 
-![Common](../../2TAT1C/Label_Common.png)
-![Devops](../../2TAT1C/Label_Devops.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Devops](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Devops.png)
 
 <a href="https://ko.wikipedia.org/wiki/%EC%95%84%EC%B9%B4%EC%9D%B4%EB%B8%8C">#아카이브</a>
 

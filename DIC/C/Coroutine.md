@@ -1,7 +1,7 @@
 
 # Coroutine
 
-![Backend](../../2TAT1C/Label_Backend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk03zog5lS3DHG1ukJ-Oe8vo_x_CCrw%3A1604558151428&ei=R52jX_HlGY62mAWMkqWABA&q=coroutines+Generator%EB%9E%80&oq=coroutines+Generator%EB%9E%80&gs_lcp=CgZwc3ktYWIQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQR1DLGViYG2C5HGgAcAJ4AIABmgGIAa4CkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwixpYz15OrsAhUOG6YKHQxJCUAQ4dUDCA0&uact=5">#C#, Javascript, Python의 Generator</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk00vOZcf7yh2ZaOiTap_bDrwMrJDDQ%3A1604558155857&ei=S52jX8qBNPyKr7wP2bmv-A0&q=Kotlin%EC%9D%98+Coroutine&oq=Kotlin%EC%9D%98+Coroutine&gs_lcp=CgZwc3ktYWIQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQR1D9b1j9b2DbcGgAcAV4AIABAIgBAJIBAJgBAKABAqABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab&ved=0ahUKEwiK05r35OrsAhV8xYsBHdncC98Q4dUDCA0&uact=5">#Kotlin의 Coroutine</a>

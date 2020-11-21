@@ -1,7 +1,7 @@
 # Opinionated
 
-![Common](../../2TAT1C/Label_Common.png)
-![Backend](../../2TAT1C/Label_Backend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction">#Python Django (Opinionated)</a>
 <a href="https://expressjs.com/">#Nodejs Express (UnOpinionated)</a>

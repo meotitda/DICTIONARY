@@ -1,6 +1,6 @@
 # Infer(Inference)
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="">#Type 언어</a>
 

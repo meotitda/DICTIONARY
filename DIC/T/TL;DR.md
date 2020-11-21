@@ -1,6 +1,6 @@
 # TL;DR
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="https://www.howtogeek.com/435266/what-does-tldr-mean-and-how-do-you-use-it/#:~:text=TLDR%20(or%20TL%3BDR)%20is%20a%20common%20internet%20acronym,and%20TLDR%20is%20no%20exception">#Too Long Don't Read</a>
 <a href="https://github.com/nodejs/node/search?q=TL%3BDR&unscoped_q=TL%3BDR">#요약이라는 뜻으로 자주 사용</a>

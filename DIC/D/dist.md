@@ -1,7 +1,7 @@
 
 # dist
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="">#디렉토리 구조</a>
 

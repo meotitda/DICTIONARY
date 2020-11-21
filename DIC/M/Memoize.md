@@ -1,7 +1,7 @@
 # Memoize
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://whatthefuck.is/memoization">#HTML등과 같은소스 코드 생성 (React, Vue등)</a>
 <a href="검색 기능">#검색 기능</a>

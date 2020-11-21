@@ -1,10 +1,10 @@
 # Chunk
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
-![Database](../../2TAT1C/Label_Database.png)
-![Devops](../../2TAT1C/Label_Devops.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Database](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Database.png)
+![Devops](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Devops.png)
 
 <a href="">#힙 메모리 관리</a>
 <a href="https://www.google.com/search?q=HTTP+%EB%A9%94%EC%8B%9C%EC%A7%80+%EC%A0%84%EC%86%A1+chunk&oq=HTTP+%EB%A9%94%EC%8B%9C%EC%A7%80+%EC%A0%84%EC%86%A1+chunk&aqs=chrome..69i57.2786j0j4&sourceid=chrome&ie=UTF-8">#HTTP 메시지 전송</a>

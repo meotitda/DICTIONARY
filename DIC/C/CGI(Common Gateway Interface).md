@@ -1,8 +1,8 @@
 # CGI(Common Gateway Interface)
 
 
-![Backend](../../2TAT1C/Label_Backend.png)
-![Devops](../../2TAT1C/Label_Devops.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Devops](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Devops.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk02TkY9ttK1turPwzgbe-tnVZz95Cw%3A1604556149603&ei=dZWjX9-vJLGQr7wPppyayAY&q=Python+%EC%9B%B9%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%9D%98+wsgi&oq=Python+%EC%9B%B9%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%9D%98+wsgi&gs_lcp=CgZwc3ktYWIQAzIFCAAQzQIyBQgAEM0CMgUIABDNAjoECAAQR1DcvgNY3L4DYIDAA2gAcAN4AIABmQGIAZkBkgEDMC4xmAEAoAECoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwifvsa63ersAhUxyIsBHSaOBmkQ4dUDCA0&uact=5">#Python 웹프레임워크의 wsgi</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk01OZXG_TOGzkECfdsejH5ZxFUUrRg%3A1604556136712&ei=aJWjX5ONK_CUr7wP4tubiAI&q=java+servlet+%EC%9D%B4%EB%9E%80&oq=java+Servlet+dlfks&gs_lcp=CgZwc3ktYWIQAxgAMggIABDJAxDLAToECAAQRzoHCAAQyQMQQzoFCAAQywE6AggAOgYIABAWEB5Qn0dY0FRg-VxoA3ACeAGAAakDiAG1DZIBCTAuNC4xLjEuMZgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab">#Java JSP의 Servlet</a>

@@ -1,6 +1,6 @@
 # Deprecated
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="">#서드파티</a>
 <a href="">#내장모듈</a>
