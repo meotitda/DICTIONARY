@@ -1,6 +1,6 @@
 # Coherence
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="https://en.wikipedia.org/wiki/Memory_coherence">#메모리</a> 
 <a href="https://ko.wikipedia.org/wiki/%EC%BA%90%EC%8B%9C_%EC%9D%BC%EA%B4%80%EC%84%B1">#캐시</a>

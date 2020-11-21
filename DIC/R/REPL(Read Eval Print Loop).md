@@ -1,7 +1,7 @@
 # REPL(Read Eval Print Loop)
 
-![Common](../../2TAT1C/Label_Common.png)
-![Backend](../../2TAT1C/Label_Backend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="">#Script Programming Lanuage</a>
 <a href="https://repl.it/languages/python3">#Python Web REPL</a>

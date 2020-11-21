@@ -1,7 +1,7 @@
 # Throttle
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://github.com/niksy/throttle-debounce">#github예제</a>
 <a href="">#Debounce</a>

@@ -1,8 +1,8 @@
 # Proxy
 
-![Common](../../2TAT1C/Label_Common.png)
-![Backend](../../2TAT1C/Label_Backend.png)
-![Devops](../../2TAT1C/Label_Devops.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Devops](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Devops.png)
 
 <a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9D%EC%8B%9C_%EC%84%9C%EB%B2%84">#Proxy Server</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk00lBg8YwNyeeDGw41YU0mTSNMF1jg%3A1604572132869&ei=5NOjX4LbNMbr-Qb3uYOIBg&q=Proxy+pattern%EC%9D%B4%EB%9E%80">#Proxy pattern</a>

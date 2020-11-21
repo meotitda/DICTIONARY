@@ -1,6 +1,6 @@
 # TrailingSlash
 
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="">#URL</a>
 <a href="https://djkeh.github.io/articles/Why-do-we-put-slash-at-the-end-of-URL-kor/">#후행 슬래시 왜 사용해야하나!</a>

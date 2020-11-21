@@ -1,6 +1,6 @@
 # Flush
 
-![Backend](../../2TAT1C/Label_Backend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk01wE6yzhTLEg7y64doHNayV8gD58A%3A1604562916298&ei=5K-jX9zaEcfN-QbMs4_wDQ&q=io%EB%9E%80&oq=IOfks&gs_lcp=CgZwc3ktYWIQARgBMgQIIxAnMggIABDJAxDLATIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDVAAWABgtRJoAHAAeACAAY4CiAGOA5IBBTAuMS4xmAEAqgEHZ3dzLXdpesABAQ&sclient=psy-ab">#IO(입출력)</a>
 

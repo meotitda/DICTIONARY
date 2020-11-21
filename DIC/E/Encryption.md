@@ -1,7 +1,7 @@
 # Encryption
 
-![Backend](../../2TAT1C/Label_Backend.png)
-![Devops](../../2TAT1C/Label_Devops.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Devops](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Devops.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk02-NnDvRyGyDne4I7ASjTyMMH65PQ%3A1604562644616&ei=1K6jX5WGJdDZhwPPlpOYCQ&q=decryption%EB%9E%80&oq=decryption%EB%9E%80&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIHCAAQyQMQQzIECAAQQzIECAAQQzIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLAToECAAQR1DBDVjPGWC6GmgAcAN4AIABlQKIAbsFkgEFMC4xLjKYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=psy-ab&ved=0ahUKEwiVwM7T9ersAhXQ7GEKHU_LBJMQ4dUDCA0&uact=5">#decryption</a>
 

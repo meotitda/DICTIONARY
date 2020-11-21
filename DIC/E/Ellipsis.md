@@ -1,7 +1,7 @@
 # Ellipsis
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">#Javascript ES6 Destructuring</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk03n3asQPz_Xqmx_pE7spOOQMuQsRQ%3A1604562308018&ei=hK2jX7BV6pGvvA-5z7qgAg&q=args+ellipsis&oq=args+ellipsis&gs_lcp=CgZwc3ktYWIQAzIGCAAQBxAeMgYIABAHEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB46BAgAEEc6BAgjECc6BwgAEMkDEEM6BAgAEEM6AggAOggIABDJAxCRAjoFCAAQkQI6BAguEEM6AgguOgYIABAKEEM6BAgAEAo6CAgAEMkDEMsBOgUIABDLAToHCAAQChDLAToFCAAQyQM6BggAEBYQHjoICAAQFhAKEB5QpoUBWJKwAWDxsQFoAnAEeACAAaoEiAHUD5IBCTAuNy40LTEuMZgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab&ved=0ahUKEwiwp46z9OrsAhXqyIsBHbmnDiQQ4dUDCA0&uact=5">#프로그래밍 언어에서의 args</a>

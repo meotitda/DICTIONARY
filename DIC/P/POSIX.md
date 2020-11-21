@@ -1,6 +1,6 @@
 # POSIX
 
-![Backend](../../2TAT1C/Label_Backend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 ---
 

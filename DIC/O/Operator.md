@@ -1,7 +1,7 @@
 # Operator
 
-![Common](../../2TAT1C/Label_Common.png)
-![Backend](../../2TAT1C/Label_Backend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://ko.wikipedia.org/wiki/%EC%97%B0%EC%82%B0%EC%9E%90_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">#프로그래밍 연산자</a>
 

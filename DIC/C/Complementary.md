@@ -1,6 +1,6 @@
 # Complementary
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="https://gist.github.com/faridiot/93abc5a6f37c56fa8af4de0b6d2d10fb">#React Complementary Tools</a>
 

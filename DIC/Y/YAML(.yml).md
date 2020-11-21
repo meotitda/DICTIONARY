@@ -1,6 +1,6 @@
 # YAML(.yml)
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="https://eslint.org/docs/user-guide/configuring#configuration-file-formats">#Eslint등 라이브러리 설정 파일 포맷</a>
 

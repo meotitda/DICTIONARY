@@ -1,9 +1,9 @@
 # Populate
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
-![Database](../../2TAT1C/Label_Database.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Database](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Database.png)
 
 <a href="https://github.com/MoonSupport/DICTIONARY/blob/master/H/Hydrate.md">#Hydrate</a>
 

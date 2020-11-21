@@ -1,6 +1,6 @@
 # Preprocessor
 
-![Backend](../../2TAT1C/Label_Backend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://ko.wikipedia.org/wiki/C_%EC%A0%84%EC%B2%98%EB%A6%AC%EA%B8%B0">#C Language Preprocessor</a>
 

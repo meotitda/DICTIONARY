@@ -1,9 +1,9 @@
 # Schema
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
-![Database](../../2TAT1C/Label_Database.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Database](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Database.png)
 
 <a href="https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%8A%A4%ED%82%A4%EB%A7%88">#Database Schema</a>
 <a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web">#URL Schema</a>

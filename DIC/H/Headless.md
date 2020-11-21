@@ -1,7 +1,7 @@
 # Headless
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://github.com/puppeteer/puppeteer">#puppeteer</a>
 <a href="https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md">#Chromium</a>

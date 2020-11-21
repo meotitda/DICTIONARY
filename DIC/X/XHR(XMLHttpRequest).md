@@ -1,8 +1,8 @@
 # XHR(XMLHttpRequest)
 
-![Common](../../2TAT1C/Label_Common.png)
-![Backend](../../2TAT1C/Label_Backend.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://www.google.com/search?q=ajax+xhr&oq=Ajax+xhr&aqs=chrome.0.0i457j0l7.1830j0j4&sourceid=chrome&ie=UTF-8">#Ajax</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk00pXUW_ZWNwQXJVfL8zIir_K0KA7Q%3A1604652211301&ei=swylX-PzEYLbhwP63ZvYDw&q=axios&oq=axios&gs_lcp=CgZwc3ktYWIQAzIHCAAQyQMQQzIFCAAQkQIyBAgAEEMyBQgAEJECMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDOgQIABBHOgQIIxAnUK6NAVjkkgFg25MBaABwBHgAgAGKAYgB9AOSAQMwLjSYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=psy-ab&ved=0ahUKEwijmauow-3sAhWC7WEKHfruBvsQ4dUDCA0&uact=5">#http client request api</a>

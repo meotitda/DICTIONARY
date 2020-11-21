@@ -1,8 +1,8 @@
 # Context
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk00rBEMkT_zcyESsIyO9yhBO1YXaAg%3A1604557809854&ei=8ZujX6vXM4TmwQOblYvAAg&q=%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8+%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8&oq=%EC%9E%90%EB%B0%94%EC%8A%A4&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnMgQIIxAnMgQIIxAnMgUIABCxAzICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQRzoHCAAQyQMQDToECAAQDToHCAAQFBCHAjoICAAQsQMQgwE6BAgAEENQzhFY3LQCYPC6AmgGcAF4AoABjgOIAb4LkgEHMC41LjEuMZgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab">#자바스크립트 실행 Context</a>
 <a href="https://developer.mozilla.org/en-US/docs/Glossary/Browsing_context">#브라우저 Context</a>

@@ -1,7 +1,7 @@
 # Debounce
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://github.com/MoonSupport/DICTIONARY/blob/master/DIC/T/Throttle.md">#Throttle</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk00TU5JzsuvOY63L_MbyKH23R8QAcg%3A1604558984556&ei=iKCjX9LQIdmtoASOorBw&q=react+debounce+%EB%9E%80&oq=react+debounce+%EB%9E%80&gs_lcp=CgZwc3ktYWIQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQR1DGA1jgBGD5BWgAcAN4AIABlwGIAakCkgEDMC4ymAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwjStK6C6OrsAhXZFogKHQ4RDA4Q4dUDCA0&uact=5">#Client App(React, Vue등 ...)</a>

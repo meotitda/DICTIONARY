@@ -1,6 +1,6 @@
 # Serialize
 
-![Backend](../../2TAT1C/Label_Backend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="">#Java Serialize</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk02o_MRZgAZtjUEwfNkN4qWwUVwOOA%3A1604574024052&ei=SNujX8nmAoKJoAT8sKn4Dw&q=orm+serializer&oq=orm+serializer&gs_lcp=CgZwc3ktYWIQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQR1C6Z1i6Z2CSaWgAcAJ4AIABAIgBAJIBAJgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab&ved=0ahUKEwjJquCFoOvsAhWCBIgKHXxYCv8Q4dUDCA0&uact=5">#ORM</a>

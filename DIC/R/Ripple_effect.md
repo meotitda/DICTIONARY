@@ -1,6 +1,6 @@
 # Ripple_effect
 
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://codesandbox.io/s/react-button-ripple-effect-z8rqw?from-embed">#코드 샌드박스에서 작동해보기</a>
 <a href="https://material-ui.com/api/button-base/#props">#UI animation</a>

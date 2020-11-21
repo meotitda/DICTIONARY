@@ -1,6 +1,6 @@
 # Consistent
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="https://medium.com/@jgefroh/why-consistency-is-one-of-the-top-indicators-of-good-code-352ba5d62020">#좋은 코드의 지표중 최고로 뽑히는 Consistent</a>
 

@@ -1,7 +1,7 @@
 
 # Adapter
 
-![Common](../../2TAT1C/Label_Common.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 <a href="https://en.wikipedia.org/wiki/Adapter_pattern">#디자인 패턴</a>
 <a href="https://www.google.com/search?sxsrf=ALeKk02YdJ_ZdyVlfdk2aZw1lGrAK9rcyA%3A1604652230985&ei=xgylX9PZO9SvoATW7IiQCA&q=http+adapter&oq=http+adapter&gs_lcp=CgZwc3ktYWIQAzIFCAAQyQMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQR1CHsAxYh7AMYMOxDGgAcAN4AIABhwGIAYcBkgEDMC4xmAEAoAECoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwjT1Nyxw-3sAhXUF4gKHVY2AoIQ4dUDCA0&uact=5">#http adapter</a>

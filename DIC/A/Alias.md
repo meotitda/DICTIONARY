@@ -1,9 +1,9 @@
 
 # Alias
 
-![Common](../../2TAT1C/Label_Common.png)
-![Backend](../../2TAT1C/Label_Backend.png)
-![Database](../../2TAT1C/Label_Database.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Database](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Database.png)
 
 <a href = "https://en.wikipedia.org/wiki/Alias_(command)">#운영체제 Alias</a> 
 <a href = "https://en.wikipedia.org/wiki/Alias_(SQL)">#일반적인 데이터베이스 AS</a> 

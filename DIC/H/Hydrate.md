@@ -1,8 +1,8 @@
 # Hydrate
 
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
-![Database](../../2TAT1C/Label_Database.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Database](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Database.png)
 
 <a href="https://stackoverflow.com/questions/6991135/what-does-it-mean-to-hydrate-an-object#:~:text=Hydration%20refers%20to%20the%20process,been%20loaded%20into%20the%20object.&text=This%20is%20one%20method%20that,not%20going%20to%20be%20used.">#Java Object</a>
 <a href="https://ko.reactjs.org/docs/react-dom.html#hydrate">#React Dom hydrate</a>

@@ -1,8 +1,8 @@
 # Dispatch
 
-![Common](../../2TAT1C/Label_Common.png)
-![Frontend](../../2TAT1C/Label_Frontend.png)
-![Backend](../../2TAT1C/Label_Backend.png)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://developer.mozilla.org/ko/docs/Web/API/EventTarget/dispatchEvent">#javascript의 dispatchEvent</a>
 <a href="">#Redux dispatch</a>

@@ -1,6 +1,6 @@
 # Orientation
 
-![Frontend](../../2TAT1C/Label_Frontend.png)
+![Frontend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Frontend.png)
 
 <a href="https://www.google.com/search?q=css+Orientation&oq=css+Orientation&aqs=chrome..69i57.6698j0j1&sourceid=chrome&ie=UTF-8">#CSS @media Rule</a>
 <a href="https://github.com/mui-org/material-ui/search?q=orientation&unscoped_q=orientation">#Material UI</a>

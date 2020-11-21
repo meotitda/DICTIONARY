@@ -1,6 +1,6 @@
 # Truncate
 
-![Database](../../2TAT1C/Label_Database.png)
+![Database](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Database.png)
 
 <a href="https://ko.wikipedia.org/wiki/TRUNCATE_(SQL)">#SQL</a>
 <a href="https://pointnet.tistory.com/334">#Delete</a>

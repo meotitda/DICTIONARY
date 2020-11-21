@@ -1,7 +1,7 @@
 # Deamon
 
-![Backend](../../2TAT1C/Label_Backend.png)
-![Devops](../../2TAT1C/Label_Devops.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+![Devops](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Devops.png)
 
 <a href="https://www.google.com/search?q=Cron+Job+%EC%9D%B4%EB%9E%80&oq=Cron+Job+%EC%9D%B4%EB%9E%80&aqs=chrome..69i57j0i457j0l5j69i61.1455j0j1&sourceid=chrome&ie=UTF-8">#Cron Job</a> 
 <a href="https://www.google.com/search?sxsrf=ALeKk03rHsBG4KG_E0ZnS74kTiUGZZ30wQ%3A1604558705345&ei=cZ-jX_jYFPGtmAWvnZrwCQ&q=daemon+%EC%9C%BC%EB%A1%9C+%EC%8B%A4%ED%96%89%EC%8B%9C%ED%82%A4%EA%B8%B0&oq=daemon+%EC%9C%BC%EB%A1%9C+%EC%8B%A4%ED%96%89%EC%8B%9C%ED%82%A4%EA%B8%B0&gs_lcp=CgZwc3ktYWIQAzoECAAQR1D-pgFYnrIBYIq0AWgAcAd4AIABeYgB1AKSAQMwLjOYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=psy-ab&ved=0ahUKEwi41Zz95ursAhXxFqYKHa-OBp4Q4dUDCA0&uact=5">#Server등 프로그램</a>

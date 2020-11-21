@@ -1,6 +1,6 @@
 # Introspection
 
-![Backend](../../2TAT1C/Label_Backend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk02YjeoMl0BcFcm0O-LGAHbrvpdGMA%3A1604564626128&ei=krajX5ilB5OHoASO0ZywCA&q=Java%EC%9D%98+instanceof+Introspection&oq=Java%EC%9D%98+instanceof+Introspection&gs_lcp=CgZwc3ktYWIQAzIFCAAQzQI6BAgAEEdQgh9Ygh9ggSFoAHADeACAAZcBiAGXAZIBAzAuMZgBAKABAqABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab&ved=0ahUKEwiYtryE_ersAhWTA4gKHY4oB4YQ4dUDCA0&uact=5">#Java의 instanceof 연산자</a>
 <a href="https://graphql.org/learn/introspection/">#grahpql Introspection</a>

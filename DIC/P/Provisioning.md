@@ -1,6 +1,6 @@
 # Provisioning
 
-![Devops](../../2TAT1C/Label_Devops.png)
+![Devops](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Devops.png)
 
 <a href="https://www.google.com/search?sxsrf=ALeKk03APz5_UR7jWO_XjFFYBTxOG1HDAQ%3A1604571897828&ei=-dKjX96PMprj-AbB_o9A&q=docker+Provisioning%EC%9D%B4%EB%9E%80&oq=docker+Provisioning%EC%9D%B4%EB%9E%80&gs_lcp=CgZwc3ktYWIQA1CYAVj6C2DjDGgAcAF4AIABAIgBAJIBAJgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwie8PGPmOvsAhWaMd4KHUH_AwgQ4dUDCA0&uact=5">#Docker</a>
 

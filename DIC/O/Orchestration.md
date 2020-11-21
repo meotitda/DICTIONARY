@@ -1,6 +1,6 @@
 # Orchestration
 
-![Devops](../../2TAT1C/Label_Devops.png)
+![Devops](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Devops.png)
 
 <a href="https://aws.amazon.com/ko/ecs/">#AWS ECS</a>
 <a href="https://kubernetes.io/">#Kubernetes</a>
