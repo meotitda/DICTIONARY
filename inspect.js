@@ -21,7 +21,7 @@ const CONTENT_DIVIDER = '---'
 
 const HASH_TAG_REGEX = /<a[\s]+([^>]+)>(?:.(?!\<\/a\>))*#((?:.(?!\<\/a\>))*.)<\/a>/
 const NON_HASH_TAG_REGEX = /<a[\s]+([^>]+)>(\n?)((?!#).*)((?:.(?!\<\/a\>))*.)<\/a>/
-const LABEL_REGEX = /!\[((Common)|(Backend)|(Database)|(Frontend)|(Devops))\]\(..\/..\/2TAT1C\/Label_((Common)|(Backend)|(Database)|(Frontend)|(Devops)).png\)/
+const LABEL_REGEX = /!\[((Common)|(Backend)|(Database)|(Frontend)|(Devops))\]\(https:\/\/raw.githubusercontent.com\/meotitda\/DICTIONARY\/master\/2TAT1C\/Label_((Common)|(Backend)|(Database)|(Frontend)|(Devops)).png\)/
 const NON_EXIST_LABEL_REGEX = /!\[((?!Common)(?!Backend)(?!Database)(?!Frontend)(?!Devops)).*\]\((.*).png\)/
 
 const cursor = {
