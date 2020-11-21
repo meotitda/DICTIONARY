@@ -1,7 +1,7 @@
 
 # AST
 
-![Backend](../../2TAT1C/Label_Backend.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
 <a href="https://ko.wikipedia.org/wiki/%EC%B6%94%EC%83%81_%EA%B5%AC%EB%AC%B8_%ED%8A%B8%EB%A6%AC">#AST</a>
 <a href="">#컴파일러 혹은 파서</a>
