@@ -65,6 +65,11 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 [Coherence](https://github.com/meotitda/DICTIONARY/blob/master/DIC/C/Coherence.md)
 ![Common](./2TAT1C/Label_Common.png)
 
+[Collision](https://github.com/meotitda/DICTIONARY/blob/master/DIC/C/Collision.md)
+![Common](./2TAT1C/Label_Common.png)
+![Backend](./2TAT1C/Label_Backend.png)
+
+
 [Compatibility](https://github.com/meotitda/DICTIONARY/blob/master/DIC/C/Compatibility.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Frontend](./2TAT1C/Label_Frontend.png)
@@ -140,6 +145,10 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 [Headless](https://github.com/meotitda/DICTIONARY/blob/master/DIC/H/Headless.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Frontend](./2TAT1C/Label_Frontend.png)
+
+[Hierarchical](https://github.com/meotitda/DICTIONARY/blob/master/DIC/H/Hierarchical.md)
+![Common](./2TAT1C/Label_Common.png)
+![Backend](./2TAT1C/Label_Backend.png)
 
 [Hydrate](https://github.com/meotitda/DICTIONARY/blob/master/DIC/H/Hydrate.md)
 ![Frontend](./2TAT1C/Label_Frontend.png)
@@ -293,6 +302,10 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 ![Backend](./2TAT1C/Label_Backend.png)
 ![Database](./2TAT1C/Label_Database.png)
 
+[Segregation](https://github.com/meotitda/DICTIONARY/blob/master/DIC/S/Segregation.md)
+![Common](./2TAT1C/Label_Common.png)
+![Backend](./2TAT1C/Label_Backend.png)
+
 [Serialize](https://github.com/meotitda/DICTIONARY/blob/master/DIC/S/Serialize.md)
 ![Backend](./2TAT1C/Label_Backend.png)
 
@@ -305,6 +318,10 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 
 [Subscription](https://github.com/meotitda/DICTIONARY/blob/master/DIC/S/Subscription.md)
 ![Frontend](./2TAT1C/Label_Frontend.png)
+![Backend](./2TAT1C/Label_Backend.png)
+
+[Substitution](https://github.com/meotitda/DICTIONARY/blob/master/DIC/S/Substitution.md)
+![Common](./2TAT1C/Label_Common.png)
 ![Backend](./2TAT1C/Label_Backend.png)
 
 ## T
@@ -324,6 +341,10 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 
 [Truncate](https://github.com/meotitda/DICTIONARY/blob/master/DIC/T/Truncate.md)
 ![Database](./2TAT1C/Label_Database.png)
+
+[Transfer](https://github.com/meotitda/DICTIONARY/blob/master/DIC/T/Transfer.md)
+![Common](./2TAT1C/Label_Common.png)
+![Backend](./2TAT1C/Label_Backend.png)
 
 ## U
 [Unobtrusive](https://github.com/meotitda/DICTIONARY/blob/master/DIC/U/Unobtrusive.md)
