@@ -247,7 +247,7 @@ function resetCursorPosition() {
 
 function nomalizedText(text) {
    const rowLines = text.split('\n')
-   const filteredLines = rowLines.filter((line)=>line!=='')
+   const filteredLines = rowLines.filter((line)=>line.trim()!=='')
    return filteredLines.map((filteredLine)=>filteredLine.trim())
 }
 
