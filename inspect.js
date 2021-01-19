@@ -23,6 +23,7 @@ const HASH_TAG_REGEX = /<a[\s]+([^>]+)>(?:.(?!\<\/a\>))*#((?:.(?!\<\/a\>))*.)<\/
 const NON_HASH_TAG_REGEX = /<a[\s]+([^>]+)>(\n?)((?!#).*)((?:.(?!\<\/a\>))*.)<\/a>/
 const LABEL_REGEX = /!\[((Common)|(Backend)|(Database)|(Frontend)|(Devops))\]\(https:\/\/raw.githubusercontent.com\/meotitda\/DICTIONARY\/master\/2TAT1C\/Label_((Common)|(Backend)|(Database)|(Frontend)|(Devops)).png\)/
 const NON_EXIST_LABEL_REGEX = /!\[((?!Common)(?!Backend)(?!Database)(?!Frontend)(?!Devops)).*\]\((.*).png\)/
+const URL_IN_A_TAG = /(http[s]?).*">/
 
 const cursor = {
    totalReadLine: 0,
@@ -89,11 +90,10 @@ function main() {
          cursor.file = filename
 
          const result = parse(text)
-         
          if(ENV==="production" || ENV==="debug") {
-            const output = extractOutput(result)
+            const output = extractJSON(result)
             fs.writeFile(
-               path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}/${filename}`),
+               path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}/${filename.slice(0,-3)}.json`),
                output,
                function (err) {
                   if (err)
@@ -118,13 +118,13 @@ function parse(text) {
    
   return {
      title, 
-     labels: labels.join(','), 
-     hashTags: hashTags.join(','),
+     labels: labels, 
+     hashTags: hashTags,
      content: content.join('\n')
    }
 }
 
-function extractOutput(result) {
+function extractJSON(result) {
    const {title, labels, hashTags, content} = result
 
    const showdown = require('showdown')
@@ -135,18 +135,16 @@ function extractOutput(result) {
       ghCodeBlocks: true,
     })
   
-    const html = converter.makeHtml(content)
+   const html = converter.makeHtml(content)
+   const output = {
+      title,
+      label: labels,
+      hashTag: hashTags,
+      content: html,   
+      slug: `/${title.charAt(0)}/${title}`
+   }
 
-   const output = 
-   `---
-title: ${title}
-label: [${labels}]
-hashTag: [${hashTags}]
-slug: /${title.charAt(0)}/${title}
----
-${html}
-`
-   return output
+   return JSON.stringify(output)
 }
 
 function extractLabels(lines) {
@@ -188,7 +186,11 @@ function extractHashTags(lines) {
             }
          }
          //only hashTag
-         hashTags.push(match[2])
+         hashTags.push({
+            name: match[2],
+            url: match[1].slice(6,-1)
+         })
+
          cursor.position = index
          return
       }
