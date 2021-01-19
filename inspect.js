@@ -10,12 +10,7 @@ const PROCESS_STATE = {
 const ENV = argv[2]
 const ALL_DIC_DIRECTORY = fs.readdirSync(path.join(__dirname, './' ,'DIC/'))
 
-let __OUTPUT_DIRECTORY = './output'
-
-if(ENV == 'production') {
-   __OUTPUT_DIRECTORY = 'dictionary-client/src/markdown-pages'
-}
-
+const __OUTPUT_DIRECTORY = './output'
 
 const CONTENT_DIVIDER = '---'
 
@@ -23,7 +18,6 @@ const HASH_TAG_REGEX = /<a[\s]+([^>]+)>(?:.(?!\<\/a\>))*#((?:.(?!\<\/a\>))*.)<\/
 const NON_HASH_TAG_REGEX = /<a[\s]+([^>]+)>(\n?)((?!#).*)((?:.(?!\<\/a\>))*.)<\/a>/
 const LABEL_REGEX = /!\[((Common)|(Backend)|(Database)|(Frontend)|(Devops))\]\(https:\/\/raw.githubusercontent.com\/meotitda\/DICTIONARY\/master\/2TAT1C\/Label_((Common)|(Backend)|(Database)|(Frontend)|(Devops)).png\)/
 const NON_EXIST_LABEL_REGEX = /!\[((?!Common)(?!Backend)(?!Database)(?!Frontend)(?!Devops)).*\]\((.*).png\)/
-const URL_IN_A_TAG = /(http[s]?).*">/
 
 const cursor = {
    totalReadLine: 0,
@@ -78,19 +72,20 @@ const WARNING = {
 
 function main() {
    cLog('작업 시작',PROCESS_STATE.INFO)
-   ALL_DIC_DIRECTORY.map((alpabet) => {
+   const results = ALL_DIC_DIRECTORY.map((alpabet) => {
       const filenames = fs.readdirSync(path.join(__dirname, './', `DIC/${alpabet}`))
 
-      if (!fs.existsSync(path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}`) )&& ENV) {
+      if (!fs.existsSync(path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}`) )&& ENV==="debug") {
          fs.mkdirSync(path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}`))
       }
       
-      filenames.map((filename) => {
+      const parseResults = filenames.map((filename) => {
          const text = fs.readFileSync(path.join(__dirname, './', `DIC/${alpabet}/${filename}`)).toString()
          cursor.file = filename
 
          const result = parse(text)
-         if(ENV==="production" || ENV==="debug") {
+
+         if(ENV==="debug") {
             const output = extractJSON(result)
             fs.writeFile(
                path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}/${filename.slice(0,-3)}.json`),
@@ -102,11 +97,14 @@ function main() {
                }
             )
          }
+         return result
       })
+      return parseResults
    })
    if(!cursor.warning) {
       cLog('작업 완료',PROCESS_STATE.SUCCESS)
    }
+   return results.flat()
 }
 
 function parse(text) {
@@ -292,4 +290,5 @@ function init() {
  }
 
 init()
-main()
+const results = main()
+console.log('results', results)
