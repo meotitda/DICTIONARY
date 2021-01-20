@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/meotitda/DICTIONARY#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "showdown": "^1.9.1"
   }
 }

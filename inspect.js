@@ -1,6 +1,7 @@
 const  fs = require('fs') 
 const path = require('path')
 const { argv } = require('process')
+
 const PROCESS_STATE = {
    SUCCESS : 'success',
    ERROR : 'ERROR',
@@ -8,14 +9,10 @@ const PROCESS_STATE = {
    WARNING : 'warning',
 }
 const ENV = argv[2]
+const D_API = process.env.D_API
 const ALL_DIC_DIRECTORY = fs.readdirSync(path.join(__dirname, './' ,'DIC/'))
 
-let __OUTPUT_DIRECTORY = './output'
-
-if(ENV == 'production') {
-   __OUTPUT_DIRECTORY = 'dictionary-client/src/markdown-pages'
-}
-
+const __OUTPUT_DIRECTORY = './output'
 
 const CONTENT_DIVIDER = '---'
 
@@ -77,23 +74,23 @@ const WARNING = {
 
 function main() {
    cLog('작업 시작',PROCESS_STATE.INFO)
-   ALL_DIC_DIRECTORY.map((alpabet) => {
+   const results = ALL_DIC_DIRECTORY.map((alpabet) => {
       const filenames = fs.readdirSync(path.join(__dirname, './', `DIC/${alpabet}`))
 
-      if (!fs.existsSync(path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}`) )&& ENV) {
+      if (!fs.existsSync(path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}`) )&& ENV==="debug") {
          fs.mkdirSync(path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}`))
       }
       
-      filenames.map((filename) => {
+      const parseResults = filenames.map((filename) => {
          const text = fs.readFileSync(path.join(__dirname, './', `DIC/${alpabet}/${filename}`)).toString()
          cursor.file = filename
 
          const result = parse(text)
-         
-         if(ENV==="production" || ENV==="debug") {
-            const output = extractOutput(result)
+
+         if(ENV==="debug") {
+            const output = extractJSON(result)
             fs.writeFile(
-               path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}/${filename}`),
+               path.join(__dirname, './', `${__OUTPUT_DIRECTORY}/${alpabet}/${filename.slice(0,-3)}.json`),
                output,
                function (err) {
                   if (err)
@@ -102,11 +99,14 @@ function main() {
                }
             )
          }
+         return result
       })
+      return parseResults
    })
    if(!cursor.warning) {
       cLog('작업 완료',PROCESS_STATE.SUCCESS)
    }
+   return results.flat()
 }
 
 function parse(text) {
@@ -118,13 +118,13 @@ function parse(text) {
    
   return {
      title, 
-     labels: labels.join(','), 
-     hashTags: hashTags.join(','),
+     labels: labels, 
+     hashTags: hashTags,
      content: content.join('\n')
    }
 }
 
-function extractOutput(result) {
+function extractJSON(result) {
    const {title, labels, hashTags, content} = result
 
    const showdown = require('showdown')
@@ -135,18 +135,16 @@ function extractOutput(result) {
       ghCodeBlocks: true,
     })
   
-    const html = converter.makeHtml(content)
+   const html = converter.makeHtml(content)
+   const output = {
+      title,
+      label: labels,
+      hashTag: hashTags,
+      content: html,   
+      slug: `/${title.charAt(0)}/${title}`
+   }
 
-   const output = 
-   `---
-title: ${title}
-label: [${labels}]
-hashTag: [${hashTags}]
-slug: /${title.charAt(0)}/${title}
----
-${html}
-`
-   return output
+   return JSON.stringify(output)
 }
 
 function extractLabels(lines) {
@@ -188,7 +186,11 @@ function extractHashTags(lines) {
             }
          }
          //only hashTag
-         hashTags.push(match[2])
+         hashTags.push({
+            name: match[2],
+            url: match[1].slice(6,-1)
+         })
+
          cursor.position = index
          return
       }
@@ -290,4 +292,14 @@ function init() {
  }
 
 init()
-main()
+const results = main()
+
+if(ENV==='production') {
+   const axios = require('axios')
+   axios({
+      method: 'post',
+      url: D_API,
+      data: results
+    });
+}
+
