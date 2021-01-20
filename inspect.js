@@ -86,6 +86,7 @@ function main() {
          cursor.file = filename
 
          const result = parse(text)
+         const output = extractJSON(result)
 
          if(ENV==="debug") {
             const output = extractJSON(result)
@@ -99,7 +100,7 @@ function main() {
                }
             )
          }
-         return result
+         return output
       })
       return parseResults
    })
@@ -120,12 +121,13 @@ function parse(text) {
      title, 
      labels: labels, 
      hashTags: hashTags,
-     content: content.join('\n')
+     content: content.join('\n'),
+     slug: `/${title.charAt(0)}/${title}`
    }
 }
 
 function extractJSON(result) {
-   const {title, labels, hashTags, content} = result
+   const {title, labels, hashTags, content, slug} = result
 
    const showdown = require('showdown')
 
@@ -140,11 +142,11 @@ function extractJSON(result) {
       title,
       label: labels,
       hashTag: hashTags,
-      content: html,   
-      slug: `/${title.charAt(0)}/${title}`
+      content: html,
+      slug,   
    }
 
-   return JSON.stringify(output)
+   return output
 }
 
 function extractLabels(lines) {
@@ -300,6 +302,6 @@ if(ENV==='production') {
       method: 'post',
       url: D_API,
       data: results
-    });
+    })
 }
 
