@@ -1,6 +1,7 @@
 const  fs = require('fs') 
 const path = require('path')
 const { argv } = require('process')
+
 const PROCESS_STATE = {
    SUCCESS : 'success',
    ERROR : 'ERROR',
@@ -8,6 +9,7 @@ const PROCESS_STATE = {
    WARNING : 'warning',
 }
 const ENV = argv[2]
+const D_API = process.env.D_API
 const ALL_DIC_DIRECTORY = fs.readdirSync(path.join(__dirname, './' ,'DIC/'))
 
 const __OUTPUT_DIRECTORY = './output'
@@ -291,4 +293,13 @@ function init() {
 
 init()
 const results = main()
-console.log('results', results)
+
+if(ENV==='production') {
+   const axios = require('axios')
+   axios({
+      method: 'post',
+      url: D_API,
+      data: results
+    });
+}
+
