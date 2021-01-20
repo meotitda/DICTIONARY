@@ -22,11 +22,7 @@ jobs:
         env:
           CI: true
 
-      - name: Clone D-Client
-        run: git clone https://github.com/MoonSupport/dictionary-client.git
-          
-
-      - name: Generate output
+      - name: migrate
         run: npm run deploy
         env:
           D_API: ${{ secrets.D_API }}
