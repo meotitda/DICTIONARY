@@ -1,5 +1,5 @@
 
-name: Deploy D-Client
+name: migrate
 
 on:
   push:
