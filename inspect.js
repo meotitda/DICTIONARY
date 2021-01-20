@@ -302,6 +302,8 @@ if(ENV==='production') {
       method: 'post',
       url: D_API,
       data: results
-    })
+    }).catch(function (error) {
+      throw new Error(error)
+    });
 }
 
