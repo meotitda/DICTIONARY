@@ -9,7 +9,17 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 2. 적절한 함수명을 작성할 수 있게 되며
 3. 개발자들의 대화를 더 잘 이해하게 됩니다.
 
+## Extension
+
+[Chrome Extension](https://chrome.google.com/webstore/detail/dictionary-%EA%B0%9C%EB%B0%9C%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/lkiddmdljaphabbegmnbocakpolanjdh?hl=ko)을 지원합니다.
+
+`command + 드래그`를 통해 쉽게 검색할 단어를 복사할 수 있습니다.
+
+`command + shift + s` 로 팝업을 열 수 있습니다.
+
 ## Contribute
+
+[Dictionary Editor](https://github.com/meotitda/DICTIONARY-EDITOR)를 통해서 쉽게 기여할 수 있습니다.
 
 단어 추가, 혹은 기여를 하시려면 [다음 링크](https://github.com/meotitda/DICTIONARY/blob/master/docs/CONTRIBUTE.md)를 확인해주세요
 
