@@ -56,6 +56,10 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 ![Backend](./2TAT1C/Label_Backend.png)
 ![Devops](./2TAT1C/Label_Devops.png)
 
+[Buffer](https://github.com/meotitda/DICTIONARY/blob/master/DIC/B/Buffer.md)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+
 ## C
 [Cache](https://github.com/meotitda/DICTIONARY/blob/master/DIC/C/Cache.md)
 ![Common](./2TAT1C/Label_Common.png)
@@ -168,6 +172,9 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 ![Database](./2TAT1C/Label_Database.png)
 
 ## I
+[Idempotent](https://github.com/meotitda/DICTIONARY/blob/master/DIC/I/Idempotent.md)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+
 [Immutable](https://github.com/meotitda/DICTIONARY/blob/master/DIC/I/Immutable.md)
 ![Common](./2TAT1C/Label_Common.png)
 ![Frontend](./2TAT1C/Label_Frontend.png)
@@ -208,6 +215,9 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 ## L
 [Landing Page](https://github.com/meotitda/DICTIONARY/blob/master/DIC/L/Landingpage.md)
 ![Frontend](./2TAT1C/Label_Frontend.png)
+
+[Lazy](https://github.com/meotitda/DICTIONARY/blob/master/DIC/L/Lazy.md)
+![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
 [Literal](https://github.com/meotitda/DICTIONARY/blob/master/DIC/L/Literal.md)
 ![Common](./2TAT1C/Label_Common.png)
