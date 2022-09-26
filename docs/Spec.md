@@ -1,4 +1,9 @@
 # DICTIONARY SPEC DEFINITION
+해당 페이지에서는 DICTIONARY에서 필요한 스펙을 정의합니다.
+
+[1.Syntax](#Syntax)
+
+[2.File Location](#File-Location)
 
 
 ## Syntax
@@ -99,7 +104,7 @@
 
 문서 내에 Body는 필수 입니다. Body가 존재하지 않는다면 `Non Body Error` 가 발생합니다.
 
-## 단어 파일 위치
+## File Location
 
 각각의 단어들은 DIC 디렉토리의 내 단어의 첫번째 알파벳 디렉토리에 위치합니다.
 
