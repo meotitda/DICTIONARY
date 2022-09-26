@@ -21,9 +21,9 @@ DICTIONARY의 최종목적은 풍부한 어휘력을 바탕으로
 
 ## Contribute
 
-[Dictionary Editor](https://github.com/meotitda/DICTIONARY-EDITOR)를 통해서 쉽게 기여할 수 있습니다.
+기여를 하시려면 [다음 링크](https://github.com/meotitda/DICTIONARY/blob/master/CONTRIBUTING.md)를 확인해주세요.
 
-단어 추가, 혹은 기여를 하시려면 [다음 링크](https://github.com/meotitda/DICTIONARY/blob/master/docs/CONTRIBUTE.md)를 확인해주세요
+[Dictionary Editor](https://meotitda.github.io/DICTIONARY-EDITOR/)를 통해서 보다 쉽게 단어를 추가 할 수 있습니다.
 
 ## A
 [Agnostic](https://github.com/meotitda/DICTIONARY/blob/master/DIC/A/Agnostic.md)
