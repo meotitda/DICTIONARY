@@ -12,7 +12,13 @@
 
 추가 했으면 하는 단어, 혹은 수정되어야 하는 단어를 DICTIONARY의 양식에 맞게 작성하여 [PR(PULL REQUEST)](https://github.com/meotitda/DICTIONARY/pulls)를 생성해주세요.
 
-### 🚀 **Quick Start**
+### **📄 추가방법** 
+
+DICTIONARY는 [DICTIONARY SPEC](https://github.com/meotitda/DICTIONARY/blob/master/docs/Spec.md)이 존재 합니다.
+단어를 추가하려면 해당 SPEC에 맞추어서 제출하셔야 합니다.
+작성 후에 `inspect.js` 혹은 `inspect.py`를 실행 시키거나 에디터를 사용한다면 스펙에 대한 문법 검사를 실행할 수 있습니다.
+
+### 🚀 **에디터로 새로운 단어 추가하기**
 
 DICTIONARY-EDITOR Beta 버전이 출시되었습니다.
 
@@ -21,18 +27,6 @@ DICTIONARY-EDITOR Beta 버전이 출시되었습니다.
 https://meotitda.github.io/DICTIONARY-EDITOR/
 
 작성 파일은 반드시 *.md(마크다운) 파일로 생성하셔야 합니다.
-
-### **📄 추가방법** 
-
-DICTIONARY는 [DICTIONARY만의 포맷](https://github.com/meotitda/DICTIONARY/blob/master/docs/SyntaxDoc.md)이 있습니다.
-단어를 추가하려면 포맷에 맞추어서 제출하셔야 합니다.
-작성 후에 inspect파일을 실행시켜 단어를 잘 작성했는지 검사할 수 있습니다.
-
-```
-python inspect.py
-혹은
-node inspect.js
-```
 
 ### **🆕 로컬에서 새로운 단어 추가하기**
 
@@ -64,7 +58,7 @@ python new.py [추가하려는 단어]
 
 ### **📄 문서 수정** 
 
-[해당 페이지](https://github.com/meotitda/DICTIONARY/tree/master/docs)의 기여 방법등 페이지를 수정 하실 수 있습니다.
+[해당 페이지](https://github.com/meotitda/DICTIONARY/tree/master/docs)내의 문서에 대한 수정 제안을 할 수 있습니다.
 
 ## 3. 🤩 GOOD ISSUE
 
