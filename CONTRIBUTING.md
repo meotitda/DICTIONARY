@@ -16,7 +16,7 @@
 
 DICTIONARY-EDITOR Beta 버전이 출시되었습니다.
 
-양식을 입력 후에 복사해서 바로 Propose 할 수 있습니다.
+양식을 입력 후에 복사해서 바로 제안 할 수 있습니다.
 
 https://meotitda.github.io/DICTIONARY-EDITOR/
 
