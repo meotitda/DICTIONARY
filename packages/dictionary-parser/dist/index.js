@@ -8,31 +8,31 @@
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
 /******/ 		__nccwpck_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			if(typeof Symbol !== "undefined" && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 /******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 			Object.defineProperty(exports, "__esModule", { value: true });
 /******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/compat */
 /******/ 	
-/******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
+/******/ 	if (typeof __nccwpck_require__ !== "undefined") __nccwpck_require__.ab = __dirname + "/";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
 __nccwpck_require__.r(__webpack_exports__);
 
-;// CONCATENATED MODULE: ./parser.ts
+// CONCATENATED MODULE: ./parser.ts
 class Parser {
     parse() {
-        return 'parser';
+        return "parser";
     }
 }
 /* harmony default export */ const parser = (Parser);
 
-;// CONCATENATED MODULE: ./index.ts
+// CONCATENATED MODULE: ./index.ts
 
 new parser().parse();
 

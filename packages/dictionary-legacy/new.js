@@ -1,16 +1,16 @@
-const fs = require('fs') 
-const path = require('path')
-const { argv } = require('process')
+const fs = require("fs"); 
+const path = require("path");
+const { argv } = require("process");
 
 if(!argv[2]) {
    throw new Error(`
       파일명을 입력해주세요.
       ex)
       node new.js (파일명)
-   `)
+   `);
 }
 
-const fileName = capitalize(argv[2])
+const fileName = capitalize(argv[2]);
 
 const example = `
 # ${fileName}
@@ -44,20 +44,20 @@ const example = `
 
 ** 이미지 추가 시, 프로젝트 내에 추가해야 한다면 2TAT1C 파일에 넣어주세요.
 
-` 
+`; 
 
-const prefix = fileName.charAt(0).toUpperCase()
+const prefix = fileName.charAt(0).toUpperCase();
 
-const dir = `./DIC/${prefix}/${fileName}.md`
+const dir = `./DIC/${prefix}/${fileName}.md`;
 
 if (fs.existsSync(dir)) {
-   throw new Error('이미 존재하는 파일입니다.')
+   throw new Error("이미 존재하는 파일입니다.");
 }
 
-fs.writeFileSync(dir, example)
+fs.writeFileSync(dir, example);
 
 function capitalize(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-console.log(`${dir}가 생성되었습니다!`)
+console.log(`${dir}가 생성되었습니다!`);

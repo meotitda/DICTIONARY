@@ -1,3 +1,3 @@
-import Parser from './parser'
+import Parser from "./parser";
 
-new Parser().parse()
+new Parser().parse();

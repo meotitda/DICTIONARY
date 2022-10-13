@@ -74,7 +74,7 @@ describe("Parser", () => {
   });
 
   describe("searchLabels", () => {
-      test('![카테고리](카테고리_이미지) 로 모든 라벨을 tokenize 한다.', ()=> {
+      test("![카테고리](카테고리_이미지) 로 모든 라벨을 tokenize 한다.", ()=> {
          const parser = new Parser();
 
    
@@ -89,7 +89,7 @@ describe("Parser", () => {
                dd
 
             `);
-   expect(labels.map((label)=> label.content)).toStrictEqual(['Backend', 'Common'])
-      })
-   })
+   expect(labels.map((label)=> label.content)).toStrictEqual(["Backend", "Common"]);
+      });
+   });
 });

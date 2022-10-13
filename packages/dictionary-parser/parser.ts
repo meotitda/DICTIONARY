@@ -70,7 +70,7 @@ class Parser {
   constructor() {
     this.labelTrie = new Trie();
 
-    Object.values(LabelType).map((label)=> this.labelTrie.insert(label))
+    Object.values(LabelType).map((label)=> this.labelTrie.insert(label));
   }
 
   public parse() {
@@ -102,7 +102,7 @@ class Parser {
         let label = "";
         i += 2;
         while (this.labelTrie.iterateSearch(text[i])){
-          label += text[i++]
+          label += text[i++];
         }
         const labelToken = new LabelToken(label);
         this.tokens.labels.push(labelToken);

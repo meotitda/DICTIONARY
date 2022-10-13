@@ -1,7 +1,6 @@
 {
-   "compilerOptions": {
-      "target": "ES2022",
-      "esModuleInterop": true,
-      "moduleResolution": "NodeNext"
-   }
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "NodeNext"
+  }
 }
