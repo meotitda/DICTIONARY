@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "dictionary from eng to kor for develop",
   "main": "index.js",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "scripts": {
-    "deploy": "node inspect.js production",
-    "inspect": "node inspect.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +21,10 @@
     "url": "https://github.com/meotitda/DICTIONARY/issues"
   },
   "homepage": "https://github.com/meotitda/DICTIONARY#readme",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "showdown": "^1.9.1"
+  "packageManager": "yarn@3.2.3",
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "prettier": "^2.7.1",
+    "typescript": "4.8.2"
   }
 }
