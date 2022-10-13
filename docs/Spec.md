@@ -8,7 +8,7 @@
 
 ## Syntax
 
-### Word [Required]
+### Title [Required]
 
 **Description**
 
@@ -17,7 +17,7 @@
 **resolution**
 
 ```markdown
-# Word
+# Title
 ```
 
 1. `#`으로 시작합니다.
@@ -27,7 +27,7 @@
 
 **Restrictions**
 
-하나의 문서에는 하나의 `WORD` 만 가질 수 있습니다. 만약 두 개 이상이라면 `Duplicate Error` 가 발생합니다.
+하나의 문서에는 하나의 `Title` 만 가질 수 있습니다. 만약 두 개 이상이라면 `Duplicate Error` 가 발생합니다.
 
 ### Label [Optional]
 
