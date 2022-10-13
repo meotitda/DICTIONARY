@@ -9,6 +9,7 @@
     ]
   },
   "scripts": {
+    "root:eslint": "eslint '**/*.{js,ts}' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,8 +24,10 @@
   "homepage": "https://github.com/meotitda/DICTIONARY#readme",
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
-    "eslint": "^8.24.0",
-    "prettier": "^2.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "8.24.0",
+    "prettier": "2.7.1",
     "typescript": "4.8.2"
   }
 }
