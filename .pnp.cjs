@@ -21,6 +21,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
+        "name": "dictionary-api",\
+        "reference": "workspace:packages/dictionary-api"\
+      },\
+      {\
         "name": "dictionary-parser",\
         "reference": "workspace:packages/dictionary-parser"\
       },\
@@ -33,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["dictionary", ["workspace:."]],\
+      ["dictionary-api", ["workspace:packages/dictionary-api"]],\
       ["dictionary-parser", ["workspace:packages/dictionary-parser"]],\
       ["dictionary-utils", ["workspace:packages/dictionary-utils"]]\
     ],\
@@ -2443,6 +2448,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:e6e834273bfe766058cb32e755082cc96bc96c650ca37c2fa5d98f5d3d1fdca79d68e943d12977f06419d537ff8dcc4d0dafd72da1e2ee8c10ee9715c83db707#npm:5.40.0"],\
             ["eslint", "npm:8.24.0"],\
             ["prettier", "npm:2.7.1"],\
+            ["typescript", "patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["dictionary-api", [\
+        ["workspace:packages/dictionary-api", {\
+          "packageLocation": "./packages/dictionary-api/",\
+          "packageDependencies": [\
+            ["dictionary-api", "workspace:packages/dictionary-api"],\
+            ["@types/jest", "npm:29.0.3"],\
+            ["@types/node", "npm:18.7.23"],\
+            ["@vercel/ncc", "npm:0.34.0"],\
+            ["dictionary-utils", "workspace:packages/dictionary-utils"],\
+            ["jest", "virtual:da970b6347dc9329e42e0e33eae752dbc7054c1c09200e5ce13d02a2a74ed59d09e02308dd8aca8b2238bbe7e6e0713ccead20375123f983d47c0812d5ac6dde#npm:29.0.3"],\
+            ["ts-jest", "virtual:da970b6347dc9329e42e0e33eae752dbc7054c1c09200e5ce13d02a2a74ed59d09e02308dd8aca8b2238bbe7e6e0713ccead20375123f983d47c0812d5ac6dde#npm:29.0.2"],\
             ["typescript", "patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"]\
           ],\
           "linkType": "SOFT"\
