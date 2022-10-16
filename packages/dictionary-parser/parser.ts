@@ -13,7 +13,7 @@ const Keyword = {
   CloseSqureBracket: "]",
   Eqaul: "=",
   Slash: "/",
-  DoubleQuote: `"`,
+  DoubleQuote: "\"",
 } as const;
 
 enum TokenType {
