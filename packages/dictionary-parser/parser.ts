@@ -1,17 +1,25 @@
 import { Trie } from "dictionary-utils";
+import { UndefinedLabelError } from "./errors";
 
 const Keyword = {
   Sharp: "#",
   Space: " ",
   LineBreak: "\n",
   Mark: "!",
+  OpenAngleBrackets: "<",
+  ClosedAngleBrackets: ">",
+  A: "a",
   OpenSqureBracket: "[",
   CloseSqureBracket: "]",
+  Eqaul: "=",
+  Slash: "/",
+  DoubleQuote: `"`,
 } as const;
 
 enum TokenType {
   Word,
-  Label
+  Label,
+  Tag,
 }
 
 const LabelType = {
@@ -22,7 +30,13 @@ const LabelType = {
   Devops: "Devops",
 };
 
+const TagAttributeState = {
+  Keyword: "Keyword",
+  Value: "Value",
+};
+
 class Token {
+  protected _type: TokenType;
   private _content: string;
   constructor(content: string) {
     this._content = content;
@@ -33,22 +47,32 @@ class Token {
   }
 }
 
+class TagToken extends Token {
+  private _attributes;
+  constructor(params, attributes) {
+    super(params);
+    this._attributes = attributes;
+
+    this._type = TokenType.Tag;
+  }
+
+  public get url() {
+    return this._attributes["href"];
+  }
+}
+
 class WordToken extends Token {
-  private _type: TokenType;
   constructor(params) {
     super(params);
 
     this._type = TokenType.Word;
   }
-
-  public get type() {
-    return this._type;
-  }
 }
 
 class LabelToken extends Token {
-  private _type: TokenType;
   constructor(params) {
+    if (!Object.values(LabelType).includes(params))
+      throw new UndefinedLabelError(`${params}는 존재하지 않는 라벨입니다.`);
     super(params);
 
     this._type = TokenType.Label;
@@ -63,14 +87,18 @@ class Parser {
   private tokens = {
     word: null,
     labels: [],
+    tags: [],
   };
 
-  private labelTrie:Trie;
+  private labelTrie: Trie;
+  private tagKeywordTrie: Trie;
 
   constructor() {
     this.labelTrie = new Trie();
+    this.tagKeywordTrie = new Trie();
 
-    Object.values(LabelType).map((label)=> this.labelTrie.insert(label));
+    Object.values(LabelType).map((label) => this.labelTrie.insert(label));
+    this.tagKeywordTrie.insert("href");
   }
 
   public parse() {
@@ -101,7 +129,7 @@ class Parser {
       if (target === Keyword.Mark && text[i + 1] === Keyword.OpenSqureBracket) {
         let label = "";
         i += 2;
-        while (this.labelTrie.iterateSearch(text[i])){
+        while (this.labelTrie.iterateSearch(text[i])) {
           label += text[i++];
         }
         const labelToken = new LabelToken(label);
@@ -109,6 +137,81 @@ class Parser {
       }
     }
     return this.tokens.labels;
+  }
+
+  public searchTags(text: string) {
+    for (let i = 0; i < text.length; i++) {
+      const target = text[i];
+
+      if (
+        target === Keyword.OpenAngleBrackets &&
+        text[i + 1] === Keyword.A &&
+        text[i + 2] === Keyword.Space
+      ) {
+        const attributes = {};
+        let keyword = "";
+
+        i += 3;
+        let tempKey = "",
+          tempValue = "",
+          state = TagAttributeState.Keyword;
+        // 여는 태그 처리
+        while (text[i] !== Keyword.ClosedAngleBrackets && i < text.length) {
+          const curr = text[i++];
+
+          if (curr === Keyword.Space) {
+            if (!tempKey) continue;
+
+            Object.assign(attributes, {
+              tempKey: tempValue ? tempValue : !!tempValue,
+            });
+            state = TagAttributeState.Keyword;
+          } else if (curr === Keyword.Eqaul) {
+            if (!tempKey) throw new Error("키가 없습니다.");
+            state = TagAttributeState.Value;
+          } else {
+            if (state === TagAttributeState.Keyword) {
+              tempKey += curr;
+            } else {
+              if (curr === Keyword.DoubleQuote) continue;
+              tempValue += curr;
+            }
+          }
+        }
+
+        Object.assign(attributes, {
+          [tempKey]: tempValue ? tempValue : !!tempValue,
+        });
+
+        // 키워드 처리
+        const curr = text[++i];
+        if (curr !== Keyword.Sharp) {
+          throw new Error("키워드는 hash여야 합니다.");
+        }
+        i++;
+        while (text[i] !== Keyword.OpenAngleBrackets) {
+          keyword += text[i++];
+        }
+
+        if (
+          !(
+            text[i + 1] === Keyword.Slash &&
+            text[i + 2] === Keyword.A &&
+            text[i + 3] === Keyword.ClosedAngleBrackets
+          )
+        ) {
+          throw new Error("잘못 닫힌 태그");
+        }
+
+        i += 3;
+
+        // 키워드 적용
+
+        this.tokens.tags.push(new TagToken(keyword, attributes));
+      }
+    }
+
+    return this.tokens.tags;
   }
 }
 

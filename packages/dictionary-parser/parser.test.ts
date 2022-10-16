@@ -1,3 +1,4 @@
+import { UndefinedLabelError } from "./errors";
 import Parser from "./parser";
 
 describe("Parser", () => {
@@ -57,7 +58,6 @@ describe("Parser", () => {
       expect(token2.content).toBe(word2);
     });
 
-
     test("공백이 있으면 tokenize를 종료한다.", () => {
       const word = "First";
 
@@ -68,17 +68,15 @@ describe("Parser", () => {
             Line
          `);
 
-
       expect(token.content).toBe(word);
     });
   });
 
   describe("searchLabels", () => {
-      test("![카테고리](카테고리_이미지) 로 모든 라벨을 tokenize 한다.", ()=> {
-         const parser = new Parser();
+    test("![카테고리](카테고리_이미지) 로 모든 라벨을 tokenize 한다.", () => {
+      const parser = new Parser();
 
-   
-         const labels = parser.searchLabels(`
+      const labels = parser.searchLabels(`
                # First
                ![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
                
@@ -89,7 +87,47 @@ describe("Parser", () => {
                dd
 
             `);
-   expect(labels.map((label)=> label.content)).toStrictEqual(["Backend", "Common"]);
-      });
-   });
+      expect(labels.map((label) => label.content)).toStrictEqual([
+        "Backend",
+        "Common",
+      ]);
+    });
+
+    test("전역 컨텍스트인 경우에 ![]()를 사용하면서 카테고리에 없는 값을 입력할 경우에는 UndefinedLabel Error이다.", () => {
+      const parser = new Parser();
+
+      expect(() =>
+        parser.searchLabels(`
+      # First
+      ![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+      
+      ddd
+      
+      ![Cobmon](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Cobmon.png)
+
+      dd
+
+   `)
+      ).toThrowError(new UndefinedLabelError("Co는 존재하지 않는 라벨입니다."));
+    });
+  });
+
+  describe("searchTags", () => {
+    test("a tag가 열리고, 자식 노드가 텍스트 노드이며, 첫 시작이 #로 시작하고 a tag가 닫히면 TagToken이다.", () => {
+      const parser = new Parser();
+      const tags = parser.searchTags(`
+      <a href="https://github.com/meotitda/DICTIONARY">#딕셔너리</a>
+      <a href="#">#멋</a>
+   `);
+
+      expect(tags.map((tags) => tags.content)).toStrictEqual([
+        "딕셔너리",
+        "멋",
+      ]);
+      expect(tags.map((tags) => tags.url)).toStrictEqual([
+        "https://github.com/meotitda/DICTIONARY",
+        "#",
+      ]);
+    });
+  });
 });
