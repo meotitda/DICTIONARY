@@ -3,4 +3,14 @@ node_modules/
 output
 OUTPUT
 dictionary-client
+
 **/dist
+
+# Settings for zero-installs
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
