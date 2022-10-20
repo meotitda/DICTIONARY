@@ -6,11 +6,20 @@ dictionary-client
 
 **/dist
 
-# Settings for zero-installs
+# Settings for non zero-installs
+.pnp.*
 .yarn/*
-!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Settings for zero-installs
+# .yarn/*
+# !.yarn/cache
+# !.yarn/patches
+# !.yarn/plugins
+# !.yarn/releases
+# !.yarn/sdks
+# !.yarn/versions
