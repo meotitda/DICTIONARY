@@ -21,6 +21,7 @@ enum TokenType {
   Word,
   Label,
   Tag,
+  Body,
 }
 
 const LabelType = {
@@ -67,6 +68,14 @@ class WordToken extends Token {
     super(params);
 
     this._type = TokenType.Word;
+  }
+}
+
+class BodyToken extends Token {
+  constructor(params) {
+    super(params);
+
+    this._type = TokenType.Body;
   }
 }
 
@@ -240,7 +249,7 @@ class Parser {
           body += text[i++];
         }
 
-        return body;
+        return new BodyToken(body);
       }
     }
     return null;

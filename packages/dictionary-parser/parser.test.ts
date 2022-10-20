@@ -180,7 +180,29 @@ describe("Parser", () => {
 
       This is Content Body :)`);
 
-      expect(body).toBe("      This is Content Body :)");
+      expect(body.content).toBe("      This is Content Body :)");
+    });
+
+    test("body 줄바꿈이 적용된 후에 공백이 없다면 Syntax 에러가 발생한다. ", () => {
+      const parser = new Parser();
+
+      expect(() =>
+        parser.searchBody(`
+        dooop
+        --------
+        This is Content Body :)`)
+      ).toThrowError(
+        new Error("Invalid Syntax: You need to put a new line after body line")
+      );
+    });
+
+    test("body 줄바꿈에 텍스트가 섞여 있으면 Body가 아니다.", () => {
+      const parser = new Parser();
+      const body = parser.searchBody(`
+      dooop
+      ------ddd
+      This is Content Body :)`);
+      expect(body).toBe(null);
     });
   });
 });
