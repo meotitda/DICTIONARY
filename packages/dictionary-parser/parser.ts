@@ -98,6 +98,7 @@ class Parser {
     word: null,
     labels: [],
     tags: [],
+    body: null,
   };
 
   private labelTrie: Trie;
@@ -111,8 +112,123 @@ class Parser {
     this.tagKeywordTrie.insert("href");
   }
 
-  public parse() {
-    return "parser";
+  public parse(text: string) {
+    for (let i = 0; i < text.length - 2; i++) {
+      switch (true) {
+        case text[i] + text[i + 1] + text[i + 2] === Keyword.Dash.repeat(3): {
+          i += 3;
+          // eslint-disable-next-line no-empty
+          while (text[i++] === "-") {}
+
+          if (text[i - 1] !== "\n") continue;
+
+          if (text[i] !== "\n") {
+            throw new Error(
+              "Invalid Syntax: You need to put a new line after body line"
+            );
+          }
+
+          i++;
+          let body = "";
+
+          while (i < text.length) {
+            body += text[i++];
+          }
+          this.tokens.body = new BodyToken(body);
+          return this.tokens;
+        }
+
+        case text[i] === Keyword.Sharp && text[i + 1] === Keyword.Space: {
+          if (this.tokens.word) throw new Error("Duplciated Word");
+          let result = "";
+          i += 2;
+          while (text[i] !== Keyword.LineBreak) {
+            result += text[i++];
+          }
+          this.tokens.word = new WordToken(result);
+          break;
+        }
+
+        case text[i] === Keyword.Mark &&
+          text[i + 1] === Keyword.OpenSqureBracket: {
+          let label = "";
+          i += 2;
+          while (this.labelTrie.iterateSearch(text[i])) {
+            label += text[i++];
+          }
+          const labelToken = new LabelToken(label);
+          this.tokens.labels.push(labelToken);
+          break;
+        }
+
+        case text[i] === Keyword.OpenAngleBrackets &&
+          text[i + 1] === Keyword.A &&
+          text[i + 2] === Keyword.Space: {
+          const attributes = {};
+          let keyword = "";
+
+          i += 3;
+          let tempKey = "",
+            tempValue = "",
+            state = TagAttributeState.Keyword;
+          // 여는 태그 처리
+          while (text[i] !== Keyword.ClosedAngleBrackets && i < text.length) {
+            const curr = text[i++];
+
+            if (curr === Keyword.Space) {
+              if (!tempKey) continue;
+
+              Object.assign(attributes, {
+                [tempKey]: tempValue ? tempValue : true,
+              });
+
+              (tempKey = ""), (tempValue = "");
+
+              state = TagAttributeState.Keyword;
+            } else if (curr === Keyword.Eqaul) {
+              if (!tempKey) throw new Error("키가 없습니다.");
+              state = TagAttributeState.Value;
+            } else {
+              if (state === TagAttributeState.Keyword) {
+                tempKey += curr;
+              } else {
+                if (curr === Keyword.DoubleQuote) continue;
+                tempValue += curr;
+              }
+            }
+          }
+
+          Object.assign(attributes, {
+            [tempKey]: tempValue ? tempValue : !!tempValue,
+          });
+
+          // 키워드 처리
+          const curr = text[++i];
+          if (curr !== Keyword.Sharp) {
+            throw new Error("키워드는 hash여야 합니다.");
+          }
+          i++;
+          while (text[i] !== Keyword.OpenAngleBrackets) {
+            keyword += text[i++];
+          }
+
+          if (
+            !(
+              text[i + 1] === Keyword.Slash &&
+              text[i + 2] === Keyword.A &&
+              text[i + 3] === Keyword.ClosedAngleBrackets
+            )
+          ) {
+            throw new Error("잘못 닫힌 태그");
+          }
+
+          i += 3;
+          this.tokens.tags.push(new TagToken(keyword, attributes));
+        }
+      }
+    }
+
+    return;
   }
 
   public searchWord(text: string) {

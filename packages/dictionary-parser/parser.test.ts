@@ -205,4 +205,35 @@ describe("Parser", () => {
       expect(body).toBe(null);
     });
   });
+
+  describe("parse", () => {
+    test("제대로 작성된 문서를 파싱한다.", () => {
+      const parser = new Parser();
+      const toknes = parser.parse(`
+      # Mock
+
+      ![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+      ![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+
+      <a href="#">#모킹</a>
+      <a href="#">#테스트</a>
+
+      ----
+
+      테스트 문서입니다.`);
+
+      expect(toknes.word.content).toBe("Mock");
+      expect(toknes.labels.map((label) => label.content)).toStrictEqual([
+        "Backend",
+        "Common",
+      ]);
+
+      expect(toknes.tags.map((tag) => tag.content)).toStrictEqual([
+        "모킹",
+        "테스트",
+      ]);
+
+      expect(toknes.body.content).toBe("      테스트 문서입니다.");
+    });
+  });
 });
