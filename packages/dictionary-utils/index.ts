@@ -1,2 +1,2 @@
-import Trie  from "./trie";
-export {Trie};
+import Trie from "./trie";
+export { Trie };

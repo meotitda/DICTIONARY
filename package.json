@@ -9,6 +9,7 @@
     ]
   },
   "scripts": {
+    "root:test": "yarn workspaces foreach run test",
     "root:eslint": "eslint '**/*.{js,ts}' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
