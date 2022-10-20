@@ -13,7 +13,8 @@ const Keyword = {
   CloseSqureBracket: "]",
   Eqaul: "=",
   Slash: "/",
-  DoubleQuote: "\"",
+  DoubleQuote: '"',
+  Dash: "-",
 } as const;
 
 enum TokenType {
@@ -163,8 +164,11 @@ class Parser {
             if (!tempKey) continue;
 
             Object.assign(attributes, {
-              tempKey: tempValue ? tempValue : !!tempValue,
+              [tempKey]: tempValue ? tempValue : true,
             });
+
+            (tempKey = ""), (tempValue = "");
+
             state = TagAttributeState.Keyword;
           } else if (curr === Keyword.Eqaul) {
             if (!tempKey) throw new Error("키가 없습니다.");
@@ -212,6 +216,34 @@ class Parser {
     }
 
     return this.tokens.tags;
+  }
+
+  public searchBody(text: string) {
+    for (let i = 0; i < text.length - 2; i++) {
+      if (text[i] + text[i + 1] + text[i + 2] === Keyword.Dash.repeat(3)) {
+        i += 3;
+        // eslint-disable-next-line no-empty
+        while (text[i++] === "-") {}
+
+        if (text[i - 1] !== "\n") continue;
+
+        if (text[i] !== "\n") {
+          throw new Error(
+            "Invalid Syntax: You need to put a new line after body line"
+          );
+        }
+
+        i++;
+        let body = "";
+
+        while (i < text.length) {
+          body += text[i++];
+        }
+
+        return body;
+      }
+    }
+    return null;
   }
 }
 

@@ -129,5 +129,58 @@ describe("Parser", () => {
         "#",
       ]);
     });
+
+    test("태그는 여러 속성을 가질 수 있다.", () => {
+      const parser = new Parser();
+      const tags = parser.searchTags(`
+      <a href="#" fewjiof avl="dadsa">#멋</a>
+   `);
+
+      expect(tags.map((tags) => tags.content)).toStrictEqual(["멋"]);
+      expect(tags.map((tags) => tags.url)).toStrictEqual(["#"]);
+    });
+
+    test("자식 노드가 #으로 시작하지 않는 경우, 에러이다.", () => {
+      const parser = new Parser();
+
+      expect(() =>
+        parser.searchTags(`
+      <a href="#">멋</a>
+   `)
+      ).toThrowError();
+    });
+
+    test("닫는 꺽쇠가 </a> 가 아니다.", () => {
+      const parser = new Parser();
+
+      expect(() =>
+        parser.searchTags(`
+      <a href="#">#멋< /a>
+   `)
+      ).toThrowError();
+      expect(() =>
+        parser.searchTags(`
+    <a href="#">#멋</ a>
+ `)
+      ).toThrowError();
+      expect(() =>
+        parser.searchTags(`
+  <a href="#">#멋</a >
+`)
+      ).toThrowError();
+    });
+  });
+
+  describe("searchBody", () => {
+    test("-가 3개 이상이며 그 외에는 줄바꿈이 존재하고, 다음 줄에는 빈 줄이 존재하고 그 아래를 Token화 한다.  ", () => {
+      const parser = new Parser();
+      const body = parser.searchBody(`
+      dooop
+      --------
+
+      This is Content Body :)`);
+
+      expect(body).toBe("      This is Content Body :)");
+    });
   });
 });
