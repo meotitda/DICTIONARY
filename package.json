@@ -25,7 +25,6 @@
   "homepage": "https://github.com/meotitda/DICTIONARY#readme",
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
-    "@serverless/dashboard-plugin": "^6.2.2",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.38.1",
     "eslint": "8.24.0",
