@@ -24,9 +24,13 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@types/aws-lambda": "^8.10.108",
+    "@vendia/serverless-express": "^4.10.1",
+    "aws-lambda": "^1.0.7",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "serverless-offline": "^11.1.3"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
@@ -43,6 +47,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "28.1.3",
     "prettier": "^2.3.2",
+    "serverless": "^3.23.0",
     "source-map-support": "^0.5.20",
     "supertest": "^6.1.3",
     "ts-jest": "28.0.8",
