@@ -1,21 +1,22 @@
 {
-  "name": "dictionary-parser",
   "main": "index.ts",
   "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "name": "dictionary-scripts",
   "packageManager": "yarn@3.2.3",
-  "dependencies": {
-    "dictionary-utils": "*"
+  "scripts": {
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^29.0.3",
     "@types/node": "^18.7.23",
-    "@vercel/ncc": "^0.34.0",
+    "dictionary-parser": "*",
+    "dictionary-utils": "*",
     "jest": "^29.0.3",
     "ts-jest": "^29.0.2",
+    "ts-node": "^10.9.1",
     "typescript": "4.8.2"
-  },
-  "scripts": {
-    "test": "jest",
-    "build": "ncc build index.ts -o dist"
   }
 }

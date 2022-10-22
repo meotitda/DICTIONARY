@@ -1,3 +1,1 @@
-import Parser from "./parser";
-
-new Parser().parse();
+export { default as Parser } from "./parser";
