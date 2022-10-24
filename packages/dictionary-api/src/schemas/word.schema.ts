@@ -17,19 +17,19 @@ class Tag {
 }
 @Schema()
 export class Word extends CommonSchema {
-  @Prop({ required: true, unique: true })
+  @Prop({ type: String, required: true, unique: true })
   title: string;
 
-  @Prop()
+  @Prop({ type: String })
   text: string;
 
-  @Prop()
+  @Prop({ type: Array })
   labels: Label[];
 
-  @Prop()
+  @Prop({ type: Array })
   tags: Tag[];
 
-  @Prop()
+  @Prop({ type: Array })
   medias: Media[];
 }
 

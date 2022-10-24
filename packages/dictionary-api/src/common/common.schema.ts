@@ -2,12 +2,12 @@ import { Prop, Schema } from '@nestjs/mongoose';
 
 @Schema()
 export class CommonSchema {
-  @Prop({ required: true, default: new Date() })
+  @Prop({ type: Date, required: true, default: Date.now })
   createdAt: Date;
 
-  @Prop()
+  @Prop({ type: Date })
   updatedAt: Date;
 
-  @Prop()
+  @Prop({ type: Date })
   deletedAt: Date;
 }
