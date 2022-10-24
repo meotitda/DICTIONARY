@@ -5,6 +5,7 @@ OUTPUT
 dictionary-client
 
 **/dist
+.serverless/
 
 # Settings for non zero-installs
 .pnp.*
