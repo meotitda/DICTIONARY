@@ -1,25 +1,36 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 import { CommonSchema } from 'src/common/common.schema';
+import { Label } from 'src/constants';
 
 export type WordDocument = Word & Document;
 
+class Media {
+  title: string;
+  url: string;
+  type: string;
+}
+
+class Tag {
+  title: string;
+  url: string;
+}
 @Schema()
 export class Word extends CommonSchema {
-  @Prop()
+  @Prop({ required: true, unique: true })
   title: string;
 
   @Prop()
   text: string;
 
   @Prop()
-  labels: string[];
+  labels: Label[];
 
   @Prop()
-  tags: string[];
+  tags: Tag[];
 
   @Prop()
-  medias: string[];
+  medias: Media[];
 }
 
 export const WordSchema = SchemaFactory.createForClass(Word);
