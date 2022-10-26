@@ -6,6 +6,7 @@ dictionary-client
 
 **/dist
 .serverless/
+.env
 
 # Settings for non zero-installs
 .pnp.*
