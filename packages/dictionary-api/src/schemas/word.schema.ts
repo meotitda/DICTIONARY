@@ -17,7 +17,7 @@ class Tag {
 }
 @Schema()
 export class Word extends CommonSchema {
-  @Prop({ type: String, required: true, unique: true })
+  @Prop({ type: String, required: true })
   title: string;
 
   @Prop({ type: String })
@@ -33,4 +33,7 @@ export class Word extends CommonSchema {
   medias: Media[];
 }
 
-export const WordSchema = SchemaFactory.createForClass(Word);
+const WordSchema = SchemaFactory.createForClass(Word);
+WordSchema.index({ title: 1, deletedAt: 1 }, { unique: true });
+
+export { WordSchema };
