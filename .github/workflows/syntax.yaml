@@ -3,7 +3,7 @@ name: dictionary syntax
 on:
   push:
     paths:
-      - "*.md"
+      - "DIC/**/*.md"
 
 jobs:
   check:
