@@ -6,32 +6,31 @@ on:
       - DIC/**/*.md
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
+  steps:
+    - uses: actions/checkout@v3
 
-      - name: Use Node.js 16
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
+    - name: Use Node.js 16
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
 
-      - name: Cache node modules
-        id: node-cache
-        uses: actions/cache@v3
-        env:
-          cache-name: cache-node-modules
-        with:
-          # npm cache files are stored in `~/.npm` on Linux/macOS
-          path: node_modules
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-modules-
+    - name: Cache node modules
+      id: node-cache
+      uses: actions/cache@v3
+      env:
+        cache-name: cache-node-modules
+      with:
+        # npm cache files are stored in `~/.npm` on Linux/macOS
+        path: node_modules
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-modules-
 
-      - name: Set Package Configuration
-        if: steps.node-cache.outputs.cache-hit != 'true'
-        run: yarn install --immutable
+    - name: Set Package Configuration
+      if: steps.node-cache.outputs.cache-hit != 'true'
+      run: yarn install --immutable
 
-      - name: Check Syntax .md
-        run: yarn d runner
+    - name: Check Syntax .md
+      run: yarn d runner
