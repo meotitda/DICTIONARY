@@ -2,7 +2,7 @@ name: dictionary syntax
 
 on:
   push:
-    path:
+    paths:
       - "*.md"
 
 jobs:
