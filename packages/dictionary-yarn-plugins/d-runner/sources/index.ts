@@ -12,6 +12,7 @@ class DictionaryRunner extends BaseCommand {
     );
     const { project } = await Project.find(configuration, this.context.cwd);
     const rootPath = project.topLevelWorkspace.cwd;
+
     runner(rootPath);
 
     console.log("No Problem :)");
