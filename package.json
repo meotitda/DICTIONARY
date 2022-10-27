@@ -5,13 +5,12 @@
   "main": "index.js",
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/**/*"
     ]
   },
   "scripts": {
     "root:test": "yarn workspaces foreach run test",
-    "root:eslint": "eslint '**/*.{js,ts}' --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "root:eslint": "eslint '**/*.{js,ts}' --fix"
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.38.1",
+    "@yarnpkg/builder": "^4.0.0-rc.26",
     "eslint": "8.24.0",
     "prettier": "2.7.1",
     "typescript": "4.8.2"
