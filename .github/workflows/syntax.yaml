@@ -1,9 +1,9 @@
 name: dictionary syntax
 
 on:
-  pull_request:
+  push:
     path:
-      - "*.md"
+      - "DIC/**/*.md"
 
 jobs:
   check:
