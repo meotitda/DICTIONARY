@@ -3,7 +3,7 @@ name: dictionary syntax
 on:
   pull_request:
     path:
-      - DIC/**/*.md
+      - "DIC/**/*.md"
 
 jobs:
   check:
