@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { Parser } from "dictionary-parser";
+import { Parser } from "../dictionary-core";
 import { dfsDirectory } from "dictionary-utils";
 
 const runner = (projectRoot: string) => {
@@ -9,9 +9,11 @@ const runner = (projectRoot: string) => {
   const parse = (file: string) => {
     const parser = new Parser();
     const content = fs.readFileSync(file, { encoding: "utf-8" });
-    const tokens = parser.parse(content);
+    parser.parse(content);
+    const word = parser.nomalizeToken();
+
     result.push({
-      [file]: tokens,
+      [word.title]: { ...word, path: file },
     });
   };
 

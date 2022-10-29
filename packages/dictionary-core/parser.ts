@@ -1,5 +1,6 @@
 import { Trie } from "dictionary-utils";
 import { UndefinedLabelError } from "./errors";
+import { IWord } from "./word.types";
 
 const Keyword = {
   Sharp: "#",
@@ -18,7 +19,7 @@ const Keyword = {
 } as const;
 
 enum TokenType {
-  Word,
+  Title,
   Label,
   Tag,
   Body,
@@ -63,11 +64,11 @@ class TagToken extends Token {
   }
 }
 
-class WordToken extends Token {
+class TitleToken extends Token {
   constructor(params) {
     super(params);
 
-    this._type = TokenType.Word;
+    this._type = TokenType.Title;
   }
 }
 
@@ -95,10 +96,10 @@ class LabelToken extends Token {
 
 class Parser {
   private tokens = {
-    word: null,
-    labels: [],
-    tags: [],
-    body: null,
+    title: null as TitleToken,
+    labels: [] as LabelToken[],
+    tags: [] as TagToken[],
+    body: null as BodyToken,
   };
 
   private labelTrie: Trie;
@@ -110,6 +111,19 @@ class Parser {
 
     Object.values(LabelType).map((label) => this.labelTrie.insert(label));
     this.tagKeywordTrie.insert("href");
+  }
+
+  public nomalizeToken(): IWord {
+    return {
+      title: this.tokens.title.content,
+      slug: this.tokens.title.content[0],
+      labels: this.tokens.labels.map((label) => label.content),
+      tags: this.tokens.tags.map((tag) => ({
+        title: tag.content,
+        link: tag.url,
+      })),
+      body: this.tokens.body.content,
+    };
   }
 
   public parse(text: string) {
@@ -139,13 +153,13 @@ class Parser {
         }
 
         case text[i] === Keyword.Sharp && text[i + 1] === Keyword.Space: {
-          if (this.tokens.word) throw new Error("Duplciated Word");
+          if (this.tokens.title) throw new Error("Duplciated Word");
           let result = "";
           i += 2;
           while (text[i] !== Keyword.LineBreak) {
             result += text[i++];
           }
-          this.tokens.word = new WordToken(result);
+          this.tokens.title = new TitleToken(result);
           break;
         }
 
@@ -231,7 +245,7 @@ class Parser {
     return this.tokens;
   }
 
-  public searchWord(text: string) {
+  public searchTitle(text: string) {
     let result = "";
     for (let i = 0; i < text.length; i++) {
       const target = text[i];
@@ -241,8 +255,8 @@ class Parser {
         while (text[i] !== Keyword.LineBreak) {
           result += text[i++];
         }
-        this.tokens.word = new WordToken(result);
-        return this.tokens.word;
+        this.tokens.title = new TitleToken(result);
+        return this.tokens.title;
       }
     }
     return null;

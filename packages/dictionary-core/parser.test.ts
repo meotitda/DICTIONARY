@@ -2,12 +2,12 @@ import { UndefinedLabelError } from "./errors";
 import Parser from "./parser";
 
 describe("Parser", () => {
-  describe("searchWord", () => {
+  describe("searchTitle", () => {
     test("#으로 시작하고 하나 이상의 공백이 존재하고 공백 뒤에 단어가 존재하면 Word이다.", () => {
       const word = "Batch";
       const parser = new Parser();
 
-      const token = parser.searchWord(`
+      const token = parser.searchTitle(`
             # ${word}
          `);
 
@@ -18,7 +18,7 @@ describe("Parser", () => {
       const word = "Batch";
       const parser = new Parser();
 
-      const token = parser.searchWord(`
+      const token = parser.searchTitle(`
             #${word}
          `);
 
@@ -31,7 +31,7 @@ describe("Parser", () => {
 
       const parser = new Parser();
 
-      const token = parser.searchWord(`
+      const token = parser.searchTitle(`
             # ${word}
             # ${word2}
    
@@ -40,17 +40,17 @@ describe("Parser", () => {
       expect(token.content).toBe(word);
     });
 
-    test("searchWord를 두 번 실행하면 마지막 Word 토큰을 발행한다.", () => {
+    test("searchTitle를 두 번 실행하면 마지막 Word 토큰을 발행한다.", () => {
       const word = "First";
       const word2 = "Second";
 
       const parser = new Parser();
 
-      const token = parser.searchWord(`
+      const token = parser.searchTitle(`
             # ${word}
          `);
 
-      const token2 = parser.searchWord(`
+      const token2 = parser.searchTitle(`
          # ${word2}
       `);
 
@@ -63,7 +63,7 @@ describe("Parser", () => {
 
       const parser = new Parser();
 
-      const token = parser.searchWord(`
+      const token = parser.searchTitle(`
             # First
             Line
          `);
@@ -222,7 +222,7 @@ describe("Parser", () => {
 
       테스트 문서입니다.`);
 
-      expect(toknes.word.content).toBe("Mock");
+      expect(toknes.title.content).toBe("Mock");
       expect(toknes.labels.map((label) => label.content)).toStrictEqual([
         "Backend",
         "Common",
@@ -234,6 +234,37 @@ describe("Parser", () => {
       ]);
 
       expect(toknes.body.content).toBe("      테스트 문서입니다.");
+    });
+  });
+
+  describe("nomalize", () => {
+    test("제대로 작성된 문서를 파싱한다.", () => {
+      const parser = new Parser();
+      parser.parse(`
+      # Mock
+
+      ![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
+      ![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
+
+      <a href="#">#모킹</a>
+      <a href="#">#테스트</a>
+
+      ----
+
+      테스트 문서입니다.`);
+
+      const results = parser.nomalizeToken();
+
+      expect(results).toStrictEqual({
+        title: "Mock",
+        slug: "M",
+        labels: ["Backend", "Common"],
+        tags: [
+          { link: "#", title: "모킹" },
+          { link: "#", title: "테스트" },
+        ],
+        body: "      테스트 문서입니다.",
+      });
     });
   });
 });
