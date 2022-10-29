@@ -1,116 +1,42 @@
 import { Trie } from "dictionary-utils";
-import { UndefinedLabelError } from "./errors";
+import { DictionaryTokenCache, ICache } from "./cache";
+import { DuplciatedError } from "./errors";
+import { BodyToken, ITokens, LabelToken, TagToken, TitleToken } from "./tokens";
+import { EKeyword, ELabel } from "./types";
 import { IWord } from "./word.types";
 
-const Keyword = {
-  Sharp: "#",
-  Space: " ",
-  LineBreak: "\n",
-  Mark: "!",
-  OpenAngleBrackets: "<",
-  ClosedAngleBrackets: ">",
-  A: "a",
-  OpenSqureBracket: "[",
-  CloseSqureBracket: "]",
-  Eqaul: "=",
-  Slash: "/",
-  DoubleQuote: '"',
-  Dash: "-",
-} as const;
-
-enum TokenType {
-  Title,
-  Label,
-  Tag,
-  Body,
-}
-
-const LabelType = {
-  Common: "Common",
-  Frontend: "Frontend",
-  Backend: "Backend",
-  Database: "Database",
-  Devops: "Devops",
-};
-
-const TagAttributeState = {
-  Keyword: "Keyword",
-  Value: "Value",
-};
-
-export class Token {
-  protected _type: TokenType;
-  private _content: string;
-  constructor(content: string) {
-    this._content = content;
-  }
-
-  public get content() {
-    return this._content;
-  }
-}
-
-class TagToken extends Token {
-  private _attributes;
-  constructor(params, attributes) {
-    super(params);
-    this._attributes = attributes;
-
-    this._type = TokenType.Tag;
-  }
-
-  public get url() {
-    return this._attributes["href"];
-  }
-}
-
-class TitleToken extends Token {
-  constructor(params) {
-    super(params);
-
-    this._type = TokenType.Title;
-  }
-}
-
-class BodyToken extends Token {
-  constructor(params) {
-    super(params);
-
-    this._type = TokenType.Body;
-  }
-}
-
-class LabelToken extends Token {
-  constructor(params) {
-    if (!Object.values(LabelType).includes(params))
-      throw new UndefinedLabelError(`${params}는 존재하지 않는 라벨입니다.`);
-    super(params);
-
-    this._type = TokenType.Label;
-  }
-
-  public get type() {
-    return this._type;
-  }
-}
-
 class Parser {
-  private tokens = {
-    title: null as TitleToken,
-    labels: [] as LabelToken[],
-    tags: [] as TagToken[],
-    body: null as BodyToken,
+  private tokens: ITokens = {
+    title: null,
+    labels: [],
+    tags: [],
+    body: null,
   };
+
+  private cursor = 0;
+  private cache: ICache;
 
   private labelTrie: Trie;
   private tagKeywordTrie: Trie;
 
-  constructor() {
+  constructor(cache?: ICache) {
     this.labelTrie = new Trie();
     this.tagKeywordTrie = new Trie();
 
-    Object.values(LabelType).map((label) => this.labelTrie.insert(label));
+    Object.values(ELabel).map((label) => this.labelTrie.insert(label));
     this.tagKeywordTrie.insert("href");
+
+    this.paths.set("Body", this.tokenizeBody.bind(this));
+    this.paths.set("Title", this.tokenizerTitle.bind(this));
+    this.paths.set("Label", this.tokenizeLabel.bind(this));
+    this.paths.set("Tag", this.tokenizeTag.bind(this));
+    this.paths.set("None", this.next.bind(this));
+
+    this.cache = cache ? cache : new DictionaryTokenCache();
+  }
+
+  private next() {
+    return null;
   }
 
   public nomalizeToken(): IWord {
@@ -126,263 +52,165 @@ class Parser {
     };
   }
 
-  public parse(text: string) {
-    for (let i = 0; i < text.length - 2; i++) {
-      switch (true) {
-        case text[i] + text[i + 1] + text[i + 2] === Keyword.Dash.repeat(3): {
-          i += 3;
-          // eslint-disable-next-line no-empty
-          while (text[i++] === "-") {}
+  private paths = new Map();
 
-          if (text[i - 1] !== "\n") continue;
+  private route(text: string) {
+    if (this.cache.has(text)) return this.cache.get(text);
 
-          if (text[i] !== "\n") {
-            throw new Error(
-              "Invalid Syntax: You need to put a new line after body line"
-            );
-          }
-
-          i++;
-          let body = "";
-
-          while (i < text.length) {
-            body += text[i++];
-          }
-          this.tokens.body = new BodyToken(body);
-          return this.tokens;
-        }
-
-        case text[i] === Keyword.Sharp && text[i + 1] === Keyword.Space: {
-          if (this.tokens.title) throw new Error("Duplciated Word");
-          let result = "";
-          i += 2;
-          while (text[i] !== Keyword.LineBreak) {
-            result += text[i++];
-          }
-          this.tokens.title = new TitleToken(result);
-          break;
-        }
-
-        case text[i] === Keyword.Mark &&
-          text[i + 1] === Keyword.OpenSqureBracket: {
-          let label = "";
-          i += 2;
-          while (this.labelTrie.iterateSearch(text[i])) {
-            label += text[i++];
-          }
-          const labelToken = new LabelToken(label);
-          this.tokens.labels.push(labelToken);
-          break;
-        }
-
-        case text[i] === Keyword.OpenAngleBrackets &&
-          text[i + 1] === Keyword.A &&
-          text[i + 2] === Keyword.Space: {
-          const attributes = {};
-          let keyword = "";
-
-          i += 3;
-          let tempKey = "",
-            tempValue = "",
-            state = TagAttributeState.Keyword;
-          // 여는 태그 처리
-          while (text[i] !== Keyword.ClosedAngleBrackets && i < text.length) {
-            const curr = text[i++];
-
-            if (curr === Keyword.Space) {
-              if (!tempKey) continue;
-
-              Object.assign(attributes, {
-                [tempKey]: tempValue ? tempValue : true,
-              });
-
-              (tempKey = ""), (tempValue = "");
-
-              state = TagAttributeState.Keyword;
-            } else if (curr === Keyword.Eqaul) {
-              if (!tempKey) throw new Error("키가 없습니다.");
-              state = TagAttributeState.Value;
-            } else {
-              if (state === TagAttributeState.Keyword) {
-                tempKey += curr;
-              } else {
-                if (curr === Keyword.DoubleQuote) continue;
-                tempValue += curr;
-              }
-            }
-          }
-
-          Object.assign(attributes, {
-            [tempKey]: tempValue ? tempValue : !!tempValue,
-          });
-
-          // 키워드 처리
-          const curr = text[++i];
-          if (curr !== Keyword.Sharp) {
-            throw new Error("키워드는 hash여야 합니다.");
-          }
-          i++;
-          while (text[i] !== Keyword.OpenAngleBrackets) {
-            keyword += text[i++];
-          }
-
-          if (
-            !(
-              text[i + 1] === Keyword.Slash &&
-              text[i + 2] === Keyword.A &&
-              text[i + 3] === Keyword.ClosedAngleBrackets
-            )
-          ) {
-            throw new Error("잘못 닫힌 태그");
-          }
-
-          i += 3;
-          this.tokens.tags.push(new TagToken(keyword, attributes));
-        }
+    const i = this.cursor;
+    switch (true) {
+      case text[i] + text[i + 1] + text[i + 2] === EKeyword.Dash.repeat(3): {
+        return "Body";
       }
+      case text[i] === EKeyword.Sharp && text[i + 1] === EKeyword.Space: {
+        return "Title";
+      }
+      case text[i] === EKeyword.Mark &&
+        text[i + 1] === EKeyword.OpenSqureBracket: {
+        return "Label";
+      }
+      case text[i] === EKeyword.OpenAngleBrackets &&
+        text[i + 1] === EKeyword.A &&
+        text[i + 2] === EKeyword.Space: {
+        return "Tag";
+      }
+      default:
+        return "None";
     }
-
-    return this.tokens;
   }
 
-  public searchTitle(text: string) {
+  private tokenizerTitle(text: string): void {
+    if (this.tokens.title)
+      throw new DuplciatedError("Title은 단어 당 하나만 가질 수 있습니다.");
     let result = "";
-    for (let i = 0; i < text.length; i++) {
-      const target = text[i];
-
-      if (target === Keyword.Sharp && text[i + 1] === Keyword.Space) {
-        i += 2;
-        while (text[i] !== Keyword.LineBreak) {
-          result += text[i++];
-        }
-        this.tokens.title = new TitleToken(result);
-        return this.tokens.title;
-      }
+    this.cursor += 2;
+    while (text[this.cursor] !== EKeyword.LineBreak) {
+      result += text[this.cursor++];
     }
-    return null;
+    this.tokens.title = new TitleToken(result);
+    return;
   }
 
-  public searchLabels(text: string) {
-    for (let i = 0; i < text.length; i++) {
-      const target = text[i];
+  private tokenizeBody(text: string): void {
+    this.cursor += 3;
+    // eslint-disable-next-line no-empty
+    while (text[this.cursor++] === "-") {}
 
-      if (target === Keyword.Mark && text[i + 1] === Keyword.OpenSqureBracket) {
-        let label = "";
-        i += 2;
-        while (this.labelTrie.iterateSearch(text[i])) {
-          label += text[i++];
-        }
-        const labelToken = new LabelToken(label);
-        this.tokens.labels.push(labelToken);
-      }
+    if (text[this.cursor - 1] !== "\n") return;
+
+    if (text[this.cursor] !== "\n") {
+      throw new Error(
+        "Invalid Syntax: You need to put a new line after body line"
+      );
     }
-    return this.tokens.labels;
+
+    this.cursor++;
+    let body = "";
+
+    while (this.cursor < text.length) {
+      body += text[this.cursor++];
+    }
+    this.tokens.body = new BodyToken(body);
   }
 
-  public searchTags(text: string) {
-    for (let i = 0; i < text.length; i++) {
-      const target = text[i];
+  private tokenizeLabel(text: string): void {
+    let label = "";
+    this.cursor += 2;
+    while (this.labelTrie.iterateSearch(text[this.cursor])) {
+      label += text[this.cursor++];
+    }
+    const labelToken = new LabelToken(label);
+    this.tokens.labels.push(labelToken);
+    return;
+  }
 
-      if (
-        target === Keyword.OpenAngleBrackets &&
-        text[i + 1] === Keyword.A &&
-        text[i + 2] === Keyword.Space
-      ) {
-        const attributes = {};
-        let keyword = "";
+  private tokenizeTag(text: string): void {
+    const TagAttributeState = {
+      Keyword: "Keyword",
+      Value: "Value",
+    };
+    const attributes = {};
+    let keyword = "";
 
-        i += 3;
-        let tempKey = "",
-          tempValue = "",
-          state = TagAttributeState.Keyword;
-        // 여는 태그 처리
-        while (text[i] !== Keyword.ClosedAngleBrackets && i < text.length) {
-          const curr = text[i++];
+    this.cursor += 3;
+    let tempKey = "",
+      tempValue = "",
+      state = TagAttributeState.Keyword;
+    // 여는 태그 처리
+    while (
+      text[this.cursor] !== EKeyword.ClosedAngleBrackets &&
+      this.cursor < text.length
+    ) {
+      const curr = text[this.cursor++];
 
-          if (curr === Keyword.Space) {
-            if (!tempKey) continue;
-
-            Object.assign(attributes, {
-              [tempKey]: tempValue ? tempValue : true,
-            });
-
-            (tempKey = ""), (tempValue = "");
-
-            state = TagAttributeState.Keyword;
-          } else if (curr === Keyword.Eqaul) {
-            if (!tempKey) throw new Error("키가 없습니다.");
-            state = TagAttributeState.Value;
-          } else {
-            if (state === TagAttributeState.Keyword) {
-              tempKey += curr;
-            } else {
-              if (curr === Keyword.DoubleQuote) continue;
-              tempValue += curr;
-            }
-          }
-        }
+      if (curr === EKeyword.Space) {
+        if (!tempKey) continue;
 
         Object.assign(attributes, {
-          [tempKey]: tempValue ? tempValue : !!tempValue,
+          [tempKey]: tempValue ? tempValue : true,
         });
 
-        // 키워드 처리
-        const curr = text[++i];
-        if (curr !== Keyword.Sharp) {
-          throw new Error("키워드는 hash여야 합니다.");
+        (tempKey = ""), (tempValue = "");
+
+        state = TagAttributeState.Keyword;
+      } else if (curr === EKeyword.Eqaul) {
+        if (!tempKey) throw new Error("키가 없습니다.");
+        state = TagAttributeState.Value;
+      } else {
+        if (state === TagAttributeState.Keyword) {
+          tempKey += curr;
+        } else {
+          if (curr === EKeyword.DoubleQuote) continue;
+          tempValue += curr;
         }
-        i++;
-        while (text[i] !== Keyword.OpenAngleBrackets) {
-          keyword += text[i++];
-        }
-
-        if (
-          !(
-            text[i + 1] === Keyword.Slash &&
-            text[i + 2] === Keyword.A &&
-            text[i + 3] === Keyword.ClosedAngleBrackets
-          )
-        ) {
-          throw new Error("잘못 닫힌 태그");
-        }
-
-        i += 3;
-
-        // 키워드 적용
-
-        this.tokens.tags.push(new TagToken(keyword, attributes));
       }
     }
 
-    return this.tokens.tags;
+    Object.assign(attributes, {
+      [tempKey]: tempValue ? tempValue : !!tempValue,
+    });
+
+    // 키워드 처리
+    const curr = text[++this.cursor];
+    if (curr !== EKeyword.Sharp) {
+      throw new Error("키워드는 hash여야 합니다.");
+    }
+    this.cursor++;
+    while (text[this.cursor] !== EKeyword.OpenAngleBrackets) {
+      keyword += text[this.cursor++];
+    }
+
+    if (
+      !(
+        text[this.cursor + 1] === EKeyword.Slash &&
+        text[this.cursor + 2] === EKeyword.A &&
+        text[this.cursor + 3] === EKeyword.ClosedAngleBrackets
+      )
+    ) {
+      throw new Error("잘못 닫힌 태그");
+    }
+
+    this.cursor += 3;
+    this.tokens.tags.push(new TagToken(keyword, attributes));
   }
 
-  public searchBody(text: string) {
-    for (let i = 0; i < text.length - 2; i++) {
-      if (text[i] + text[i + 1] + text[i + 2] === Keyword.Dash.repeat(3)) {
-        i += 3;
-        // eslint-disable-next-line no-empty
-        while (text[i++] === "-") {}
-
-        if (text[i - 1] !== "\n") continue;
-
-        if (text[i] !== "\n") {
-          throw new Error(
-            "Invalid Syntax: You need to put a new line after body line"
-          );
-        }
-
-        i++;
-        let body = "";
-
-        while (i < text.length) {
-          body += text[i++];
-        }
-
-        return new BodyToken(body);
-      }
+  public parse(text: string): ITokens {
+    if (this.cache.has(text)) return this.cache.get(text);
+    this.cursor = 0;
+    this.tokens = {
+      title: null,
+      labels: [],
+      tags: [],
+      body: null,
+    };
+    for (; this.cursor < text.length - 2; this.cursor++) {
+      const path = this.route(text);
+      this.paths.get(path)(text);
     }
-    return null;
+
+    this.cache.set(text, this.tokens);
+
+    return this.tokens;
   }
 }
 
