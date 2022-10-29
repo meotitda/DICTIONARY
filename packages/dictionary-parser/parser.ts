@@ -37,7 +37,7 @@ const TagAttributeState = {
   Value: "Value",
 };
 
-class Token {
+export class Token {
   protected _type: TokenType;
   private _content: string;
   constructor(content: string) {
@@ -228,7 +228,7 @@ class Parser {
       }
     }
 
-    return;
+    return this.tokens;
   }
 
   public searchWord(text: string) {
