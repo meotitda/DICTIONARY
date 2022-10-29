@@ -653,6 +653,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dictionary/core@*, @dictionary/core@workspace:^, @dictionary/core@workspace:packages/dictionary-core":
+  version: 0.0.0-use.local
+  resolution: "@dictionary/core@workspace:packages/dictionary-core"
+  dependencies:
+    "@types/jest": ^29.0.3
+    "@types/node": ^18.7.23
+    "@vercel/ncc": ^0.34.0
+    dictionary-utils: "*"
+    jest: ^29.0.3
+    ts-jest: ^29.0.2
+    typescript: 4.8.2
+  languageName: unknown
+  linkType: soft
+
 "@eslint/eslintrc@npm:^1.3.2":
   version: 1.3.2
   resolution: "@eslint/eslintrc@npm:1.3.2"
@@ -5237,6 +5251,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dictionary-api@workspace:packages/dictionary-api"
   dependencies:
+    "@dictionary/core": "workspace:^"
     "@nestjs/cli": ^9.0.0
     "@nestjs/common": ^9.0.0
     "@nestjs/config": ^2.2.0
@@ -5276,27 +5291,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"dictionary-parser@*, dictionary-parser@workspace:packages/dictionary-parser":
-  version: 0.0.0-use.local
-  resolution: "dictionary-parser@workspace:packages/dictionary-parser"
-  dependencies:
-    "@types/jest": ^29.0.3
-    "@types/node": ^18.7.23
-    "@vercel/ncc": ^0.34.0
-    dictionary-utils: "*"
-    jest: ^29.0.3
-    ts-jest: ^29.0.2
-    typescript: 4.8.2
-  languageName: unknown
-  linkType: soft
-
 "dictionary-scripts@workspace:^, dictionary-scripts@workspace:packages/dictionary-scripts":
   version: 0.0.0-use.local
   resolution: "dictionary-scripts@workspace:packages/dictionary-scripts"
   dependencies:
+    "@dictionary/core": "*"
     "@types/jest": ^29.0.3
     "@types/node": ^18.7.23
-    dictionary-parser: "*"
     dictionary-utils: "*"
     jest: ^29.0.3
     ts-jest: ^29.0.2

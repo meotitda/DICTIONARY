@@ -10,9 +10,9 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@dictionary/core": "*",
     "@types/jest": "^29.0.3",
     "@types/node": "^18.7.23",
-    "dictionary-parser": "*",
     "dictionary-utils": "*",
     "jest": "^29.0.3",
     "ts-jest": "^29.0.2",
