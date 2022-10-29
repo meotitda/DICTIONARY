@@ -2,8 +2,7 @@ import { Trie } from "dictionary-utils";
 import { DictionaryTokenCache, ICache } from "./cache";
 import { DuplciatedError } from "./errors";
 import { BodyToken, ITokens, LabelToken, TagToken, TitleToken } from "./tokens";
-import { EKeyword, ELabel } from "./types";
-import { IWord } from "./word.types";
+import { EKeyword, ELabel, IWord } from "./types";
 
 class Parser {
   private tokens: ITokens = {
