@@ -55,7 +55,7 @@ class Parser {
     this.paths.set(EToken.Title, this.tokenizerTitle.bind(this));
     this.paths.set(EToken.Label, this.tokenizeLabel.bind(this));
     this.paths.set(EToken.Tag, this.tokenizeTag.bind(this));
-    this.paths.set("None", this.next.bind(this));
+    this.paths.set("Space", this.next.bind(this));
 
     this.cache = cache ? cache : new DictionaryTokenCache();
   }
@@ -99,8 +99,14 @@ class Parser {
         text[i + 2] === EKeyword.Space: {
         return EToken.Tag;
       }
+      case text[i] === EKeyword.Space || text[i] === EKeyword.LineBreak:
+        return "Space";
       default:
-        return "None";
+        throw new DSyntaxError("유효하지 않은 키워드 입니다.", {
+          errorCursor: this.cursor,
+          errorLineStr: this.errorLineStr,
+          errorLine: this.line,
+        });
     }
   }
 
@@ -153,6 +159,7 @@ class Parser {
     while (this.labelTrie.iterateSearch(text[this.cursor])) {
       label += text[this.moveCursor(1)];
     }
+
     try {
       const labelToken = new LabelToken(label);
       this.tokens.labels.push(labelToken);
@@ -163,6 +170,38 @@ class Parser {
         errorLine: this.line,
       });
     }
+
+    if (text[this.moveCursor(1)] !== EKeyword.CloseSqureBracket) {
+      throw new DSyntaxError("유효하지 않은 키워드 입니다.", {
+        errorCursor: this.cursor,
+        errorLineStr: this.errorLineStr,
+        errorLine: this.line,
+      });
+    }
+
+    if (text[this.moveCursor(1)] !== EKeyword.OpenRoundBrackets) {
+      throw new DSyntaxError(
+        "라벨은 반드시 라벨 이미지가 포함 되어야 합니다.",
+        {
+          errorCursor: this.cursor,
+          errorLineStr: this.errorLineStr,
+          errorLine: this.line,
+        }
+      );
+    }
+
+    while (text[this.moveCursor(1)] !== EKeyword.ClosedRoundBrackets) {
+      if (text[this.cursor] === EKeyword.LineBreak)
+        throw new DSyntaxError(
+          "라벨은 반드시 라벨 이미지가 포함 되어야 합니다.",
+          {
+            errorCursor: this.cursor,
+            errorLineStr: this.errorLineStr,
+            errorLine: this.line,
+          }
+        );
+    }
+
     return;
   }
 

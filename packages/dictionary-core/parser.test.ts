@@ -1,18 +1,18 @@
-import { DSyntaxError, DuplciatedError, UndefinedLabelError } from "./errors";
+import { DSyntaxError, DuplciatedError } from "./errors";
 import Parser from "./parser";
 
 describe("Parser", () => {
   describe("parse", () => {
     describe("title", () => {
-      test("#으로 시작하고 하나 이상의 공백이 존재하지 않으면 Word 토큰을 발행하지 않는다.", () => {
+      test("#으로 시작하고 하나 이상의 공백이 존재하지 않으면 Syntax 에러 이다.", () => {
         const word = "Batch";
         const parser = new Parser();
 
-        const token = parser.parse(`
-              #${word}
-           `);
-
-        expect(token.title).toBeNull();
+        expect(() =>
+          parser.parse(`
+        #${word}
+     `)
+        ).toThrowError(DSyntaxError);
       });
 
       test("WordToken이 두 개 이상이라면 Duplicated Error가 발생한다.", () => {
@@ -47,19 +47,6 @@ describe("Parser", () => {
         expect(tokens.title.content).toBe(word);
         expect(tokens2.title.content).toBe(word2);
       });
-
-      test("공백이 있으면 tokenize를 종료한다.", () => {
-        const word = "First";
-
-        const parser = new Parser();
-
-        const tokens = parser.parse(`
-              # First
-              Line
-           `);
-
-        expect(tokens.title.content).toBe(word);
-      });
     });
 
     describe("labels", () => {
@@ -70,11 +57,11 @@ describe("Parser", () => {
                  # First
                  ![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
-                 ddd
+                 
 
                  ![Common](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Common.png)
 
-                 dd
+                 
 
               `);
         expect(tokens.labels.map((label) => label.content)).toStrictEqual([
@@ -91,16 +78,16 @@ describe("Parser", () => {
         # First
         ![Backend](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Backend.png)
 
-        ddd
+        
 
         ![Cobmon](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Cobmon.png)
 
-        dd
+        
 
      `)
         ).toThrowError(
           new DSyntaxError("Co는 존재하지 않는 라벨입니다.", {
-            errorCursor: 149,
+            errorCursor: 146,
             errorLineStr:
               "![Cobmon](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Cobmon.png)",
             errorLine: 6,
@@ -172,7 +159,7 @@ describe("Parser", () => {
       test("-가 3개 이상이며 그 외에는 줄바꿈이 존재하고, 다음 줄에는 빈 줄이 존재하고 그 아래를 Token화 한다.  ", () => {
         const parser = new Parser();
         const tokens = parser.parse(`
-          dooop
+          
           --------
 
           This is Content Body :)`);
@@ -184,14 +171,14 @@ describe("Parser", () => {
         const parser = new Parser();
         expect(() =>
           parser.parse(`
-            dooop
+            
             --------
             This is Content Body :)`)
         ).toThrowError(
           new DSyntaxError(
             "Body 라인 이후에는 반드시 공백이 하나 더 있어야 합니다.",
             {
-              errorCursor: 40,
+              errorCursor: 35,
               errorLine: 3,
               errorLineStr: "This is Content Body :)",
             }
@@ -202,7 +189,7 @@ describe("Parser", () => {
       test("body 줄바꿈에 텍스트가 섞여 있으면 Body가 아니다.", () => {
         const parser = new Parser();
         const token = parser.parse(`
-          dooop
+          
           ------ddd
           This is Content Body :)`);
         expect(token.body).toBe(null);

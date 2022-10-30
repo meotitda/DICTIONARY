@@ -26,6 +26,8 @@ export const EKeyword = {
   Mark: "!",
   OpenAngleBrackets: "<",
   ClosedAngleBrackets: ">",
+  OpenRoundBrackets: "(",
+  ClosedRoundBrackets: ")",
   A: "a",
   OpenSqureBracket: "[",
   CloseSqureBracket: "]",
