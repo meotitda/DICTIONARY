@@ -1,9 +1,9 @@
 import { UndefinedLabelError } from "./errors";
-import { ELabel, EToken, TToken } from "./types";
+import { ELabel, EToken, TLabel, TToken } from "./types";
 
 export class Token {
   protected _type: TToken;
-  private _content: string;
+  protected _content: string;
   constructor(content: string) {
     this._content = content;
   }
@@ -54,6 +54,10 @@ export class LabelToken extends Token {
 
   public get type() {
     return this._type;
+  }
+
+  public get content() {
+    return this._content as TLabel;
   }
 }
 
