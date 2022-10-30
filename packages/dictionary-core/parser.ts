@@ -1,8 +1,8 @@
 import { Trie } from "dictionary-utils";
 import { DictionaryTokenCache, ICache } from "./cache";
-import { DuplciatedError } from "./errors";
+import { DuplciatedError, DSyntaxError } from "./errors";
 import { BodyToken, ITokens, LabelToken, TagToken, TitleToken } from "./tokens";
-import { EKeyword, ELabel, IWord } from "./types";
+import { EKeyword, ELabel, EToken, IWord } from "./types";
 
 class Parser {
   private tokens: ITokens = {
@@ -12,7 +12,33 @@ class Parser {
     body: null,
   };
 
-  private cursor = 0;
+  private _cursor = 0;
+
+  private line = 0;
+
+  private text = "";
+
+  private get cursor() {
+    return this._cursor;
+  }
+
+  private get errorLineStr() {
+    return this.text.split(EKeyword.LineBreak)[this.line].trim();
+  }
+
+  private moveCursor(amount = 1) {
+    const result = this._cursor;
+    for (let i = 0; i < amount && this._cursor < this.text.length; i++) {
+      if (this.text[this._cursor] === EKeyword.LineBreak) this.line++;
+      this._cursor++;
+    }
+    return result;
+  }
+
+  private resetCursor() {
+    this._cursor = 0;
+  }
+
   private cache: ICache;
 
   private labelTrie: Trie;
@@ -25,10 +51,10 @@ class Parser {
     Object.values(ELabel).map((label) => this.labelTrie.insert(label));
     this.tagKeywordTrie.insert("href");
 
-    this.paths.set("Body", this.tokenizeBody.bind(this));
-    this.paths.set("Title", this.tokenizerTitle.bind(this));
-    this.paths.set("Label", this.tokenizeLabel.bind(this));
-    this.paths.set("Tag", this.tokenizeTag.bind(this));
+    this.paths.set(EToken.Body, this.tokenizeBody.bind(this));
+    this.paths.set(EToken.Title, this.tokenizerTitle.bind(this));
+    this.paths.set(EToken.Label, this.tokenizeLabel.bind(this));
+    this.paths.set(EToken.Tag, this.tokenizeTag.bind(this));
     this.paths.set("None", this.next.bind(this));
 
     this.cache = cache ? cache : new DictionaryTokenCache();
@@ -59,19 +85,19 @@ class Parser {
     const i = this.cursor;
     switch (true) {
       case text[i] + text[i + 1] + text[i + 2] === EKeyword.Dash.repeat(3): {
-        return "Body";
+        return EToken.Body;
       }
       case text[i] === EKeyword.Sharp && text[i + 1] === EKeyword.Space: {
-        return "Title";
+        return EToken.Title;
       }
       case text[i] === EKeyword.Mark &&
         text[i + 1] === EKeyword.OpenSqureBracket: {
-        return "Label";
+        return EToken.Label;
       }
       case text[i] === EKeyword.OpenAngleBrackets &&
         text[i + 1] === EKeyword.A &&
         text[i + 2] === EKeyword.Space: {
-        return "Tag";
+        return EToken.Tag;
       }
       default:
         return "None";
@@ -80,46 +106,63 @@ class Parser {
 
   private tokenizerTitle(text: string): void {
     if (this.tokens.title)
-      throw new DuplciatedError("Title은 단어 당 하나만 가질 수 있습니다.");
+      throw new DuplciatedError("Title은 단어 당 하나만 가질 수 있습니다.", {
+        errorCursor: this.cursor,
+        errorLineStr: this.errorLineStr,
+        errorLine: this.line,
+      });
     let result = "";
-    this.cursor += 2;
+    this.moveCursor(2);
     while (text[this.cursor] !== EKeyword.LineBreak) {
-      result += text[this.cursor++];
+      result += text[this.moveCursor()];
     }
     this.tokens.title = new TitleToken(result);
     return;
   }
 
   private tokenizeBody(text: string): void {
-    this.cursor += 3;
+    this.moveCursor(3);
     // eslint-disable-next-line no-empty
-    while (text[this.cursor++] === "-") {}
+    while (text[this.moveCursor(1)] === "-") {}
 
     if (text[this.cursor - 1] !== "\n") return;
 
     if (text[this.cursor] !== "\n") {
-      throw new Error(
-        "Invalid Syntax: You need to put a new line after body line"
+      throw new DSyntaxError(
+        "Body 라인 이후에는 반드시 공백이 하나 더 있어야 합니다.",
+        {
+          errorCursor: this.cursor,
+          errorLineStr: this.errorLineStr,
+          errorLine: this.line,
+        }
       );
     }
 
-    this.cursor++;
+    this.moveCursor(1);
     let body = "";
 
     while (this.cursor < text.length) {
-      body += text[this.cursor++];
+      body += text[this.moveCursor(1)];
     }
     this.tokens.body = new BodyToken(body);
   }
 
   private tokenizeLabel(text: string): void {
     let label = "";
-    this.cursor += 2;
+    this.moveCursor(2);
     while (this.labelTrie.iterateSearch(text[this.cursor])) {
-      label += text[this.cursor++];
+      label += text[this.moveCursor(1)];
     }
-    const labelToken = new LabelToken(label);
-    this.tokens.labels.push(labelToken);
+    try {
+      const labelToken = new LabelToken(label);
+      this.tokens.labels.push(labelToken);
+    } catch (UndefinedLabelError) {
+      throw new DSyntaxError(`${label}는 존재하지 않는 라벨입니다.`, {
+        errorCursor: this.cursor,
+        errorLineStr: this.errorLineStr,
+        errorLine: this.line,
+      });
+    }
     return;
   }
 
@@ -131,7 +174,7 @@ class Parser {
     const attributes = {};
     let keyword = "";
 
-    this.cursor += 3;
+    this.moveCursor(3);
     let tempKey = "",
       tempValue = "",
       state = TagAttributeState.Keyword;
@@ -140,7 +183,7 @@ class Parser {
       text[this.cursor] !== EKeyword.ClosedAngleBrackets &&
       this.cursor < text.length
     ) {
-      const curr = text[this.cursor++];
+      const curr = text[this.moveCursor(1)];
 
       if (curr === EKeyword.Space) {
         if (!tempKey) continue;
@@ -153,7 +196,12 @@ class Parser {
 
         state = TagAttributeState.Keyword;
       } else if (curr === EKeyword.Eqaul) {
-        if (!tempKey) throw new Error("키가 없습니다.");
+        if (!tempKey)
+          throw new DSyntaxError("키가 없습니다.", {
+            errorCursor: this.cursor,
+            errorLineStr: this.errorLineStr,
+            errorLine: this.line,
+          });
         state = TagAttributeState.Value;
       } else {
         if (state === TagAttributeState.Keyword) {
@@ -170,13 +218,18 @@ class Parser {
     });
 
     // 키워드 처리
-    const curr = text[++this.cursor];
+    this.moveCursor(1);
+    const curr = text[this.cursor];
     if (curr !== EKeyword.Sharp) {
-      throw new Error("키워드는 hash여야 합니다.");
+      throw new DSyntaxError("키워드는 hash여야 합니다.", {
+        errorCursor: this.cursor,
+        errorLineStr: this.errorLineStr,
+        errorLine: this.line,
+      });
     }
-    this.cursor++;
+    this.moveCursor(1);
     while (text[this.cursor] !== EKeyword.OpenAngleBrackets) {
-      keyword += text[this.cursor++];
+      keyword += text[this.moveCursor(1)];
     }
 
     if (
@@ -186,23 +239,29 @@ class Parser {
         text[this.cursor + 3] === EKeyword.ClosedAngleBrackets
       )
     ) {
-      throw new Error("잘못 닫힌 태그");
+      throw new DSyntaxError("잘못 닫힌 태그입니다.", {
+        errorCursor: this.cursor,
+        errorLineStr: this.errorLineStr,
+        errorLine: this.line,
+      });
     }
 
-    this.cursor += 3;
+    this.moveCursor(3);
     this.tokens.tags.push(new TagToken(keyword, attributes));
   }
 
   public parse(text: string): ITokens {
     if (this.cache.has(text)) return this.cache.get(text);
-    this.cursor = 0;
+    this.text = text;
+    this.resetCursor();
     this.tokens = {
       title: null,
       labels: [],
       tags: [],
       body: null,
     };
-    for (; this.cursor < text.length - 2; this.cursor++) {
+
+    for (; this.cursor < text.length - 2; this.moveCursor(1)) {
       const path = this.route(text);
       this.paths.get(path)(text);
     }

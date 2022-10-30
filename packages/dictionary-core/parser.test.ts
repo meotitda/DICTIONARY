@@ -1,4 +1,4 @@
-import { DuplciatedError, UndefinedLabelError } from "./errors";
+import { DSyntaxError, DuplciatedError, UndefinedLabelError } from "./errors";
 import Parser from "./parser";
 
 describe("Parser", () => {
@@ -83,7 +83,7 @@ describe("Parser", () => {
         ]);
       });
 
-      test("전역 컨텍스트인 경우에 ![]()를 사용하면서 카테고리에 없는 값을 입력할 경우에는 UndefinedLabel Error이다.", () => {
+      test("전역 컨텍스트인 경우에 ![]()를 사용하면서 카테고리에 없는 값을 입력할 경우에는 Syntax Error이다.", () => {
         const parser = new Parser();
 
         expect(() =>
@@ -99,7 +99,12 @@ describe("Parser", () => {
 
      `)
         ).toThrowError(
-          new UndefinedLabelError("Co는 존재하지 않는 라벨입니다.")
+          new DSyntaxError("Co는 존재하지 않는 라벨입니다.", {
+            errorCursor: 149,
+            errorLineStr:
+              "![Cobmon](https://raw.githubusercontent.com/meotitda/DICTIONARY/master/2TAT1C/Label_Cobmon.png)",
+            errorLine: 6,
+          })
         );
       });
     });
@@ -177,15 +182,19 @@ describe("Parser", () => {
 
       test("body 줄바꿈이 적용된 후에 공백이 없다면 Syntax 에러가 발생한다. ", () => {
         const parser = new Parser();
-
         expect(() =>
           parser.parse(`
             dooop
             --------
             This is Content Body :)`)
         ).toThrowError(
-          new Error(
-            "Invalid Syntax: You need to put a new line after body line"
+          new DSyntaxError(
+            "Body 라인 이후에는 반드시 공백이 하나 더 있어야 합니다.",
+            {
+              errorCursor: 40,
+              errorLine: 3,
+              errorLineStr: "This is Content Body :)",
+            }
           )
         );
       });
