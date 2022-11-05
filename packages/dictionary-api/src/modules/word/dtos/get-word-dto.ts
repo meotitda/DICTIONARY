@@ -5,12 +5,12 @@ import { WordDto } from './word-dto';
 
 export class InputGetWordDto extends PickType(WordDto, ['title'] as const) {}
 
-export class OutputGetWordDto extends ResultDto {
+export class OutputGetWordDto implements ResultDto {
   items: Word;
   message: string;
 }
 
-export class OutputGetWordsDto extends ResultDto {
+export class OutputGetWordsDto implements ResultDto {
   items: Word[];
   message: string;
 }

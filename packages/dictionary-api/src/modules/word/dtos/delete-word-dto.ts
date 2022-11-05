@@ -5,7 +5,7 @@ import { WordDto } from './word-dto';
 
 export class InputDeleteWordDto extends PickType(WordDto, ['title'] as const) {}
 
-export class OutputDeleteDto extends ResultDto {
+export class OutputDeleteDto implements ResultDto {
   items: Word;
   message: string;
 }
