@@ -1,18 +1,15 @@
-import { CommonDto } from 'src/common/common.dto';
+import { DateDto } from 'src/common/common.dto';
 import {
   IsString,
   IsNotEmpty,
   IsArray,
   IsOptional,
   IsEnum,
-  ValidateNested,
   Length,
 } from 'class-validator';
 import { ELabel, ITag, TLabel } from '@dictionary/core/types';
-import { Type } from 'class-transformer';
-import { IsArrayOfObjects } from 'src/decorators/nested-dto.decorator';
 
-export class WordDto extends CommonDto {
+export class WordDto extends DateDto {
   @IsNotEmpty()
   @IsString()
   @Length(1)

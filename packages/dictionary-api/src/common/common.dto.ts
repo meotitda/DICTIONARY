@@ -1,6 +1,6 @@
 import { IsDate, IsOptional } from 'class-validator';
 
-export class CommonDto {
+export class DateDto {
   @IsDate()
   @IsOptional()
   createdAt: Date;
@@ -12,4 +12,9 @@ export class CommonDto {
   @IsDate()
   @IsOptional()
   deletedAt: Date;
+}
+
+export class ResultDto {
+  items: any;
+  message: string;
 }

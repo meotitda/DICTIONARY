@@ -1,10 +1,12 @@
 import { OmitType } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
 import { ValidateNested } from 'class-validator';
+import { ResultDto } from 'src/common/common.dto';
 import { IsArrayOfObjects } from 'src/decorators/nested-dto.decorator';
+import { Word } from 'src/schemas/word.schema';
 import { Tag, WordDto } from './word-dto';
 
-export class CreateWordDto extends OmitType(WordDto, [
+export class InputCreateWordDto extends OmitType(WordDto, [
   'updatedAt',
   'deletedAt',
 ] as const) {
@@ -12,4 +14,9 @@ export class CreateWordDto extends OmitType(WordDto, [
   @ValidateNested()
   @Type(() => Tag)
   tags: Tag[];
+}
+
+export class OutputCreateWordDto extends ResultDto {
+  items: Word;
+  message: string;
 }

@@ -3,13 +3,16 @@ import {
   Controller,
   Delete,
   Get,
+  HttpCode,
   HttpStatus,
   Param,
   Post,
   Res,
 } from '@nestjs/common';
-import { Word } from 'src/schemas/word.schema';
-import { CreateWordDto } from './dtos/create-word-dto';
+import {
+  InputCreateWordDto,
+  OutputCreateWordDto,
+} from './dtos/create-word-dto';
 import { WordService } from './word.service';
 
 @Controller('words')
@@ -17,12 +20,13 @@ export class WordController {
   constructor(private readonly wordService: WordService) {}
 
   @Post()
-  async createWord(@Res() response, @Body() input: CreateWordDto) {
-    console.log(input);
-    const newWord = await this.wordService.createWord(input);
-    return response.status(HttpStatus.CREATED).json({
-      newWord,
-    });
+  @HttpCode(201)
+  async createWord(
+    @Body() input: InputCreateWordDto,
+  ): Promise<OutputCreateWordDto> {
+    const result = await this.wordService.createWord(input);
+
+    return result;
   }
 
   @Get()
