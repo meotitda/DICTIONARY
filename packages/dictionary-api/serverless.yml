@@ -6,6 +6,8 @@ plugins:
 provider:
   name: aws
   runtime: nodejs16.x
+  region: ap-northeast-2
+  profile: dictionary
 
 functions:
   main:

@@ -3,6 +3,7 @@ module.exports = (options, webpack) => {
     '@nestjs/microservices/microservices-module',
     '@nestjs/websockets/socket-module',
     '@nestjs/common/cache/cache.providers.js',
+    'class-transformer/storage',
   ];
 
   return {

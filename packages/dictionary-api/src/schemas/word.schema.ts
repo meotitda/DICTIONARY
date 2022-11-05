@@ -1,36 +1,26 @@
+import { ITag, IWord, TLabel } from '@dictionary/core/types';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 import { CommonSchema } from 'src/common/common.schema';
-import { Label } from 'src/constants';
 
 export type WordDocument = Word & Document;
 
-class Media {
-  title: string;
-  url: string;
-  type: string;
-}
-
-class Tag {
-  title: string;
-  url: string;
-}
 @Schema()
-export class Word extends CommonSchema {
+export class Word extends CommonSchema implements IWord {
+  @Prop({ type: String, required: true, uppercase: true, maxlength: 1 })
+  slug: string;
+
   @Prop({ type: String, required: true })
   title: string;
 
+  @Prop({ type: Array })
+  labels: TLabel[];
+
+  @Prop({ type: Array })
+  tags: ITag[];
+
   @Prop({ type: String })
-  text: string;
-
-  @Prop({ type: Array })
-  labels: Label[];
-
-  @Prop({ type: Array })
-  tags: Tag[];
-
-  @Prop({ type: Array })
-  medias: Media[];
+  body: string;
 }
 
 const WordSchema = SchemaFactory.createForClass(Word);
