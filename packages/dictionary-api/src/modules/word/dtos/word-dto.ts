@@ -5,18 +5,17 @@ import {
   IsArray,
   IsOptional,
   IsEnum,
+  ValidateNested,
+  Length,
 } from 'class-validator';
 import { ELabel, ITag, TLabel } from '@dictionary/core/types';
 import { Type } from 'class-transformer';
+import { IsArrayOfObjects } from 'src/decorators/nested-dto.decorator';
 
-export class Tag implements ITag {
-  title: string;
-  link: string;
-}
-
-export class CreateWordDto extends CommonDto {
+export class WordDto extends CommonDto {
   @IsNotEmpty()
   @IsString()
+  @Length(1)
   slug: string;
 
   @IsNotEmpty()
@@ -30,10 +29,17 @@ export class CreateWordDto extends CommonDto {
 
   @IsOptional()
   @IsArray()
-  @Type(() => Tag)
-  tags: Tag[];
+  tags: ITag[];
 
   @IsNotEmpty()
   @IsString()
   body: string;
+}
+
+export class Tag implements ITag {
+  @IsString()
+  title: string;
+
+  @IsString()
+  link: string;
 }
