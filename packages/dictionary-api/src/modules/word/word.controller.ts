@@ -4,21 +4,12 @@ import {
   Delete,
   Get,
   HttpCode,
-  HttpStatus,
   Param,
   Post,
-  Res,
 } from '@nestjs/common';
-import {
-  InputCreateWordDto,
-  OutputCreateWordDto,
-} from './dtos/create-word-dto';
-import { OutputDeleteDto } from './dtos/delete-word-dto';
-import {
-  InputGetWordDto,
-  OutputGetWordDto,
-  OutputGetWordsDto,
-} from './dtos/get-word-dto';
+import { ResultDto } from 'src/common/common.dto';
+import { Word } from 'src/schemas/word.schema';
+import { InputCreateWordDto } from './dtos/create-word.dto';
 import { WordService } from './word.service';
 
 @Controller('words')
@@ -29,7 +20,7 @@ export class WordController {
   @HttpCode(201)
   async createWord(
     @Body() input: InputCreateWordDto,
-  ): Promise<OutputCreateWordDto> {
+  ): Promise<ResultDto<Word>> {
     const result = await this.wordService.createWord(input);
 
     return result;
@@ -37,7 +28,7 @@ export class WordController {
 
   @Get()
   @HttpCode(200)
-  async getWords(): Promise<OutputGetWordsDto> {
+  async getWords(): Promise<ResultDto<Word[]>> {
     const result = await this.wordService.getWords();
 
     return result;
@@ -45,7 +36,9 @@ export class WordController {
 
   @Get('/:title')
   @HttpCode(200)
-  async getWord(@Param('title') title): Promise<OutputGetWordDto> {
+  async getWord(@Param('title') title): Promise<ResultDto<Word>> {
+    console.log(title);
+    console.log(typeof title);
     const result = await this.wordService.getWord(title);
 
     return result;
@@ -53,7 +46,7 @@ export class WordController {
 
   @Delete('/:title')
   @HttpCode(200)
-  async deleteWord(@Param('title') title): Promise<OutputDeleteDto> {
+  async deleteWord(@Param('title') title): Promise<ResultDto<Word>> {
     const result = await this.wordService.deleteWord(title);
 
     return result;

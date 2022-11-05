@@ -1,4 +1,4 @@
-export interface ResultDto {
-  items: any;
+export interface ResultDto<T> {
+  items: T;
   message: string;
 }

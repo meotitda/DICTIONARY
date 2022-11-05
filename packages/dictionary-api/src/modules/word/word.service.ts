@@ -1,19 +1,17 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
+import { ResultDto } from 'src/common/common.dto';
 import { Word, WordDocument } from 'src/schemas/word.schema';
-import {
-  InputCreateWordDto,
-  OutputCreateWordDto,
-} from './dtos/create-word-dto';
-import { InputDeleteWordDto, OutputDeleteDto } from './dtos/delete-word-dto';
-import { InputGetWordDto, OutputGetWordsDto } from './dtos/get-word-dto';
+import { InputCreateWordDto } from './dtos/create-word.dto';
+import { InputDeleteWordDto } from './dtos/delete-word.dto';
+import { InputGetWordDto } from './dtos/get-word.dto';
 
 @Injectable()
 export class WordService {
   constructor(@InjectModel(Word.name) private wordModel: Model<WordDocument>) {}
 
-  async createWord(input: InputCreateWordDto): Promise<OutputCreateWordDto> {
+  async createWord(input: InputCreateWordDto): Promise<ResultDto<Word>> {
     const word = new this.wordModel(input);
     await word.save();
 
@@ -24,7 +22,7 @@ export class WordService {
     return result;
   }
 
-  async getWords(): Promise<OutputGetWordsDto> {
+  async getWords(): Promise<ResultDto<Word[]>> {
     // TODO paging
     const words = await this.wordModel.find({ deletedAt: null }).exec();
     const result = {
@@ -40,7 +38,7 @@ export class WordService {
    * @param {string} title title
    * @returns {Word} Word
    */
-  async getWord(title: InputGetWordDto): Promise<OutputCreateWordDto> {
+  async getWord(title: InputGetWordDto): Promise<ResultDto<Word>> {
     const word = await this.wordModel
       .findOne({ title, deletedAt: null })
       .exec();
@@ -58,7 +56,7 @@ export class WordService {
    * @param {string} title title
    * @returns {Word} Word
    */
-  async deleteWord(title: InputDeleteWordDto): Promise<OutputDeleteDto> {
+  async deleteWord(title: InputDeleteWordDto): Promise<ResultDto<Word>> {
     const word = await this.wordModel
       .findOne({ title, deletedAt: null })
       .exec();
@@ -67,7 +65,7 @@ export class WordService {
       throw new NotFoundException();
     }
 
-    word.updatedAt = new Date();
+    word.deletedAt = new Date();
     await word.save();
 
     const result = {

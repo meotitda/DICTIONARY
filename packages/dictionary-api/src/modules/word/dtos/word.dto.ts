@@ -5,8 +5,11 @@ import {
   IsOptional,
   IsEnum,
   Length,
+  ValidateNested,
 } from 'class-validator';
 import { ELabel, ITag, TLabel } from '@dictionary/core/types';
+import { IsArrayOfObjects } from 'src/decorators/nested-dto.decorator';
+import { Type } from 'class-transformer';
 
 export class WordDto {
   @IsNotEmpty()
@@ -25,7 +28,10 @@ export class WordDto {
 
   @IsOptional()
   @IsArray()
-  tags: ITag[];
+  @IsArrayOfObjects()
+  @ValidateNested()
+  @Type(() => Tag)
+  tags: Tag[];
 
   @IsNotEmpty()
   @IsString()
