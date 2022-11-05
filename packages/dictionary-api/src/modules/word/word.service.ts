@@ -2,13 +2,14 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Word, WordDocument } from 'src/schemas/word.schema';
+import { CreateWordDto } from './dtos/create-word-dto';
 
 @Injectable()
 export class WordService {
   constructor(@InjectModel(Word.name) private wordModel: Model<WordDocument>) {}
 
-  async createWord(word: Word): Promise<Word> {
-    const newWord = new this.wordModel(word);
+  async createWord(input: CreateWordDto): Promise<Word> {
+    const newWord = new this.wordModel(input);
     return newWord.save();
   }
 
