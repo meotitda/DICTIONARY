@@ -2,6 +2,7 @@ import { ITag, IWord, TLabel } from '@dictionary/core/types';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 import { CommonSchema } from 'src/common/common.schema';
+import { Tag } from 'src/modules/word/dtos/word-dto';
 
 export type WordDocument = Word & Document;
 
