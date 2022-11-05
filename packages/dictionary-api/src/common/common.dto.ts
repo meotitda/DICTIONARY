@@ -14,7 +14,7 @@ export class DateDto {
   deletedAt: Date;
 }
 
-export class ResultDto {
+export interface ResultDto {
   items: any;
   message: string;
 }

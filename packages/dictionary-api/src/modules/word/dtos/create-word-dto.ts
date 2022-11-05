@@ -16,7 +16,7 @@ export class InputCreateWordDto extends OmitType(WordDto, [
   tags: Tag[];
 }
 
-export class OutputCreateWordDto extends ResultDto {
+export class OutputCreateWordDto implements ResultDto {
   items: Word;
   message: string;
 }
