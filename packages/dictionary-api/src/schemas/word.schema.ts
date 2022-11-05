@@ -5,19 +5,6 @@ import { CommonSchema } from 'src/common/common.schema';
 
 export type WordDocument = Word & Document;
 
-// class Label {
-//   Common: TLabel;
-//   Frontend: TLabel;
-//   Backend: TLabel;
-//   Database: TLabel;
-//   Devops: TLabel;
-// }
-
-// class Tag implements ITag {
-//   title: string;
-//   link: string;
-// }
-
 @Schema()
 export class Word extends CommonSchema implements IWord {
   @Prop({ type: String, required: true, uppercase: true, maxlength: 1 })

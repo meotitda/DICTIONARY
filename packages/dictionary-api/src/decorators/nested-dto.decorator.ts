@@ -1,8 +1,5 @@
-import { Type } from 'class-transformer';
 import {
-  IsString,
   registerDecorator,
-  ValidateNested,
   ValidationArguments,
   ValidationOptions,
 } from 'class-validator';

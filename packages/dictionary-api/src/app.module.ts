@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { WordModule } from './modules/word/word.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { Mongoose } from 'mongoose';
 
 @Module({
   imports: [
