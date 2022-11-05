@@ -1,4 +1,3 @@
-import { DateDto } from 'src/common/common.dto';
 import {
   IsString,
   IsNotEmpty,
@@ -9,7 +8,7 @@ import {
 } from 'class-validator';
 import { ELabel, ITag, TLabel } from '@dictionary/core/types';
 
-export class WordDto extends DateDto {
+export class WordDto {
   @IsNotEmpty()
   @IsString()
   @Length(1)
