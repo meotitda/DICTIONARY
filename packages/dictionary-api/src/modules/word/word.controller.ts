@@ -13,6 +13,12 @@ import {
   InputCreateWordDto,
   OutputCreateWordDto,
 } from './dtos/create-word-dto';
+import { OutputDeleteDto } from './dtos/delete-word-dto';
+import {
+  InputGetWordDto,
+  OutputGetWordDto,
+  OutputGetWordsDto,
+} from './dtos/get-word-dto';
 import { WordService } from './word.service';
 
 @Controller('words')
@@ -30,26 +36,26 @@ export class WordController {
   }
 
   @Get()
-  async getWords(@Res() response) {
-    const words = await this.wordService.getWords();
-    return response.status(HttpStatus.OK).json({
-      words,
-    });
+  @HttpCode(200)
+  async getWords(): Promise<OutputGetWordsDto> {
+    const result = await this.wordService.getWords();
+
+    return result;
   }
 
   @Get('/:title')
-  async getWord(@Res() response, @Param('title') title) {
-    const word = await this.wordService.getWord(title);
-    return response.status(HttpStatus.OK).json({
-      word,
-    });
+  @HttpCode(200)
+  async getWord(@Param('title') title): Promise<OutputGetWordDto> {
+    const result = await this.wordService.getWord(title);
+
+    return result;
   }
 
   @Delete('/:title')
-  async deleteWord(@Res() response, @Param('title') title) {
-    const deletedWord = await this.wordService.deleteWord(title);
-    return response.status(HttpStatus.OK).json({
-      deletedWord,
-    });
+  @HttpCode(200)
+  async deleteWord(@Param('title') title): Promise<OutputDeleteDto> {
+    const result = await this.wordService.deleteWord(title);
+
+    return result;
   }
 }
