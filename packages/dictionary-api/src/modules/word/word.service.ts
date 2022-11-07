@@ -1,19 +1,36 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
+import { ResultDto } from 'src/common/common.dto';
 import { Word, WordDocument } from 'src/schemas/word.schema';
+import { InputCreateWordDto } from './dtos/create-word.dto';
+import { InputDeleteWordDto } from './dtos/delete-word.dto';
+import { InputGetWordDto } from './dtos/get-word.dto';
 
 @Injectable()
 export class WordService {
   constructor(@InjectModel(Word.name) private wordModel: Model<WordDocument>) {}
 
-  async createWord(word: Word): Promise<Word> {
-    const newWord = new this.wordModel(word);
-    return newWord.save();
+  async createWord(input: InputCreateWordDto): Promise<ResultDto<Word>> {
+    const word = new this.wordModel(input);
+    await word.save();
+
+    const result = {
+      items: word,
+      message: `${word.title} is successfully created`,
+    };
+    return result;
   }
 
-  async getWords(): Promise<Word[]> {
-    return await this.wordModel.find({ deletedAt: null }).exec();
+  async getWords(): Promise<ResultDto<Word[]>> {
+    // TODO paging
+    const words = await this.wordModel.find({ deletedAt: null }).exec();
+    const result = {
+      items: words,
+      message: 'Successfully got words',
+    };
+
+    return result;
   }
 
   /**
@@ -21,8 +38,17 @@ export class WordService {
    * @param {string} title title
    * @returns {Word} Word
    */
-  async getWord(title): Promise<Word> {
-    return await this.wordModel.findOne({ title, deletedAt: null }).exec();
+  async getWord(title: InputGetWordDto): Promise<ResultDto<Word>> {
+    const word = await this.wordModel
+      .findOne({ title, deletedAt: null })
+      .exec();
+
+    const result = {
+      items: word,
+      message: word ? `Successfully got ${word.title}` : 'No Content',
+    };
+
+    return result;
   }
 
   /**
@@ -30,11 +56,23 @@ export class WordService {
    * @param {string} title title
    * @returns {Word} Word
    */
-  async deleteWord(title): Promise<any> {
-    return await this.wordModel.findOneAndUpdate(
-      { title },
-      { deletedAt: new Date() },
-      { new: true },
-    );
+  async deleteWord(title: InputDeleteWordDto): Promise<ResultDto<Word>> {
+    const word = await this.wordModel
+      .findOne({ title, deletedAt: null })
+      .exec();
+
+    if (!word) {
+      throw new NotFoundException();
+    }
+
+    word.deletedAt = new Date();
+    await word.save();
+
+    const result = {
+      items: word,
+      message: `${word.title} is successfully deleted`,
+    };
+
+    return result;
   }
 }
