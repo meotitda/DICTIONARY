@@ -7,7 +7,7 @@ import {
   Length,
   ValidateNested,
 } from 'class-validator';
-import { ELabel, ITag, TLabel } from '@dictionary/core/types';
+import { ELabel, ITag, TLabel } from '@dictionary/core';
 import { IsArrayOfObjects } from 'src/decorators/nested-dto.decorator';
 import { Type } from 'class-transformer';
 
