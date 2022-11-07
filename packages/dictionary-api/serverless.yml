@@ -1,4 +1,4 @@
-service: serverless-example
+service: dictionary-api
 
 plugins:
   - serverless-offline
