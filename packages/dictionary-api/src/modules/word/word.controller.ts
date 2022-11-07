@@ -7,9 +7,11 @@ import {
   Param,
   Post,
 } from '@nestjs/common';
-import { ResultDto } from 'src/common/common.dto';
+import { ControllerResultDto } from 'src/common/common.dto';
 import { Word } from 'src/schemas/word.schema';
 import { InputCreateWordDto } from './dtos/create-word.dto';
+import { InputDeleteWordDto } from './dtos/delete-word.dto';
+import { InputGetWordDto } from './dtos/get-word.dto';
 import { WordService } from './word.service';
 
 @Controller('words')
@@ -20,34 +22,60 @@ export class WordController {
   @HttpCode(201)
   async createWord(
     @Body() input: InputCreateWordDto,
-  ): Promise<ResultDto<Word>> {
-    const result = await this.wordService.createWord(input);
+  ): Promise<ControllerResultDto<Word>> {
+    const { items } = await this.wordService.createWord(input);
+
+    const result = {
+      items,
+      statusCode: 200,
+      message: `${items.title} is successfully created`,
+    };
 
     return result;
   }
 
   @Get()
   @HttpCode(200)
-  async getWords(): Promise<ResultDto<Word[]>> {
-    const result = await this.wordService.getWords();
+  async getWords(): Promise<ControllerResultDto<Word[]>> {
+    const { items } = await this.wordService.getWords();
+
+    const result = {
+      items,
+      statusCode: 200,
+      message: 'Successfully got words',
+    };
 
     return result;
   }
 
   @Get('/:title')
   @HttpCode(200)
-  async getWord(@Param('title') title): Promise<ResultDto<Word>> {
-    console.log(title);
-    console.log(typeof title);
-    const result = await this.wordService.getWord(title);
+  async getWord(
+    @Param() param: InputGetWordDto,
+  ): Promise<ControllerResultDto<Word>> {
+    const { items } = await this.wordService.getWord(param);
+
+    const result = {
+      items,
+      statusCode: 200,
+      message: items ? `Successfully got ${items.title}` : 'No Content',
+    };
 
     return result;
   }
 
   @Delete('/:title')
   @HttpCode(200)
-  async deleteWord(@Param('title') title): Promise<ResultDto<Word>> {
-    const result = await this.wordService.deleteWord(title);
+  async deleteWord(
+    @Param() param: InputDeleteWordDto,
+  ): Promise<ControllerResultDto<Word>> {
+    const { items } = await this.wordService.deleteWord(param);
+
+    const result = {
+      items,
+      statusCode: 200,
+      message: `${items.title} is successfully deleted`,
+    };
 
     return result;
   }
