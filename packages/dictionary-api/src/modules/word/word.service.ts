@@ -5,13 +5,14 @@ import { ResultDto } from 'src/common/common.dto';
 import { Word, WordDocument } from 'src/schemas/word.schema';
 import { InputCreateWordDto } from './dtos/create-word.dto';
 import { InputDeleteWordDto } from './dtos/delete-word.dto';
-import { InputGetWordDto } from './dtos/get-word.dto';
+import { InputGetWordDto, ResultWordDto } from './dtos/get-word.dto';
+import { WordDto } from './dtos/word.dto';
 
 @Injectable()
 export class WordService {
   constructor(@InjectModel(Word.name) private wordModel: Model<WordDocument>) {}
 
-  async createWord(input: InputCreateWordDto): Promise<ResultDto<Word>> {
+  async createWord(input: InputCreateWordDto): Promise<ResultDto> {
     const word = new this.wordModel(input);
     await word.save();
 
@@ -22,7 +23,7 @@ export class WordService {
     return result;
   }
 
-  async getWords(): Promise<ResultDto<Word[]>> {
+  async getWords(): Promise<any> {
     // TODO paging
     const words = await this.wordModel.find({ deletedAt: null }).exec();
     const result = {
@@ -38,13 +39,13 @@ export class WordService {
    * @param {string} title title
    * @returns {Word} Word
    */
-  async getWord(title: InputGetWordDto): Promise<ResultDto<Word>> {
+  async getWord(title: string): Promise<ResultWordDto> {
     const word = await this.wordModel
       .findOne({ title, deletedAt: null })
       .exec();
 
     const result = {
-      items: word,
+      item: word,
       message: word ? `Successfully got ${word.title}` : 'No Content',
     };
 
@@ -56,11 +57,11 @@ export class WordService {
    * @param {string} title title
    * @returns {Word} Word
    */
-  async deleteWord(title: InputDeleteWordDto): Promise<ResultDto<Word>> {
+  async deleteWord(title: InputDeleteWordDto): Promise<ResultDto> {
     const word = await this.wordModel
       .findOne({ title, deletedAt: null })
       .exec();
-
+    console.log('hit');
     if (!word) {
       throw new NotFoundException();
     }

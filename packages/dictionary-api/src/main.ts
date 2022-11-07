@@ -1,5 +1,6 @@
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import serverlessExpress from '@vendia/serverless-express';
 import { Callback, Context, Handler } from 'aws-lambda';
 import { AppModule } from './app.module';
@@ -23,6 +24,15 @@ async function bootstrap(): Promise<Handler> {
   );
 
   if (CONFIG.NEST_ENV === 'dev') {
+    const config = new DocumentBuilder()
+      .setTitle('DICTIONARY OFFICAIL API')
+      .setDescription('딕셔너리 공식 API 문서입니다.')
+      .setVersion('1.0')
+      .addTag('dictionary')
+      .build();
+    const document = SwaggerModule.createDocument(app, config);
+    SwaggerModule.setup('api', app, document);
+
     await app.listen(CONFIG.PORT);
   } else {
     await app.init();
