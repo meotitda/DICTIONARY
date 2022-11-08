@@ -33,7 +33,7 @@ const WordSchema = new Schema<MigrationIWord>({
 const WordModel = mongoose.model("Word", WordSchema);
 
 async function main() {
-  await mongoose.connect(process.env.MONGO_URI);
+  await mongoose.connect(process.env.MONGODB_URI);
 
   const dbWords = await WordModel.find({ deletedAt: null }).exec();
   const mdWords = await runner(ROOT);
