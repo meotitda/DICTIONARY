@@ -7,7 +7,8 @@ const dfsDirectory = (root: string, callback: (curr: string) => any) => {
     isVisited.add(curr);
 
     if (fs.lstatSync(curr).isFile()) {
-      return callback(curr);
+      callback(curr);
+      return;
     }
 
     const lists = fs.readdirSync(curr);

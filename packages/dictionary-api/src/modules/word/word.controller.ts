@@ -3,12 +3,15 @@ import {
   Controller,
   Delete,
   Get,
-  HttpStatus,
+  HttpCode,
   Param,
   Post,
-  Res,
 } from '@nestjs/common';
+import { ControllerResultDto } from 'src/common/common.dto';
 import { Word } from 'src/schemas/word.schema';
+import { InputCreateWordDto } from './dtos/create-word.dto';
+import { InputDeleteWordDto } from './dtos/delete-word.dto';
+import { InputGetWordDto } from './dtos/get-word.dto';
 import { WordService } from './word.service';
 
 @Controller('words')
@@ -16,34 +19,64 @@ export class WordController {
   constructor(private readonly wordService: WordService) {}
 
   @Post()
-  async createWord(@Res() response, @Body() word: Word) {
-    const newWord = await this.wordService.createWord(word);
-    return response.status(HttpStatus.CREATED).json({
-      newWord,
-    });
+  @HttpCode(201)
+  async createWord(
+    @Body() input: InputCreateWordDto,
+  ): Promise<ControllerResultDto<Word>> {
+    const { items } = await this.wordService.createWord(input);
+
+    const result = {
+      items,
+      statusCode: 200,
+      message: `${items.title} is successfully created`,
+    };
+
+    return result;
   }
 
   @Get()
-  async getWords(@Res() response) {
-    const words = await this.wordService.getWords();
-    return response.status(HttpStatus.OK).json({
-      words,
-    });
+  @HttpCode(200)
+  async getWords(): Promise<ControllerResultDto<Word[]>> {
+    const { items } = await this.wordService.getWords();
+
+    const result = {
+      items,
+      statusCode: 200,
+      message: 'Successfully got words',
+    };
+
+    return result;
   }
 
   @Get('/:title')
-  async getWord(@Res() response, @Param('title') title) {
-    const word = await this.wordService.getWord(title);
-    return response.status(HttpStatus.OK).json({
-      word,
-    });
+  @HttpCode(200)
+  async getWord(
+    @Param() param: InputGetWordDto,
+  ): Promise<ControllerResultDto<Word>> {
+    const { items } = await this.wordService.getWord(param);
+
+    const result = {
+      items,
+      statusCode: 200,
+      message: items ? `Successfully got ${items.title}` : 'No Content',
+    };
+
+    return result;
   }
 
   @Delete('/:title')
-  async deleteWord(@Res() response, @Param('title') title) {
-    const deletedWord = await this.wordService.deleteWord(title);
-    return response.status(HttpStatus.OK).json({
-      deletedWord,
-    });
+  @HttpCode(200)
+  async deleteWord(
+    @Param() param: InputDeleteWordDto,
+  ): Promise<ControllerResultDto<Word>> {
+    const { items } = await this.wordService.deleteWord(param);
+
+    const result = {
+      items,
+      statusCode: 200,
+      message: `${items.title} is successfully deleted`,
+    };
+
+    return result;
   }
 }
