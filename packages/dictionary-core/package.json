@@ -1,6 +1,6 @@
 {
   "name": "@dictionary/core",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "version": "1.0.0",
   "packageManager": "yarn@3.2.3",
   "dependencies": {

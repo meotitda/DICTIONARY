@@ -8,9 +8,12 @@
   "scripts": {
     "build": "yarn nest build --webpack",
     "offline": "yarn build && yarn sls offline",
-    "start": "yarn nodemon --exec yarn offline",
     "deploy": "yarn build && yarn sls deploy --aws-profile dictionary --stage prod",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "NEST_ENV=dev nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",

@@ -5,7 +5,7 @@ import { ServiceResultDto } from 'src/common/common.dto';
 import { Word, WordDocument } from 'src/schemas/word.schema';
 import { InputCreateWordDto } from './dtos/create-word.dto';
 import { InputDeleteWordDto } from './dtos/delete-word.dto';
-import { InputGetWordDto } from './dtos/get-word.dto';
+import { ResultWordDto } from './dtos/get-word.dto';
 
 @Injectable()
 export class WordService {
@@ -34,12 +34,15 @@ export class WordService {
    * @param {string} title title
    * @returns {Word} Word
    */
-  async getWord({ title }: InputGetWordDto): Promise<ServiceResultDto<Word>> {
+  async getWord(title: string): Promise<ResultWordDto> {
     const word = await this.wordModel
       .findOne({ title, deletedAt: null })
       .exec();
 
-    const result = { items: word };
+    const result = {
+      item: word,
+      message: word ? `Successfully got ${word.title}` : 'No Content',
+    };
 
     return result;
   }
@@ -55,7 +58,7 @@ export class WordService {
     const word = await this.wordModel
       .findOne({ title, deletedAt: null })
       .exec();
-
+    console.log('hit');
     if (!word) {
       throw new NotFoundException();
     }
