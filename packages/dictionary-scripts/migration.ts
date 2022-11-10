@@ -33,34 +33,39 @@ const WordSchema = new Schema<MigrationIWord>({
 const WordModel = mongoose.model("Word", WordSchema);
 
 async function main() {
-  await mongoose.connect(process.env.MONGODB_URI);
+  try {
+    await mongoose.connect(process.env.MONGODB_URI);
 
-  const dbWords = await WordModel.find({ deletedAt: null }).exec();
-  const mdWords = await runner(ROOT);
+    const dbWords = await WordModel.find({ deletedAt: null }).exec();
+    const mdWords = await runner(ROOT);
 
-  const dbWordTitles = dbWords.map((dbWord) => dbWord.title);
+    const dbWordTitles = dbWords.map((dbWord) => dbWord.title);
+    await Promise.all(
+      mdWords.map(async (mdWord) => {
+        const key = Object.keys(mdWord)[0];
+        const { slug, title, labels, tags, body } = mdWord[key];
 
-  for (const mdWord of mdWords) {
-    const key = Object.keys(mdWord)[0];
-    const { slug, title, labels, tags, body } = mdWord[key];
+        if (!dbWordTitles.includes(title)) {
+          await new WordModel({
+            slug,
+            title,
+            labels,
+            tags,
+            body,
+            createdAt: new Date(),
+          }).save();
 
-    if (!dbWordTitles.includes(title)) {
-      await new WordModel({
-        slug,
-        title,
-        labels,
-        tags,
-        body,
-        createdAt: new Date(),
-      }).save();
-
-      console.log(`✅ ${title} is registered`);
-    }
+          console.log(`${title} is registered`);
+          return title;
+        }
+      })
+    );
+  } catch (error) {
+    console.log(error);
+  } finally {
+    console.log("MONGO LOCKED 🔒");
+    await mongoose.disconnect();
   }
-
-  console.log("🚀 Words successfully migrated");
-
-  await mongoose.disconnect();
 }
 
 main().catch((err) => console.log(err));

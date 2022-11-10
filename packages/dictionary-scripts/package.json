@@ -7,7 +7,8 @@
   "name": "dictionary-scripts",
   "packageManager": "yarn@3.2.3",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start:migration": "ts-node migration.ts"
   },
   "devDependencies": {
     "@dictionary/core": "*",
