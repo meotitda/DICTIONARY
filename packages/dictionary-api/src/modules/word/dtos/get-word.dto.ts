@@ -1,10 +1,10 @@
 import { ApiProperty, PickType } from '@nestjs/swagger';
-import { SwaggerableResponseDto } from 'src/common/common.dto';
+import { SwaggerResponseDto } from 'src/common/common.dto';
 import { WordDto } from './word.dto';
 
 export class InputGetWordDto extends PickType(WordDto, ['title'] as const) {}
 
-export class ResultWordDto extends SwaggerableResponseDto {
+export class ResultWordDto extends SwaggerResponseDto {
   @ApiProperty({
     type: WordDto,
   })
