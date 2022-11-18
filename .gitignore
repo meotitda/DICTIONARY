@@ -2,7 +2,7 @@ node_modules/
 .DS_Store
 output
 OUTPUT
-dictionary-client
+
 
 **/dist
 .serverless/
@@ -25,3 +25,6 @@ dictionary-client
 # !.yarn/releases
 # !.yarn/sdks
 # !.yarn/versions
+
+# web
+.next
