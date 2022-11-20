@@ -1,4 +1,5 @@
 import { Box, IconButton } from "@mui/material";
+import Link from "next/link";
 import type { FC, PropsWithChildren } from "react";
 import LogoSVG from "../../svgs/LogoSVG";
 import BottomNavigation from "../BottomNavigation";
@@ -13,10 +14,12 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          borderBottom: (theme) => `1px solid ${theme.palette.gray2}`,
+          marginBottom: "15px",
         }}
         component="header"
       >
-        <IconButton>
+        <IconButton disableRipple href="/" LinkComponent={Link}>
           <LogoSVG
             sx={{
               width: 144,

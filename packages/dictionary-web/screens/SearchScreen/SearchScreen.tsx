@@ -1,12 +1,12 @@
 import { Box } from "@mui/material";
 import SearchBar from "../../components/SearchBar";
 
-const Home = () => {
+const SearchScreen = () => {
   return (
     <Box>
-      <SearchBar linkComponent />
+      <SearchBar />
     </Box>
   );
 };
 
-export default Home;
+export default SearchScreen;

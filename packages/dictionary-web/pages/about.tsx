@@ -1,10 +1,10 @@
 import Layout from "../components/Layout/Layout";
-import Home from "../screens/Home";
+import AboutScreen from "../screens/About";
 
-export default function Index() {
+export default function About() {
   return (
     <Layout>
-      <Home />
+      <AboutScreen />
     </Layout>
   );
 }

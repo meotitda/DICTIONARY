@@ -8,11 +8,12 @@ import HomeSVG from "../../svgs/HomeSVG";
 import InfoSVG from "../../svgs/InfoSVG";
 import PencliSVG from "../../svgs/PencliSVG";
 import BottomNavigationAction from "./BottomNavigationAction";
-import { PATH } from "./navigationRoutingTable";
+import useNavigationRoutingTable from "./useNavigationRoutingTable";
 
 const BottomNavigation = () => {
   const router = useRouter();
-  const value = router.pathname;
+  const [PATH, NavigationRoutingTable] = useNavigationRoutingTable();
+  const value = router.pathname === PATH.SEARCH ? PATH.HOME : router.pathname;
 
   return (
     <Paper
@@ -22,8 +23,12 @@ const BottomNavigation = () => {
       <MuiBottomNavigation
         showLabels
         value={value}
-        onChange={(event, newValue) => {
-          router.push(newValue);
+        onChange={(event, value) => {
+          const newPath = value as keyof typeof PATH;
+          const route = NavigationRoutingTable[newPath] as
+            | (() => Promise<boolean>)
+            | (() => Window | null);
+          route();
         }}
       >
         <BottomNavigationAction
@@ -31,7 +36,11 @@ const BottomNavigation = () => {
           label="홈"
           icon={<HomeSVG />}
         />
-        <BottomNavigationAction label="단어추가" icon={<PencliSVG />} />
+        <BottomNavigationAction
+          value={PATH.WRITE}
+          label="단어추가"
+          icon={<PencliSVG />}
+        />
         <BottomNavigationAction
           value={PATH.ABOUT}
           label="About"
