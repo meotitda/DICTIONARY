@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import dynamic from "next/dynamic";
-import { FC } from "react";
+import { useRouter } from "next/router";
+import { FC, MouseEvent } from "react";
 import { Word } from "../../pages/api/types";
 
 const LabelLogo = dynamic(() => import("./LabelLogo"));
@@ -10,15 +11,28 @@ interface WordListProps {
 }
 
 const WordList: FC<WordListProps> = ({ words }) => {
+  const router = useRouter();
+
+  const handleClick = (
+    e: MouseEvent<HTMLElement, MouseEvent>,
+    title: string
+  ) => {
+    const target = e.target as unknown as { tagName: string };
+    if (target.tagName !== "A") {
+      router.push(`./${title}`);
+    }
+  };
+
   return (
     <Box>
-      {words.map((word) => (
+      {words.map((word, index) => (
         <Box
+          onClick={(e) => handleClick(e, word.title)}
           sx={{
             padding: "10px 20px",
             borderBottom: (theme) => `1px solid ${theme.palette.gray2}`,
           }}
-          key={word.title}
+          key={index}
         >
           <Box
             sx={{
@@ -47,6 +61,7 @@ const WordList: FC<WordListProps> = ({ words }) => {
           {word.tags.map((tag) => (
             <Box
               component={"a"}
+              target="_blank"
               href={tag.link}
               sx={{
                 marginRight: "5px",
