@@ -1,11 +1,14 @@
 import runner from "./runner";
 import mongoose from "mongoose";
 import { ITag, IWord, TLabel } from "../dictionary-core/types";
-
 import dotenv from "dotenv";
 dotenv.config();
 
 const ROOT = "../../";
+
+// 1. 에러 핸들링
+// 2. await 제거
+// 3. O(n2) -> O(n)
 
 interface MigrationIWord extends IWord {
   slug: string;
@@ -33,39 +36,72 @@ const WordSchema = new Schema<MigrationIWord>({
 const WordModel = mongoose.model("Word", WordSchema);
 
 async function main() {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI);
+  await mongoose.connect(process.env.MONGODB_URI);
 
-    const dbWords = await WordModel.find({ deletedAt: null }).exec();
-    const mdWords = await runner(ROOT);
+  const dbWords = await WordModel.find({ deletedAt: null }).exec();
+  const mdWords = runner(ROOT);
 
-    const dbWordTitles = dbWords.map((dbWord) => dbWord.title);
-    await Promise.all(
-      mdWords.map(async (mdWord) => {
-        const key = Object.keys(mdWord)[0];
-        const { slug, title, labels, tags, body } = mdWord[key];
+  // 이걸 normalize 해야한다.
+  // const dbWordTable = dbWords.map((dbWord) => dbWord.title);
 
-        if (!dbWordTitles.includes(title)) {
-          await new WordModel({
-            slug,
-            title,
-            labels,
-            tags,
-            body,
-            createdAt: new Date(),
-          }).save();
+  const dbWordTable = dbWords.reduce<Map<string, any>>((map, next) => {
+    const { _id, slug, title: key, labels, tags, body } = next;
+    const value = {
+      _id,
+      slug,
+      labels,
+      tags,
+      body,
+    };
+    map.set(key, value);
+    return map;
+  }, new Map());
 
-          console.log(`${title} is registered`);
-          return title;
-        }
-      })
-    );
-  } catch (error) {
-    console.log(error);
-  } finally {
-    console.log("MONGO LOCKED 🔒");
-    await mongoose.disconnect();
-  }
+  const mdWordTitles = [];
+  const mdWordTable = mdWords.reduce<Map<string, any>>((map, next) => {
+    const [[key, value]] = Object.entries(next);
+    map.set(key, value);
+    mdWordTitles.push(key);
+    return map;
+  }, new Map());
+
+  await Promise.all(
+    mdWordTitles.map(async (mdTitle) => {
+      const dbWord = dbWordTable.get(mdTitle);
+      const { slug, title, labels, tags, body, createdAt } =
+        mdWordTable.get(mdTitle);
+
+      if (!dbWord) {
+        await new WordModel({
+          slug,
+          title,
+          labels,
+          tags,
+          body,
+          createdAt,
+        }).save();
+
+        console.log(`${title} is registered`);
+      }
+    })
+  );
+
+  //     // if (!mdWordTable.has(dbTitle)) {
+  //     //   await new WordModel({
+  //     //     slug,
+  //     //     title,
+  //     //     labels,
+  //     //     tags,
+  //     //     body,
+  //     //     createdAt: new Date(),
+  //     //   }).save();
+  //     // }
+  //     //
+  //   })
+  // );
+
+  console.log("MONGO LOCKED 🔒");
+  await mongoose.disconnect();
 }
 
-main().catch((err) => console.log(err));
+main();
