@@ -5,10 +5,11 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const ROOT = "../../";
-
-// 1. 에러 핸들링
-// 2. await 제거
-// 3. O(n2) -> O(n)
+const DIFF = {
+  LABELS: "labels",
+  TAGS: "tags",
+  BODY: "body",
+};
 
 interface MigrationIWord extends IWord {
   slug: string;
@@ -40,10 +41,6 @@ async function main() {
 
   const dbWords = await WordModel.find({ deletedAt: null }).exec();
   const mdWords = runner(ROOT);
-
-  // 이걸 normalize 해야한다.
-  // const dbWordTable = dbWords.map((dbWord) => dbWord.title);
-
   const dbWordTable = dbWords.reduce<Map<string, any>>((map, next) => {
     const { _id, slug, title: key, labels, tags, body } = next;
     const value = {
@@ -56,7 +53,6 @@ async function main() {
     map.set(key, value);
     return map;
   }, new Map());
-
   const mdWordTitles = [];
   const mdWordTable = mdWords.reduce<Map<string, any>>((map, next) => {
     const [[key, value]] = Object.entries(next);
@@ -68,8 +64,7 @@ async function main() {
   await Promise.all(
     mdWordTitles.map(async (mdTitle) => {
       const dbWord = dbWordTable.get(mdTitle);
-      const { slug, title, labels, tags, body, createdAt } =
-        mdWordTable.get(mdTitle);
+      const { slug, title, labels, tags, body } = mdWordTable.get(mdTitle);
 
       if (!dbWord) {
         await new WordModel({
@@ -78,27 +73,38 @@ async function main() {
           labels,
           tags,
           body,
-          createdAt,
+          createdAt: new Date(),
         }).save();
 
         console.log(`${title} is registered`);
+      } else {
+        const { labels: dbLabels, tags: dbTags, body: dbBody } = dbWord;
+
+        const diff = {};
+        if (JSON.stringify(labels) !== JSON.stringify(dbLabels)) {
+          diff[DIFF.LABELS] = labels;
+        }
+        if (JSON.stringify(tags) !== JSON.stringify(dbTags)) {
+          diff[DIFF.TAGS] = tags;
+        }
+        if (body !== dbBody) {
+          diff[DIFF.BODY] = body;
+        }
+
+        if (Object.keys(diff).length > 0) {
+          await WordModel.findOneAndUpdate(
+            { title },
+            {
+              labels: diff[DIFF.LABELS] || dbLabels,
+              tags: diff[DIFF.TAGS] || dbTags,
+              body: diff[DIFF.BODY] || dbBody,
+              updatedAt: new Date(),
+            }
+          ).exec();
+        }
       }
     })
   );
-
-  //     // if (!mdWordTable.has(dbTitle)) {
-  //     //   await new WordModel({
-  //     //     slug,
-  //     //     title,
-  //     //     labels,
-  //     //     tags,
-  //     //     body,
-  //     //     createdAt: new Date(),
-  //     //   }).save();
-  //     // }
-  //     //
-  //   })
-  // );
 
   console.log("MONGO LOCKED 🔒");
   await mongoose.disconnect();
