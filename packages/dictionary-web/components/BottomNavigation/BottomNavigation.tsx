@@ -1,8 +1,4 @@
-import {
-  Paper,
-  BottomNavigation as MuiBottomNavigation,
-  BottomNavigationAction as MuiBottomNavigationAction,
-} from "@mui/material";
+import { Paper, BottomNavigation as MuiBottomNavigation } from "@mui/material";
 import { useRouter } from "next/router";
 import HomeSVG from "../../svgs/HomeSVG";
 import InfoSVG from "../../svgs/InfoSVG";

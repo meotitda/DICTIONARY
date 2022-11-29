@@ -1,1 +1,1 @@
-// export const getWords = createApi();
+export const getWords = {};
