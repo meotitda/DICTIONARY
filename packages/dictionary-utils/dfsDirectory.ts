@@ -3,7 +3,7 @@ import fs from "fs";
 const dfsDirectory = (root: string, callback: (curr: string) => any) => {
   const isVisited = new Set();
 
-  const _dfsDirectory = (curr) => {
+  const _dfsDirectory = (curr: string) => {
     isVisited.add(curr);
 
     if (fs.lstatSync(curr).isFile()) {

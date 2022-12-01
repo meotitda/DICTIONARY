@@ -3,6 +3,7 @@
     "target": "ES2022",
     "esModuleInterop": true,
     "noEmit": true,
-    "moduleResolution": "NodeNext"
+    "moduleResolution": "NodeNext",
+    "strictPropertyInitialization": false
   }
 }

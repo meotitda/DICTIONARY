@@ -65,6 +65,9 @@ class Parser {
   }
 
   public nomalizeToken(): IWord {
+    if (!this.tokens.title || !this.tokens.body)
+      throw new Error("Syntax Error");
+
     return {
       title: this.tokens.title.content,
       slug: this.tokens.title.content[0],
@@ -161,7 +164,7 @@ class Parser {
     }
 
     try {
-      const labelToken = new LabelToken(label);
+      const labelToken = new LabelToken(label as any);
       this.tokens.labels.push(labelToken);
     } catch (UndefinedLabelError) {
       throw new DSyntaxError(`${label}는 존재하지 않는 라벨입니다.`, {
@@ -290,7 +293,7 @@ class Parser {
   }
 
   public parse(text: string): ITokens {
-    if (this.cache.has(text)) return this.cache.get(text);
+    if (this.cache.has(text)) return this.cache.get(text) as ITokens;
     this.text = text;
     this.resetCursor();
     this.tokens = {

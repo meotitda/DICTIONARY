@@ -1,7 +1,7 @@
 class TrieNode {
   value: string;
   end: boolean;
-  child: object;
+  child: { [key: string]: TrieNode };
   constructor(value = "") {
     this.value = value;
     this.end = false;
@@ -17,7 +17,7 @@ class Trie {
     this.cursor = this.root;
   }
 
-  insert(string) {
+  insert(string: string) {
     let currentNode = this.root;
 
     for (let i = 0; i < string.length; i++) {

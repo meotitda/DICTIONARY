@@ -1,5 +1,7 @@
 import { Box } from "@mui/material";
+import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "next/router";
+import { getWords } from "../../apis/getWords.api";
 import SearchBar from "../../components/SearchBar";
 import ChipFilter from "./ChipFilter";
 import WordList from "./WordList";
@@ -15,28 +17,18 @@ const Home = () => {
     return object;
   }, {});
 
+  const { data } = useQuery({
+    queryKey: ["getWords"],
+    queryFn: getWords,
+  });
+
+  console.log("query", data);
+
   return (
     <Box>
       <SearchBar linkComponent />
       <ChipFilter selected={selected} />
-      <WordList
-        words={Array(10).fill({
-          title: "AST",
-          body: "AST",
-          slug: "A",
-          labels: ["Frontend", "Common"],
-          tags: [
-            {
-              title: "test",
-              link: "rr",
-            },
-            {
-              title: "test2",
-              link: "rr2",
-            },
-          ],
-        })}
-      />
+      <WordList words={data} />
     </Box>
   );
 };
