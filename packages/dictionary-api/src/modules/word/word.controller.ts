@@ -13,6 +13,7 @@ import { ControllerResultDto } from 'src/common/common.dto';
 import { Word } from 'src/schemas/word.schema';
 import { InputCreateWordDto } from './dtos/create-word.dto';
 import { InputDeleteWordDto } from './dtos/delete-word.dto';
+import { InputGetWordFilterDto } from './dtos/get-word-filter.dto';
 import { ResultWordDto } from './dtos/get-word.dto';
 import { WordService } from './word.service';
 
@@ -38,16 +39,15 @@ export class WordController {
   }
 
   @Get()
-  @HttpCode(200)
-  async getWords(): Promise<ControllerResultDto<Word[]>> {
-    const { items } = await this.wordService.getWords();
+  @HttpCode(HttpStatus.OK)
+  async getWords(
+    @Body() input: InputGetWordFilterDto,
+  ): Promise<ControllerResultDto<Word[]>> {
+    const { items } = await this.wordService.getWords(input);
+    const statusCode = items.length < 1 ? HttpStatus.NO_CONTENT : HttpStatus.OK;
+    const message = items.length < 1 ? 'OK' : 'NO_CONTENT';
 
-    const result = {
-      items,
-      statusCode: 200,
-      message: 'Successfully got words',
-    };
-
+    const result = { items, statusCode, message };
     return result;
   }
 

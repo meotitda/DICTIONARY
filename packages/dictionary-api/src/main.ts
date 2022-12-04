@@ -25,7 +25,7 @@ async function bootstrap(): Promise<Handler> {
 
   if (CONFIG.NEST_ENV === 'dev') {
     const config = new DocumentBuilder()
-      .setTitle('DICTIONARY OFFICAIL API')
+      .setTitle('DICTIONARY OFFICIAL API')
       .setDescription('딕셔너리 공식 API 문서입니다.')
       .setVersion('1.0')
       .addTag('dictionary')

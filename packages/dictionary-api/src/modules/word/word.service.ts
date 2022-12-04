@@ -5,6 +5,7 @@ import { ServiceResultDto } from 'src/common/common.dto';
 import { Word, WordDocument } from 'src/schemas/word.schema';
 import { InputCreateWordDto } from './dtos/create-word.dto';
 import { InputDeleteWordDto } from './dtos/delete-word.dto';
+import { InputGetWordFilterDto } from './dtos/get-word-filter.dto';
 import { ResultWordDto } from './dtos/get-word.dto';
 
 @Injectable()
@@ -21,9 +22,16 @@ export class WordService {
     return result;
   }
 
-  async getWords(): Promise<ServiceResultDto<Word[]>> {
+  async getWords(
+    input: InputGetWordFilterDto,
+  ): Promise<ServiceResultDto<Word[]>> {
     // TODO paging
-    const words = await this.wordModel.find({ deletedAt: null }).exec();
+    const query = { deletedAt: null };
+    const { labels } = input;
+
+    if (labels) query['labels'] = labels;
+
+    const words = await this.wordModel.find(query).exec();
     const result = { items: words };
 
     return result;
