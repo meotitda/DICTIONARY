@@ -17,18 +17,20 @@ const Home = () => {
     return object;
   }, {});
 
-  const { data } = useQuery({
+  const { data, isLoading } = useQuery({
     queryKey: ["getWords"],
     queryFn: getWords,
   });
 
-  console.log("query", data);
+  if (isLoading) return null;
+
+  const words = data?.data.items || [];
 
   return (
     <Box>
       <SearchBar linkComponent />
       <ChipFilter selected={selected} />
-      <WordList words={data} />
+      <WordList words={words} />
     </Box>
   );
 };
