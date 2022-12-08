@@ -7,7 +7,9 @@ interface ApiRespose<T> {
   message: string;
 }
 
-export const getWords = async (): Promise<AxiosResponse<ApiRespose<IWord>>> => {
+export const getWords = async (): Promise<
+  AxiosResponse<ApiRespose<IWord[]>>
+> => {
   const instance = axios.create({
     baseURL: "http://localhost:4000",
     responseType: "json",
