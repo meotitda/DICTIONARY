@@ -5,7 +5,7 @@ import { ServiceResultDto } from 'src/common/common.dto';
 import { Word, WordDocument } from 'src/schemas/word.schema';
 import { InputCreateWordDto } from './dtos/create-word.dto';
 import { InputDeleteWordDto } from './dtos/delete-word.dto';
-import { InputGetWordDto, ResultWordDto } from './dtos/get-word.dto';
+import { ResultWordDto } from './dtos/get-word.dto';
 import { InputGetWordFilterDto } from './dtos/get-words.dto';
 
 @Injectable()

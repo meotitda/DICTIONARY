@@ -4,17 +4,20 @@ import { IsOptional } from 'class-validator';
 import { SwaggerResponseDto } from 'src/common/common.dto';
 import { WordDto } from './word.dto';
 
-interface IFilter {
+class CFilter {
+  @ApiProperty()
   labels: TLabel[];
 }
+
 export class InputGetWordFilterDto {
+  @ApiProperty()
   @IsOptional()
-  filter: IFilter;
+  filter: CFilter;
 }
 
-export class ResultWordDto extends SwaggerResponseDto {
+export class ResultWordsDto extends SwaggerResponseDto {
   @ApiProperty({
-    type: WordDto,
+    type: [WordDto],
   })
-  item: WordDto;
+  items: WordDto[];
 }
