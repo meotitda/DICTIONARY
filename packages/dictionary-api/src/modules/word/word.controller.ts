@@ -8,12 +8,13 @@ import {
   Param,
   Post,
 } from '@nestjs/common';
-import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { ControllerResultDto } from 'src/common/common.dto';
 import { Word } from 'src/schemas/word.schema';
 import { InputCreateWordDto } from './dtos/create-word.dto';
 import { InputDeleteWordDto } from './dtos/delete-word.dto';
 import { ResultWordDto } from './dtos/get-word.dto';
+import { InputGetWordFilterDto, ResultWordsDto } from './dtos/get-words.dto';
 import { WordService } from './word.service';
 
 @Controller('words')
@@ -38,16 +39,28 @@ export class WordController {
   }
 
   @Get()
-  @HttpCode(200)
-  async getWords(): Promise<ControllerResultDto<Word[]>> {
-    const { items } = await this.wordService.getWords();
+  @HttpCode(HttpStatus.OK)
+  @ApiOperation({
+    summary: '단어 목록 조회',
+    description: '필터 옵션과 함께 단어 목록을 조회합니다.',
+  })
+  @ApiResponse({
+    type: ResultWordsDto,
+    status: HttpStatus.OK,
+    description: '게시글 객체 목록 반환',
+  })
+  @ApiBody({
+    type: InputGetWordFilterDto,
+    required: false,
+  })
+  async getWords(
+    @Body() input: InputGetWordFilterDto,
+  ): Promise<ResultWordsDto> {
+    const { items } = await this.wordService.getWords(input);
+    const statusCode = items.length < 1 ? HttpStatus.NO_CONTENT : HttpStatus.OK;
+    const message = items.length < 1 ? 'NO_CONTENT' : 'OK';
 
-    const result = {
-      items,
-      statusCode: 200,
-      message: 'Successfully got words',
-    };
-
+    const result = { items, statusCode, message };
     return result;
   }
 
