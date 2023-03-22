@@ -4,7 +4,7 @@ import AboutScreen from "../screens/About";
 export default function Detail() {
   return (
     <Layout>
-      <AboutScreen />
+      <AboutScreen title={""} />
     </Layout>
   );
 }

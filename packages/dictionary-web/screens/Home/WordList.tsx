@@ -14,7 +14,7 @@ const WordList: FC<WordListProps> = ({ words }) => {
   const router = useRouter();
 
   const handleClick = (
-    e: MouseEvent<HTMLElement, MouseEvent>,
+    e: MouseEvent<HTMLElement, globalThis.MouseEvent>,
     title: string
   ) => {
     const target = e.target as unknown as { tagName: string };
@@ -29,6 +29,7 @@ const WordList: FC<WordListProps> = ({ words }) => {
         <Box
           onClick={(e) => handleClick(e, word.title)}
           sx={{
+            cursor: "pointer",
             padding: "10px 20px",
             borderBottom: (theme) => `1px solid ${theme.palette.gray2}`,
           }}

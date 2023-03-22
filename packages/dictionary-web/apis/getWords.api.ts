@@ -1,5 +1,6 @@
-import axios, { AxiosResponse } from "axios";
+import type { AxiosResponse } from "axios";
 import { IWord } from "@dictionary/core";
+import { getApi } from "../utils";
 
 interface ApiRespose<T> {
   items: T;
@@ -10,10 +11,7 @@ interface ApiRespose<T> {
 export const getWords = async (): Promise<
   AxiosResponse<ApiRespose<IWord[]>>
 > => {
-  const instance = axios.create({
-    baseURL: "http://localhost:4000",
-    responseType: "json",
-  });
-  const result = await instance.get("words");
+  const api = getApi();
+  const result = await api.get("words");
   return result;
 };

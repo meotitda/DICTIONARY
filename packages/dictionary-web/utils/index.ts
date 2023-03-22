@@ -1,2 +1,1 @@
-export { default as createHTTPClient } from "./createHTTPClient";
-export { default as createAPI } from "./createAPI";
+export { default as getApi } from "./getApi";
