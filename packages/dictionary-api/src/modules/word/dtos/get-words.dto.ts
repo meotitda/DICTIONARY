@@ -1,18 +1,15 @@
 import { TLabel } from '@dictionary/core/types';
 import { ApiProperty } from '@nestjs/swagger';
-import { IsOptional } from 'class-validator';
+import { IsArray, IsOptional, IsString } from 'class-validator';
 import { SwaggerResponseDto } from 'src/common/common.dto';
 import { WordDto } from './word.dto';
-
-class CFilter {
-  @ApiProperty()
-  labels: TLabel[];
-}
 
 export class InputGetWordFilterDto {
   @ApiProperty()
   @IsOptional()
-  filter: CFilter;
+  @IsArray()
+  @IsString({ each: true })
+  labels: TLabel[];
 }
 
 export class ResultWordsDto extends SwaggerResponseDto {

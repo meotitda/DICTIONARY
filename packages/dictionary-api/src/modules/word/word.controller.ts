@@ -7,6 +7,7 @@ import {
   HttpStatus,
   Param,
   Post,
+  Query,
 } from '@nestjs/common';
 import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { ControllerResultDto } from 'src/common/common.dto';
@@ -54,7 +55,7 @@ export class WordController {
     required: false,
   })
   async getWords(
-    @Body() input: InputGetWordFilterDto,
+    @Query() input: InputGetWordFilterDto,
   ): Promise<ResultWordsDto> {
     const { items } = await this.wordService.getWords(input);
     const statusCode = items.length < 1 ? HttpStatus.NO_CONTENT : HttpStatus.OK;

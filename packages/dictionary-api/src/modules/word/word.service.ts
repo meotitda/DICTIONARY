@@ -27,8 +27,7 @@ export class WordService {
   ): Promise<ServiceResultDto<Word[]>> {
     // TODO paging
     const query = { deletedAt: null };
-    const { filter } = input;
-    const labels = filter?.labels;
+    const { labels } = input;
 
     if (labels) query['labels'] = { $in: labels };
 
