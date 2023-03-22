@@ -11,7 +11,7 @@ export class ResultDto {
   message: string;
 }
 
-export class SwaggerableResponseDto {
+export class SwaggerResponseDto {
   @ApiProperty()
   message: string;
 }

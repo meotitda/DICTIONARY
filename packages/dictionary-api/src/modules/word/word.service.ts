@@ -6,6 +6,7 @@ import { Word, WordDocument } from 'src/schemas/word.schema';
 import { InputCreateWordDto } from './dtos/create-word.dto';
 import { InputDeleteWordDto } from './dtos/delete-word.dto';
 import { ResultWordDto } from './dtos/get-word.dto';
+import { InputGetWordFilterDto } from './dtos/get-words.dto';
 
 @Injectable()
 export class WordService {
@@ -21,9 +22,17 @@ export class WordService {
     return result;
   }
 
-  async getWords(): Promise<ServiceResultDto<Word[]>> {
+  async getWords(
+    input: InputGetWordFilterDto,
+  ): Promise<ServiceResultDto<Word[]>> {
     // TODO paging
-    const words = await this.wordModel.find({ deletedAt: null }).exec();
+    const query = { deletedAt: null };
+    const { filter } = input;
+    const labels = filter?.labels;
+
+    if (labels) query['labels'] = { $in: labels };
+
+    const words = await this.wordModel.find(query).exec();
     const result = { items: words };
 
     return result;
