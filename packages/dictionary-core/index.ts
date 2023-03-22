@@ -1,2 +1,3 @@
 export { default as Parser } from "./parser";
-export { IWord, ITag, ELabel, TLabel } from "./types";
+export { ELabel } from "./types";
+export type { IWord, ITag, TLabel } from "./types";

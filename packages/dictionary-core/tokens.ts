@@ -15,7 +15,7 @@ export class Token {
 
 export class TagToken extends Token {
   private _attributes;
-  constructor(params, attributes) {
+  constructor(params: string, attributes: unknown) {
     super(params);
     this._attributes = attributes;
 
@@ -23,12 +23,13 @@ export class TagToken extends Token {
   }
 
   public get url() {
+    // @ts-ignore
     return this._attributes["href"];
   }
 }
 
 export class TitleToken extends Token {
-  constructor(params) {
+  constructor(params: string) {
     super(params);
 
     this._type = EToken.Title;
@@ -36,7 +37,7 @@ export class TitleToken extends Token {
 }
 
 export class BodyToken extends Token {
-  constructor(params) {
+  constructor(params: string) {
     super(params);
 
     this._type = EToken.Body;
@@ -44,7 +45,7 @@ export class BodyToken extends Token {
 }
 
 export class LabelToken extends Token {
-  constructor(params) {
+  constructor(params: TLabel) {
     if (!Object.values(ELabel).includes(params))
       throw new UndefinedLabelError(`${params}는 존재하지 않는 라벨입니다.`);
     super(params);
@@ -62,8 +63,8 @@ export class LabelToken extends Token {
 }
 
 export interface ITokens {
-  title: TitleToken;
+  title: TitleToken | null;
   labels: LabelToken[];
   tags: TagToken[];
-  body: BodyToken;
+  body: BodyToken | null;
 }
