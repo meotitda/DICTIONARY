@@ -7,6 +7,11 @@ import { WordDto } from './word.dto';
 export class InputGetWordFilterDto {
   @ApiProperty()
   @IsOptional()
+  @IsString()
+  title: TLabel[];
+
+  @ApiProperty()
+  @IsOptional()
   @IsArray()
   @IsString({ each: true })
   labels: TLabel[];

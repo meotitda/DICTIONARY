@@ -27,9 +27,15 @@ export class WordService {
   ): Promise<ServiceResultDto<Word[]>> {
     // TODO paging
     const query = { deletedAt: null };
-    const { labels } = input;
+    const { title, labels } = input;
 
+    if (title) {
+      const regex = new RegExp(`^${title}.*`, 'i');
+      query['title'] = { $regex: regex };
+    }
     if (labels) query['labels'] = { $in: labels };
+
+    console.log('query: ', query);
 
     const words = await this.wordModel.find(query).exec();
     const result = { items: words };
