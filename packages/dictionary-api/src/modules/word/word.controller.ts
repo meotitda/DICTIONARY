@@ -11,6 +11,7 @@ import {
 } from '@nestjs/common';
 import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { ControllerResultDto } from 'src/common/common.dto';
+import { HttpStatusMessage } from 'src/common/constants/message.constant';
 import { Word } from 'src/schemas/word.schema';
 import { InputCreateWordDto } from './dtos/create-word.dto';
 import { InputDeleteWordDto } from './dtos/delete-word.dto';
@@ -59,7 +60,7 @@ export class WordController {
   ): Promise<ResultWordsDto> {
     const { items } = await this.wordService.getWords(input);
     const statusCode = items.length < 1 ? HttpStatus.NO_CONTENT : HttpStatus.OK;
-    const message = items.length < 1 ? 'NO_CONTENT' : 'OK';
+    const message = HttpStatusMessage[statusCode];
 
     const result = { items, statusCode, message };
     return result;
